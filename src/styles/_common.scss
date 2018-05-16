@@ -1,0 +1,125 @@
+*:focus{
+  outline: none;
+}
+
+::-moz-selection {
+  background: rgba(darken($yellow, 40%), 0.4);
+}
+
+::selection {
+  background: rgba(darken($yellow, 40%), 0.4);
+}
+
+.current-shadow{
+  box-shadow: 0 4px 4px rgba(#000, 0.2);
+
+}
+
+a.current-shadow{
+  &:hover{
+    box-shadow: 0 4px 8px rgba(#000, 0.3);
+  }
+}
+
+.link-reset{
+  text-decoration: none;
+  color: inherit;
+  &:hover, &:focus, &:active{
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.main-content{
+  position: relative;
+  z-index: 9999;
+  background-color: #fff;
+  margin-bottom: 72px;
+}
+
+.height-full{
+  min-height: 100vh;
+}
+
+.title-char{
+  $size: 4px;
+
+  display: inline-block;
+  height: $size;
+  width: $size*6;
+  border-radius: $size/2;
+  background-color: $yellow;
+}
+
+.custom-link{
+  position: relative;
+  text-decoration: none;
+  &:after{
+    content: '';
+    display: block;
+    height: 4px;
+    border-radius: 2px;
+    width: 0;
+    background-color: $main-color;
+    position: absolute;
+    bottom: 0;
+    transition: width 0.2s;
+  }
+  &:hover{
+    text-decoration: none;
+    &:after{
+      width: 30px;
+    }
+  }
+}
+
+.mw-800{
+  max-width: 800px;
+}
+
+.mw-600{
+  max-width: 600px;
+}
+
+.btn{
+  box-shadow: 0 2px 4px rgba(#000, 0.2);
+  &:hover{
+    box-shadow: 0 2px 8px rgba(#000, 0.3);
+  }
+  &:focus{
+    box-shadow: 0 2px 4px rgba(#000, 0.2)!important;
+  }
+}
+
+.btn-rounded{
+  border-radius: 40px;
+}
+
+.project-section{
+  position: relative;
+  overflow: hidden;
+  &__clip{
+    clip: rect(auto, auto, auto, auto);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  &__item{
+    padding-top: 50px;
+    max-width: 300px;
+    display: block;
+    left: 50%;
+    max-height: 600px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    vertical-align: middle;
+    width: 51.66667%;
+  }
+  &__info{
+    position: relative;
+    z-index: 9;
+  }
+}
