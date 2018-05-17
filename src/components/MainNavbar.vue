@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white d-flex container-fluid justify-content-between align-items-center">
+  <header class="bg-white d-flex container-fluid justify-content-between align-items-center fixed-top">
     <span>logo</span>
     <nav>
       <router-link :to="{name: 'main'}" active-class="active" class="py-3 px-4 d-inline-block custom-link text-dark">Main</router-link>

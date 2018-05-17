@@ -1,29 +1,36 @@
 .side-nav{
+  $size: 1rem;
   position: fixed;
-  right: 1rem;
+  right: 1.2rem;
   top: 50%;
   transform: translateY(-50%);
   z-index: 999;
   &__link{
-    $size: 2rem;
-
-    width: 100%;
-    max-width: $size;
+    width: $size;
     height: $size;
     border-radius: $size;
-    line-height: $size;
-    white-space: nowrap;
-    overflow: hidden;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    transition: all 0.3s;
     @extend .link-reset;
-    text-indent: $size;
     background-color: #fff;
     margin-bottom: 0.5rem;
-    &:hover{
-      max-width: 200px;
-      text-indent: 0;
+    position: relative;
+    &:hover, &.active{
+     .side-nav__text{
+        opacity: 1;
+        right: 100%;
+      }
     }
+  }
+  &__text{
+    pointer-events: none;
+    transition: all 0.3s;
+    opacity: 0;
+    white-space: nowrap;
+    position: absolute;
+    right: 50%;
+    margin-right: 10px;
+    top: 0;
+    color: #fff;
+    line-height: $size;
+    text-shadow: 0 1px 10px rgba(#000, 0.5);
   }
 }

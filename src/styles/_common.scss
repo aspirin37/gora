@@ -32,9 +32,14 @@ a.current-shadow{
 
 .main-content{
   position: relative;
-  z-index: 9999;
+  z-index: 9;
   background-color: #fff;
   margin-bottom: 72px;
+  padding-top: 56px;
+}
+
+.main-footer{
+  z-index: 1;
 }
 
 .height-full{
