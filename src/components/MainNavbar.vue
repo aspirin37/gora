@@ -1,6 +1,8 @@
 <template>
   <header class="bg-white d-flex container-fluid justify-content-between align-items-center fixed-top">
-    <span>logo</span>
+    <router-link :to="{name: 'main'}">
+      <img src="@/images/logo.svg" alt="logo" class="navbar-logo">
+    </router-link>
     <nav>
       <router-link :to="{name: 'main'}" active-class="active" class="py-3 px-4 d-inline-block custom-link text-dark">Main</router-link>
       <router-link :to="{name: 'inner'}" active-class="active" class="py-3 px-4 d-inline-block custom-link text-dark">Portfolio</router-link>
