@@ -1,10 +1,5 @@
 <template>
-  <section>
-    <h2>Inner page</h2>
-    <h2>Inner page</h2>
-
-    <h2>Inner page</h2>
-    <h2>Inner page</h2>
+  <section class="container-fluid">
     <h2>Inner page</h2>
   </section>
 </template>

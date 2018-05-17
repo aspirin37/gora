@@ -18,15 +18,14 @@ var router = new Router({
   routes: [
     {
       path: '/',
-      name: 'main',
+      name: 'main-page',
       component: Main
     },
     {
       path: '/inner',
       name: 'inner',
       component: Inner
-    },
-    { path: '*', redirect: '/' }
+    }
   ]
 })
 

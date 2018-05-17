@@ -2,7 +2,9 @@
   <div>
     <main-navbar></main-navbar>
     <main class="main-content">
-      <router-view></router-view>
+      <transition name="page">
+        <router-view></router-view>
+      </transition>
     </main>
     <main-footer></main-footer>
   </div>

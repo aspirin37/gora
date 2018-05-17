@@ -6,15 +6,51 @@
         <button class="btn btn-pink btn-lg btn-rounded">Keep in touch</button>
       </div>
     </section>
-    <section class="height-full bg-pink project-section container-fluid d-flex align-items-center js-scroll-block" id="project-1">
+    <section class="height-full bg-light project-section container-fluid d-flex align-items-center js-scroll-block" id="project-1">
       <div class="row py-4 project-section__info">
         <div class="col-lg-4">
           <h4 class="text-dark text-center">Lorem ipsum dolor</h4>
         </div>
         <div class="col-lg-4"></div>
         <div class="col-lg-3">
-          <h3 class="text-white">Mobile Apps</h3>
-          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quis, dolores sint. Cumque ab nobis explicabo dignissimos unde, tempora quos consequuntur nesciunt tempore architecto perferendis doloremque quia, similique libero, provident.</p>
+          <h3>Mobile Apps</h3>
+          <p>Создаем мобильные решения, позволяющие повышать лояльность клиентов и снижать расходы за счет внедрения средств автоматизации и оптимизации процессов.</p>
+        </div>
+      </div>
+      <div class="project-section__clip">
+        <div class="project-section__item">
+          <img src="@/images/iphone.svg" alt="" class="mw-100 project-section__frame">
+          <img src="@/images/projects/mesto-phone.png" alt="" class="project-section__pic">
+        </div>
+      </div>
+    </section>
+    <section class="height-full bg-white project-section container-fluid d-flex align-items-center js-scroll-block" id="project-2">
+      <div class="row py-4 project-section__info">
+        <div class="col-lg-4">
+          <h4 class="text-dark text-center">Lorem ipsum dolor</h4>
+        </div>
+        <div class="col-lg-4"></div>
+        <div class="col-lg-3">
+          <h3>Web Projects</h3>
+          <p>Проектируем архитектуру проекта индивидуально для каждого кейса, учитывая все возможные платформы. Все для того чтобы создать по-настоящему качественный продукт.</p>
+        </div>
+      </div>
+      <div class="project-section__clip">
+        <div class="project-section__item">
+          <img src="@/images/samsung.svg" alt="" class="mw-100 project-section__frame">
+          <img src="@/images/projects/mesto-phone.png" alt="" class="project-section__pic">
+        </div>
+      </div>
+    </section>
+    <section class="height-full bg-light project-section container-fluid d-flex align-items-center js-scroll-block" id="project-3">
+      <div class="row py-4 project-section__info">
+        <div class="col-lg-4">
+          <h4 class="text-dark text-center">Lorem ipsum dolor</h4>
+        </div>
+        <div class="col-lg-4"></div>
+        <div class="col-lg-3">
+          <h3>Blockchain</h3>
+          <p>Консультируем и разрабатываем проекты с использованием Blockchain технологий. Рассчет токеномики, сопровождение ICO, экспертиза цифровых активов, внедрение FOMO-подхода. Будьте в тренде цифровой трансформации!</p>
         </div>
       </div>
       <div class="project-section__clip">
@@ -23,49 +59,15 @@
         </div>
       </div>
     </section>
-    <section class="height-full bg-primary project-section container-fluid d-flex align-items-center js-scroll-block" id="project-2">
-      <div class="row py-4 project-section__info">
-        <div class="col-lg-4">
-          <h4 class="text-dark text-center">Lorem ipsum dolor</h4>
-        </div>
-        <div class="col-lg-4"></div>
-        <div class="col-lg-3">
-          <h3 class="text-white">Web Projects</h3>
-          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quis, dolores sint. Cumque ab nobis explicabo dignissimos unde, tempora quos consequuntur nesciunt tempore architecto perferendis doloremque quia, similique libero, provident.</p>
-        </div>
-      </div>
-      <div class="project-section__clip">
-        <div class="project-section__item">
-          <img src="@/images/samsung.svg" alt="" class="mw-100">
-        </div>
-      </div>
-    </section>
-    <section class="height-full bg-success project-section container-fluid d-flex align-items-center js-scroll-block" id="project-3">
-      <div class="row py-4 project-section__info">
-        <div class="col-lg-4">
-          <h4 class="text-dark text-center">Lorem ipsum dolor</h4>
-        </div>
-        <div class="col-lg-4"></div>
-        <div class="col-lg-3">
-          <h3 class="text-white">Blockchain</h3>
-          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quis, dolores sint. Cumque ab nobis explicabo dignissimos unde, tempora quos consequuntur nesciunt tempore architecto perferendis doloremque quia, similique libero, provident.</p>
-        </div>
-      </div>
-      <div class="project-section__clip">
-        <div class="project-section__item">
-          <img src="@/images/iphone.svg" alt="" class="mw-100">
-        </div>
-      </div>
-    </section>
-    <section class="height-full bg-primary project-section container-fluid d-flex align-items-center js-scroll-block" id="project-4">
+    <section class="height-full bg-white project-section container-fluid d-flex align-items-center js-scroll-block" id="project-4">
       <div class="row py-4 project-section__info">
         <div class="col-lg-4">
           <h4 class="text-dark text-center">E-Commerce</h4>
         </div>
         <div class="col-lg-4"></div>
         <div class="col-lg-3">
-          <h3 class="text-white">E-Commerce</h3>
-          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quis, dolores sint. Cumque ab nobis explicabo dignissimos unde, tempora quos consequuntur nesciunt tempore architecto perferendis doloremque quia, similique libero, provident.</p>
+          <h3>E-Commerce</h3>
+          <p>Разрабатываем полноценные цифровые каналы продаж, интегрированные и автоматизированные решения обеспечивающие бесшовный покупательский опыт в рамках омниканальной стратегии.</p>
         </div>
       </div>
       <div class="project-section__clip">
