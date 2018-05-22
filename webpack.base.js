@@ -1,5 +1,5 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
@@ -16,31 +16,20 @@ module.exports = {
     rules: [
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
+        exclude: /node_modules/,
+        loader: 'vue-loader',
+        options: {
+          cacheBusting: true
+        }
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
-
         options: {
-          presets: ['env']
+          presets: ['env'],
+          cacheDirectory: true
         }
-      },
-      {
-        test: /\.(scss|css)$/,
-
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader
-          },
-          {
-            loader: 'css-loader'
-          },
-          {
-            loader: 'sass-loader'
-          }
-        ]
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -58,7 +47,6 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
-    new MiniCssExtractPlugin({ filename: 'app.[chunkhash].css' }),
     new HtmlWebPackPlugin({
       template: 'index.html'
     })

@@ -6,31 +6,35 @@
         <button class="btn btn-pink btn-lg btn-rounded">Keep in touch</button>
       </div>
     </section>
-    <section class="height-full bg-light project-section container-fluid d-flex align-items-center js-scroll-block" id="project-1">
+    <section class="height-full bg-light project-section container-fluid align-items-center js-scroll-block d-flex justify-content-center flex-column" id="project-1">
       <div class="row py-4 project-section__info">
-        <div class="col-lg-4">
-          <h4 class="text-dark text-center">Lorem ipsum dolor</h4>
+        <div class="col-12 col-lg-3 text-center">
+          <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
+          <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/apple.svg" alt="apple"></a>
+          <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/web.svg" alt="web"></a>
         </div>
-        <div class="col-lg-4"></div>
-        <div class="col-lg-3">
-          <h3>Mobile Apps</h3>
-          <p>Создаем мобильные решения, позволяющие повышать лояльность клиентов и снижать расходы за счет внедрения средств автоматизации и оптимизации процессов.</p>
+        <div class="col-12 col-lg-4"></div>
+        <div class="col-12 col-lg-4">
+          <h3 class="h1">Mesto.Delivery</h3>
+          <p>Место — сервис умных доставок день в день по Санкт-Петербургу от 250 руб. Подача 60 мин. Следи за посылкой онлайн. Личный кабинет. Простые iOS и Android приложения. Оплата наличными и картой. Работаем с юр. лицами. Аренда курьера на день.</p>
         </div>
       </div>
       <div class="project-section__clip">
-        <div class="project-section__item">
+        <div class="project-section__item mb-4 mb-md-0 mx-auto">
           <img src="@/images/iphone.svg" alt="" class="mw-100 project-section__frame">
           <img src="@/images/projects/mesto-phone.png" alt="" class="project-section__pic">
         </div>
       </div>
     </section>
-    <section class="height-full bg-white project-section container-fluid d-flex align-items-center js-scroll-block" id="project-2">
+    <section class="height-full bg-light project-section container-fluid align-items-center js-scroll-block d-flex justify-content-center flex-column" id="project-2">
       <div class="row py-4 project-section__info">
-        <div class="col-lg-4">
-          <h4 class="text-dark text-center">Lorem ipsum dolor</h4>
+        <div class="col-12 col-lg-3 text-center">
+          <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
+          <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/apple.svg" alt="apple"></a>
+          <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/web.svg" alt="web"></a>
         </div>
-        <div class="col-lg-4"></div>
-        <div class="col-lg-3">
+        <div class="col-12 col-lg-4"></div>
+        <div class="col-12 col-lg-4">
           <h3>Web Projects</h3>
           <p>Проектируем архитектуру проекта индивидуально для каждого кейса, учитывая все возможные платформы. Все для того чтобы создать по-настоящему качественный продукт.</p>
         </div>
@@ -42,13 +46,15 @@
         </div>
       </div>
     </section>
-    <section class="height-full bg-light project-section container-fluid d-flex align-items-center js-scroll-block" id="project-3">
+    <section class="height-full bg-light project-section container-fluid align-items-center js-scroll-block d-flex justify-content-center flex-column" id="project-3">
       <div class="row py-4 project-section__info">
-        <div class="col-lg-4">
-          <h4 class="text-dark text-center">Lorem ipsum dolor</h4>
+        <div class="col-12 col-lg-3 text-center">
+          <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
+          <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/apple.svg" alt="apple"></a>
+          <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/web.svg" alt="web"></a>
         </div>
-        <div class="col-lg-4"></div>
-        <div class="col-lg-3">
+        <div class="col-12 col-lg-4"></div>
+        <div class="col-12 col-lg-4">
           <h3>Blockchain</h3>
           <p>Консультируем и разрабатываем проекты с использованием Blockchain технологий. Рассчет токеномики, сопровождение ICO, экспертиза цифровых активов, внедрение FOMO-подхода. Будьте в тренде цифровой трансформации!</p>
         </div>
@@ -59,13 +65,15 @@
         </div>
       </div>
     </section>
-    <section class="height-full bg-white project-section container-fluid d-flex align-items-center js-scroll-block" id="project-4">
+    <section class="height-full bg-light project-section container-fluid align-items-center js-scroll-block d-flex justify-content-center flex-column" id="project-4">
       <div class="row py-4 project-section__info">
-        <div class="col-lg-4">
-          <h4 class="text-dark text-center">E-Commerce</h4>
+        <div class="col-12 col-lg-3 text-center">
+          <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
+          <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/apple.svg" alt="apple"></a>
+          <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/web.svg" alt="web"></a>
         </div>
-        <div class="col-lg-4"></div>
-        <div class="col-lg-3">
+        <div class="col-12 col-lg-4"></div>
+        <div class="col-12 col-lg-4">
           <h3>E-Commerce</h3>
           <p>Разрабатываем полноценные цифровые каналы продаж, интегрированные и автоматизированные решения обеспечивающие бесшовный покупательский опыт в рамках омниканальной стратегии.</p>
         </div>
