@@ -1,12 +1,39 @@
 <template>
   <div>
-    <section class="py-5 text-center height-full d-flex align-items-center js-scroll-block" id="main">
+    <article class="py-5 text-center height-full d-flex align-items-center js-scroll-block" id="main">
       <div class="w-100 mb-5 container">
-        <h1 class="text-center mw-800 mx-auto mb-5">Best mobile & web applications all over<span class="title-char"></span></h1>
+        <h1 class="text-center mw-800 mx-auto">Best mobile & web applications all over<span class="title-char"></span></h1>
+        <p class="text-center mw-600 mx-auto mb-5">We are «A3 technology» — mobile and web development company focused on modern technologies and knowledge related on delivery, blockchain, e-commerce.</p>
         <button class="btn btn-pink btn-lg btn-rounded">Keep in touch</button>
       </div>
-    </section>
-    <section class="height-full bg-light project-section container-fluid align-items-center js-scroll-block d-flex justify-content-center flex-column" id="project-1">
+    </article>
+
+    <article class="bg-light py-5">
+      <div class="container mb-5">
+        <h3>What we do<span class="title-char"></span></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sequi quam ipsa amet facere veritatis exercitationem neque et doloremque possimus id velit accusamus laboriosam at optio ratione, non corporis ad!</p>
+      </div>
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 text-right">
+            img
+          </div>
+          <div class="col-12 col-md-6">
+            <p class="mw-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas accusantium aliquid sit minima, perferendis excepturi cupiditate, perspiciatis amet itaque consequuntur ipsa sequi. Sed ex nihil tempora enim earum delectus tenetur?</p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 text-right">
+            <p class="mw-600 ml-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas accusantium aliquid sit minima, perferendis excepturi cupiditate, perspiciatis amet itaque consequuntur ipsa sequi. Sed ex nihil tempora enim earum delectus tenetur?</p>
+          </div>
+          <div class="col-12 col-md-6">
+            img
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <section class="height-full project-section container-fluid align-items-center js-scroll-block d-flex justify-content-center flex-column" id="project-1">
       <div class="row py-4 project-section__info">
         <div class="col-12 col-lg-3 text-center">
           <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
@@ -26,7 +53,8 @@
         </div>
       </div>
     </section>
-    <section class="height-full bg-light project-section container-fluid align-items-center js-scroll-block d-flex justify-content-center flex-column" id="project-2">
+
+    <section class="height-full project-section container-fluid align-items-center js-scroll-block d-flex justify-content-center flex-column" id="project-2">
       <div class="row py-4 project-section__info">
         <div class="col-12 col-lg-3 text-center">
           <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
@@ -46,7 +74,8 @@
         </div>
       </div>
     </section>
-    <section class="height-full bg-light project-section container-fluid align-items-center js-scroll-block d-flex justify-content-center flex-column" id="project-3">
+
+    <section class="height-full project-section container-fluid align-items-center js-scroll-block d-flex justify-content-center flex-column" id="project-3">
       <div class="row py-4 project-section__info">
         <div class="col-12 col-lg-3 text-center">
           <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
@@ -65,7 +94,8 @@
         </div>
       </div>
     </section>
-    <section class="height-full bg-light project-section container-fluid align-items-center js-scroll-block d-flex justify-content-center flex-column" id="project-4">
+
+    <section class="height-full project-section container-fluid align-items-center js-scroll-block d-flex justify-content-center flex-column" id="project-4">
       <div class="row py-4 project-section__info">
         <div class="col-12 col-lg-3 text-center">
           <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
