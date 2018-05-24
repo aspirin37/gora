@@ -1,23 +1,26 @@
 $font-family-base: 'Fira San', sans-serif;
 $headings-font-family: 'Fira San', sans-serif;
 $headings-font-weight: 400;
-$headings-color: $gray-800;
-$body-color: $gray-700;
+
+$gray-100: #FAFCFD;
+$gray-200: #CFD8DC;
+$gray-300: #B0BEC5;
+$gray-400: #90A4AE;
+$gray-500: #78909C;
+$gray-600: #607D8B;
+$gray-700: #6b696a;
+$gray-800: #444243;
+$gray-900: #263238;
 $blue: #2B6BA4;
 $pink: #E53061;
 $yellow: #FDED35;
+
+$headings-color: $gray-900;
+$body-color: $gray-700;
 $link-color: $blue;
 $main-color: $pink;
-
-$gray-100: #CFD8DC;
-$gray-200: #B0BEC5;
-$gray-300: #90A4AE;
-$gray-400: #78909C;
-$gray-500: #607D8B;
-$gray-600: #546E7A;
-$gray-700: #455A64;
-$gray-800: #37474F;
-$gray-900: #263238;
+$light: $gray-100;
+$primary: $blue;
 
 $h1-font-size: $font-size-base * 4;
 $h2-font-size: $font-size-base * 3.5;
@@ -26,6 +29,7 @@ $h4-font-size: $font-size-base * 2.5;
 $h5-font-size: $font-size-base * 2;
 $h6-font-size: $font-size-base;
 
+$theme-colors: ();
 $theme-colors: map-merge((
   "primary":    $primary,
   "secondary":  $secondary,

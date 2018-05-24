@@ -1,0 +1,15 @@
+@for $i from 1 through 5 {
+  h#{$i}, .h#{$i} {
+    @include media-breakpoint-down(md) {
+      line-height: 1;
+      font-size: ($font-size-base * 3) - ($i / 5);
+    }
+  }
+}
+
+.font-large{
+  font-size: $font-size-lg;
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-base;
+  }
+}

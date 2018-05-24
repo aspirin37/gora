@@ -100,14 +100,29 @@ a.current-shadow{
   border-radius: 40px;
 }
 
+.relative{
+  position: relative;
+}
+
+.main-section{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.service-pic{
+  width: 300px;
+  height: auto;
+}
+
 .project-section{
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   &__clip{
     clip: rect(auto, auto, auto, auto);
     height: 100%;
     position: relative;
     top: 0;
+    left: 0;
     width: 100%;
     @include media-breakpoint-up(md) {
       position: absolute;
