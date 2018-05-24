@@ -116,6 +116,26 @@
       </div>
     </section>
 
+    <section class="js-scroll-block bg-white current-shadow" id="team">
+      <div class="container py-5">
+        <h3 class="section-title">Team<span class="title-char"></span></h3>
+      </div>
+      <div class="d-flex flex-wrap">
+        <div class="team-item">
+          <img src="@/images/team.jpeg" alt="team" class="team-item__img">
+        </div>
+        <div class="team-item">
+          <img src="@/images/team.jpeg" alt="team" class="team-item__img">
+        </div>
+        <div class="team-item">
+          <img src="@/images/team.jpeg" alt="team" class="team-item__img">
+        </div>
+        <div class="team-item">
+          <img src="@/images/team.jpeg" alt="team" class="team-item__img">
+        </div>
+      </div>
+    </section>
+
     <nav class="side-nav">
       <a href="#main"
         class="side-nav__link current-shadow d-block ml-auto"
@@ -142,6 +162,11 @@
         :class="{'bg-dark active': scrolledBlock === 'project-3'}"
         v-on:click.prevent="scrollToItem('project-3', 500)"
       ><span class="side-nav__text">KUC</span></a>
+      <a href="#team"
+        class="side-nav__link current-shadow d-block ml-auto"
+        :class="{'bg-dark active': scrolledBlock === 'team'}"
+        v-on:click.prevent="scrollToItem('team', 500)"
+      ><span class="side-nav__text">Team</span></a>
     </nav>
   </div>
 </template>

@@ -198,3 +198,21 @@ a.current-shadow{
     background-color: rgba(#000, 0.1);
   }
 }
+
+.team-item{
+  width: 25%;
+  overflow: hidden;
+  &__img{
+    height: 100%;
+    filter: grayscale(100%);
+    &:hover{
+      filter: none;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    width: 50%;
+  }
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
+}
