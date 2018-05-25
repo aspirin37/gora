@@ -4,7 +4,7 @@
       <div class="w-100 mb-5 container">
         <h1 class="text-center mw-800 mx-auto">Best mobile & web applications all over<span class="title-char"></span></h1>
         <p class="text-center mw-600 mx-auto mb-5">We are «GORA» — mobile and web development company focused on modern technologies and knowledge related on delivery, blockchain, e-commerce.</p>
-        <button class="btn btn-pink btn-lg btn-rounded">Keep in touch</button>
+        <button class="btn btn-theme btn-lg btn-rounded">Keep in touch</button>
       </div>
     </article>
 
@@ -33,48 +33,50 @@
       </div>
     </article>
 
-    <section class="height-full project-section container-fluid js-scroll-block d-flex justify-content-center flex-column" id="project-1">
-      <div class="container">
-        <h3 class="section-title">Lasets jobs<span class="title-char"></span></h3>
-      </div>
-      <div class="row py-4 project-section__info">
-        <div class="col-12 col-lg-4 text-center">
-          <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
-          <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/apple.svg" alt="apple"></a>
-          <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/web.svg" alt="web"></a>
+    <div class="js-scroll-block" id="project-1">
+      <section class="height-full project-section container-fluid  d-flex justify-content-center flex-column">
+        <div class="container">
+          <h3 class="section-title">Lasets jobs<span class="title-char"></span></h3>
         </div>
-        <div class="col-12 col-lg-3"></div>
-        <div class="col-12 col-lg-4">
-          <h3 class="h1 mb-4">Mesto.Delivery</h3>
-          <p class="font-large">Место — сервис умных доставок день в день по Санкт-Петербургу от 250 руб. Подача 60 мин. Следи за посылкой онлайн. Личный кабинет. Простые iOS и Android приложения. Оплата наличными и картой. Работаем с юр. лицами. Аренда курьера на день.</p>
-          <a href="#">Read more</a>
+        <div class="row py-4 project-section__info">
+          <div class="col-12 col-lg-4 text-center">
+            <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
+            <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/apple.svg" alt="apple"></a>
+            <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/web.svg" alt="web"></a>
+          </div>
+          <div class="col-12 col-lg-3"></div>
+          <div class="col-12 col-lg-4">
+            <h3 class="h1 mb-4">Mesto.Delivery</h3>
+            <p class="font-large">Место — сервис умных доставок день в день по Санкт-Петербургу от 250 руб. Подача 60 мин. Следи за посылкой онлайн. Личный кабинет. Простые iOS и Android приложения. Оплата наличными и картой. Работаем с юр. лицами. Аренда курьера на день.</p>
+            <a href="#">Read more</a>
+          </div>
         </div>
-      </div>
-      <div class="project-section__clip">
-        <div class="project-section__item mb-4 mb-md-0 mx-auto">
-          <img src="@/images/samsung.svg" alt="" class="mw-100 project-section__frame">
-          <img src="@/images/projects/mesto-phone.png" alt="" class="project-section__pic">
+        <div class="project-section__clip">
+          <div class="project-section__item mb-4 mb-md-0 mx-auto">
+            <img src="@/images/samsung.svg" alt="" class="mw-100 project-section__frame">
+            <img src="@/images/projects/mesto-phone.png" alt="" class="project-section__pic">
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="height-full project-section container-fluid align-items-center js-scroll-block d-flex justify-content-center flex-column">
-      <div class="row py-4 project-section__info">
-        <div class="col-12 col-lg-4 text-right">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum laborum odit aspernatur dignissimos magnam dolor accusantium veritatis tempora suscipit. Ea vel dignissimos inventore saepe enim molestias aliquid in similique quo.</p>
+      <section class="height-full project-section container-fluid align-items-center d-flex justify-content-center flex-column">
+        <div class="row py-4 project-section__info">
+          <div class="col-12 col-lg-4 text-right">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum laborum odit aspernatur dignissimos magnam dolor accusantium veritatis tempora suscipit. Ea vel dignissimos inventore saepe enim molestias aliquid in similique quo.</p>
+          </div>
+          <div class="col-12 col-lg-3"></div>
+          <div class="col-12 col-lg-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum laborum odit aspernatur dignissimos magnam dolor accusantium veritatis tempora suscipit. Ea vel dignissimos inventore saepe enim molestias aliquid in similique quo.</p>
+          </div>
         </div>
-        <div class="col-12 col-lg-3"></div>
-        <div class="col-12 col-lg-4">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum laborum odit aspernatur dignissimos magnam dolor accusantium veritatis tempora suscipit. Ea vel dignissimos inventore saepe enim molestias aliquid in similique quo.</p>
+        <div class="project-section__clip">
+          <div class="project-section__item mb-4 mb-md-0 mx-auto">
+            <img src="@/images/samsung.svg" alt="" class="mw-100 project-section__frame">
+            <img src="@/images/projects/mesto-phone.png" alt="" class="project-section__pic">
+          </div>
         </div>
-      </div>
-      <div class="project-section__clip">
-        <div class="project-section__item mb-4 mb-md-0 mx-auto">
-          <img src="@/images/samsung.svg" alt="" class="mw-100 project-section__frame">
-          <img src="@/images/projects/mesto-phone.png" alt="" class="project-section__pic">
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <section class="height-full project-section container-fluid align-items-center js-scroll-block d-flex justify-content-center flex-column" id="project-2">
       <div class="row py-4 project-section__info">
@@ -116,7 +118,7 @@
       </div>
     </section>
 
-    <section class="js-scroll-block bg-white current-shadow" id="team">
+    <section class="js-scroll-block bg-white height-half" id="team">
       <div class="container py-5">
         <h3 class="section-title">Team<span class="title-char"></span></h3>
       </div>
@@ -136,6 +138,21 @@
       </div>
     </section>
 
+    <section class="js-scroll-block main-section bg-white current-shadow height-half d-flex align-items-center" id="contact">
+      <div class="container text-center">
+        <h3 class="section-title">Contact Us<span class="title-char"></span></h3>
+        <p class="font-large mb-4">Our pleasure to answer you!</p>
+        <form class="mw-600 mx-auto">
+          <div class="mb-3 input-group">
+            <input type="text" class="form-control form-control-lg rounded-left-lg" required placeholder="Name or phone">
+            <div class="input-group-append">
+              <button class="btn btn-theme btn-lg rounded-left-0">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
     <nav class="side-nav">
       <a href="#main"
         class="side-nav__link current-shadow d-block ml-auto"
@@ -146,7 +163,7 @@
         class="side-nav__link current-shadow d-block ml-auto"
         :class="{'bg-dark active': scrolledBlock === 'services'}"
         v-on:click.prevent="scrollToItem('services', 500)"
-      ><span class="side-nav__text">Услуги</span></a>
+      ><span class="side-nav__text">Services</span></a>
       <a href="#project-1"
         class="side-nav__link current-shadow d-block ml-auto"
         :class="{'bg-dark active': scrolledBlock === 'project-1'}"
@@ -167,6 +184,11 @@
         :class="{'bg-dark active': scrolledBlock === 'team'}"
         v-on:click.prevent="scrollToItem('team', 500)"
       ><span class="side-nav__text">Team</span></a>
+      <a href="#contact"
+        class="side-nav__link current-shadow d-block ml-auto"
+        :class="{'bg-dark active': scrolledBlock === 'contact'}"
+        v-on:click.prevent="scrollToItem('contact', 500)"
+      ><span class="side-nav__text">Contact</span></a>
     </nav>
   </div>
 </template>
@@ -186,14 +208,17 @@ export default {
   },
   methods: {
     getScrollPos () {
-      let activeOffset = 200
+      let activeOffset = window.innerHeight / 2
       let scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop
       let project = document.querySelectorAll('.js-scroll-block')
 
       project.forEach(item => {
         let topOffset = item.offsetTop
+        let bottomOffset = item.offsetTop + item.clientHeight
+        let blockScrolledOffsetTop = (topOffset <= scrollTop + activeOffset) && (scrollTop <= topOffset + (item.clientHeight - activeOffset))
+        console.log(item.getAttribute('id'), (topOffset <= scrollTop + activeOffset), (scrollTop <= topOffset + (item.clientHeight - activeOffset)))
 
-        if ((topOffset <= scrollTop + activeOffset) && (topOffset >= scrollTop - activeOffset)) {
+        if (blockScrolledOffsetTop) {
           this.scrolledBlock = item.getAttribute('id')
         }
       })

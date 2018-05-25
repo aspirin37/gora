@@ -29,6 +29,10 @@ $h4-font-size: $font-size-base * 2.5;
 $h5-font-size: $font-size-base * 2;
 $h6-font-size: $font-size-base;
 
+$border-radius: 0.3rem;
+$border-radius-sm: 0.2rem;
+$border-radius-lg: 0.6rem;
+
 $theme-colors: ();
 $theme-colors: map-merge((
   "primary":    $primary,
@@ -39,22 +43,33 @@ $theme-colors: map-merge((
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  "pink":       $pink
+  "pink":       $pink,
+  "theme":      $main-color
 ), $theme-colors);
 
-$input-btn-focus-box-shadow: none!important;
-$btn-box-shadow: 0 4px 4px rgba(#000, 0.2);
+$input-btn-focus-box-shadow: 0 1px 1px rgba(#000, 0.2);
 // $btn-focus-box-shadow: $input-btn-focus-box-shadow;
-$btn-active-box-shadow: $input-btn-focus-box-shadow;
+
 $input-btn-padding-y: 0.6rem;
 $input-btn-padding-x: 1.2rem;
 $input-btn-padding-y-sm: .25rem;
 $input-btn-padding-x-sm: .8rem;
 $input-btn-padding-y-lg: 1rem;
 $input-btn-padding-x-lg: 2rem;
+
+$btn-box-shadow: 0 4px 4px rgba(#000, 0.2);
+$btn-active-box-shadow: $input-btn-focus-box-shadow;
 $btn-padding-y: $input-btn-padding-y;
 $btn-padding-x: $input-btn-padding-x;
 $btn-padding-y-sm: $input-btn-padding-y-sm;
 $btn-padding-x-sm: $input-btn-padding-x-sm;
 $btn-padding-y-lg: $input-btn-padding-y-lg;
 $btn-padding-x-lg: $input-btn-padding-x-lg;
+$btn-border-radius-lg: $border-radius-lg;
+
+$input-bg: rgba(#000, 0.05);
+$input-border-color: $input-bg;
+$input-focus-bg: #fff;
+$input-border-radius-lg: $border-radius-lg;
+$input-focus-box-shadow: $input-btn-focus-box-shadow;
+$input-focus-border-color: $input-bg;

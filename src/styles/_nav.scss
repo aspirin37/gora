@@ -30,11 +30,14 @@
     margin-right: 10px;
     top: 0;
     line-height: $size;
+    background-color: rgba(#fff, 0.6);
+    padding: 0 3px;
+    border-radius: 3px;
   }
 }
 
 .bg-navbar{
-  background-color: rgba(#fff, 0.6);
+  background-color: rgba(#fff, 0.98);
 }
 
 .navbar-logo{
