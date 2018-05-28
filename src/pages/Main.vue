@@ -10,7 +10,7 @@
 
     <article class="bg-light main-section js-scroll-block relative current-shadow" id="services">
       <div class="container mb-5">
-        <h3 class="section-title">What we do<span class="title-char"></span></h3>
+        <h3>What we do<span class="title-char"></span></h3>
         <p class="font-large">Мы занимаемся разработкой средних и крупных проектов под все популярные платформы: iOS, Android, Web. Основные направления нашей деятельности это разработка мобильных приложений и крупных порталов.</p>
       </div>
       <div class="container-fluid">
@@ -36,7 +36,7 @@
     <div class="js-scroll-block" id="project-1">
       <section class="height-full project-section container-fluid  d-flex justify-content-center flex-column">
         <div class="container">
-          <h3 class="section-title">Lasets jobs<span class="title-char"></span></h3>
+          <h3>Lasets jobs<span class="title-char"></span></h3>
         </div>
         <div class="row py-4 project-section__info">
           <div class="col-12 col-lg-4 text-center">
@@ -120,7 +120,7 @@
 
     <section class="js-scroll-block bg-white height-half" id="team">
       <div class="container py-5">
-        <h3 class="section-title">Team<span class="title-char"></span></h3>
+        <h3>Team<span class="title-char"></span></h3>
       </div>
       <div class="d-flex flex-wrap">
         <div class="team-item">
@@ -140,7 +140,7 @@
 
     <section class="js-scroll-block main-section bg-white current-shadow height-half d-flex align-items-center" id="contact">
       <div class="container text-center">
-        <h3 class="section-title">Contact Us<span class="title-char"></span></h3>
+        <h3>Contact Us<span class="title-char"></span></h3>
         <p class="font-large mb-4">Our pleasure to answer you!</p>
         <form class="mw-600 mx-auto">
           <div class="mb-3 input-group">

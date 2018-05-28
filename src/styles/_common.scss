@@ -8,10 +8,14 @@
 
 .current-shadow{
   box-shadow: 0 2px 6px rgba(#000, 0.2);
-
 }
 
-a.current-shadow{
+.cursor-pointer{
+  cursor: pointer;
+}
+
+a.current-shadow, .cursor-pointer.current-shadow{
+  transition: box-shadow 0.3s;
   &:hover{
     box-shadow: 0 4px 8px rgba(#000, 0.3);
   }
@@ -218,5 +222,28 @@ a.current-shadow{
   }
   @include media-breakpoint-down(sm) {
     width: 100%;
+  }
+}
+
+.portfolio-item{
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s!important;
+  &--disabled{
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  &__img{
+    width: 100%;
+    height: auto;
+  }
+  &__description{
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    width: calc(100% - 1rem);
+    border-top-right-radius: $border-radius-lg;
+    border-bottom-right-radius: $border-radius-lg;
   }
 }
