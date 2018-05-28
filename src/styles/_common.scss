@@ -261,6 +261,7 @@ a.current-shadow, .cursor-pointer.current-shadow{
   $size: 2rem;
 
   width: $size;
+  min-width: $size;
   height: $size;
   line-height: $size;
   border-radius: 50%;
