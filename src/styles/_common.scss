@@ -74,7 +74,7 @@ a.current-shadow, .cursor-pointer.current-shadow{
     bottom: 0;
     transition: width 0.2s;
   }
-  &:hover{
+  &:hover, &.active{
     text-decoration: none;
     &:after{
       width: 30px;
