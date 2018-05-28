@@ -124,16 +124,16 @@
       </div>
       <div class="d-flex flex-wrap">
         <div class="team-item">
-          <img src="@/images/team.jpeg" alt="team" class="team-item__img">
+          <img src="@/images/team/team1.jpg" alt="team" class="team-item__img">
         </div>
         <div class="team-item">
-          <img src="@/images/team.jpeg" alt="team" class="team-item__img">
+          <img src="@/images/team/team2.jpg" alt="team" class="team-item__img">
         </div>
         <div class="team-item">
-          <img src="@/images/team.jpeg" alt="team" class="team-item__img">
+          <img src="@/images/team/team3.jpg" alt="team" class="team-item__img">
         </div>
         <div class="team-item">
-          <img src="@/images/team.jpeg" alt="team" class="team-item__img">
+          <img src="@/images/team/team4.jpg" alt="team" class="team-item__img">
         </div>
       </div>
     </section>
@@ -216,7 +216,6 @@ export default {
         let topOffset = item.offsetTop
         let bottomOffset = item.offsetTop + item.clientHeight
         let blockScrolledOffsetTop = (topOffset <= scrollTop + activeOffset) && (scrollTop <= topOffset + (item.clientHeight - activeOffset))
-        console.log(item.getAttribute('id'), (topOffset <= scrollTop + activeOffset), (scrollTop <= topOffset + (item.clientHeight - activeOffset)))
 
         if (blockScrolledOffsetTop) {
           this.scrolledBlock = item.getAttribute('id')

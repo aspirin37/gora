@@ -26,7 +26,6 @@ export default {
   },
   methods: {
     emitLink (index) {
-      console.log(index)
       this.activeLink = index
       this.$emit('clicked', index)
     }

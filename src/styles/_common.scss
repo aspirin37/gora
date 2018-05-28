@@ -221,6 +221,10 @@ a.current-shadow, .cursor-pointer.current-shadow{
   overflow: hidden;
   &__img{
     height: 100%;
+    width: auto;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0);
     filter: grayscale(100%);
     &:hover{
       filter: none;
