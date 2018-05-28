@@ -50,6 +50,15 @@ a.current-shadow, .cursor-pointer.current-shadow{
   min-height: 50vh;
 }
 
+.bg-gradient{
+  background: linear-gradient(to right, $main-color , darken($main-color, 10%));
+  color: #fff;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
 .title-char{
   $size: 4px;
 
@@ -245,5 +254,21 @@ a.current-shadow, .cursor-pointer.current-shadow{
     width: calc(100% - 1rem);
     border-top-right-radius: $border-radius-lg;
     border-bottom-right-radius: $border-radius-lg;
+  }
+}
+
+.circled-icon{
+  $size: 2rem;
+
+  width: $size;
+  height: $size;
+  line-height: $size;
+  border-radius: 50%;
+  background-color: rgba(#fff, 0.8);
+  text-align: center;
+  display: inline-block;
+  img{
+    width: $size/2;
+    height: $size/2;
   }
 }

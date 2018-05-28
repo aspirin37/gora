@@ -12,3 +12,30 @@
   opacity: 0;
   transform: translateY(10px);
 }
+
+.feedback-form{
+  perspective: 300px;
+  position: relative;
+  transform-origin: 0 0;
+}
+
+.feedback-out-leave-active {
+  transition: transform 0.3s ease-in;
+}
+
+.feedback-out-leave-active {
+  position: absolute;
+  transform-origin: top left;
+  transform: rotateY(120deg);
+}
+
+.feedback-in-enter-active {
+  transition: transform 0.3s ease-out;
+  transform-origin: top left;
+  transition-delay: 0.3s;
+}
+
+.feedback-in-enter{
+  transform-origin: top left;
+  transform: rotateY(120deg);
+}
