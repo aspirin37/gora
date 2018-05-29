@@ -6,12 +6,14 @@ export default {
     }
   },
   mounted () {
-    this.blockHeight = this.$refs['main-block'].clientHeight
+    this.targetRef = this.$refs['main-block']
+    this.blockOffsetTop = this.targetRef.offsetTop
+    this.blockHeight = this.targetRef.clientHeight
     document.addEventListener('scroll', this.getScrollPos)
   },
   computed: {
     parallaxPercent () {
-      return `margin-top:${this.scrolledWindow / (this.blockHeight /100).toFixed(1)/10}%`
+      return `margin-top:${(this.scrolledWindow - this.blockOffsetTop) / (this.blockHeight /100).toFixed(1)/10}%`
     }
   },
   destroyed () {

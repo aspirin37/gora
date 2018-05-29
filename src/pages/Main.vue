@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main-block id="main"></main-block>
+    <main-page-head id="main"></main-page-head>
 
     <article class="bg-light main-section js-scroll-block relative" id="services">
       <div class="container mb-5">
@@ -33,45 +33,11 @@
       </div>
     </div>
 
-    <mesto-project id="project-1"></mesto-project>
+    <main-project-mesto id="project-1"></main-project-mesto>
 
-    <section class="height-full project-section container-fluid js-scroll-block d-flex justify-content-center flex-column" id="project-2">
-      <div class="row py-4 project-section__info">
-        <div class="col-12 col-lg-5"></div>
-        <div class="col-12 col-lg-5">
-          <h3 class="h1 mb-4">Linger</h3>
-          <p class="font-large mb-4">Первый в мире мессенджер, который говорит на твоем языке. <a href="#">Read more</a></p>
-          <div class="mb-4">
-            <a href="https://linger.im/" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/web.svg" alt="web"></a>
-          </div>
-        </div>
-      </div>
-      <div class="project-section__clip">
-        <div class="project-section__item mb-4 mb-md-0 mx-auto">
-          <img src="@/images/iphone.svg" alt="" class="mw-100 project-section__frame">
-          <img src="@/images/projects/linger.png" alt="" class="project-section__pic">
-        </div>
-      </div>
-    </section>
+    <main-project-linger id="project-2"></main-project-linger>
 
-    <section class="height-full project-section container-fluid js-scroll-block d-flex justify-content-center flex-column" id="project-3">
-      <div class="row py-4 project-section__info">
-        <div class="col-12 col-lg-5"></div>
-        <div class="col-12 col-lg-5">
-          <h3 class="h1 mb-4">KYC</h3>
-          <p class="font-large mb-4">Место — сервис умных доставок день в день по Санкт-Петербургу от 250 руб. Подача 60 мин. Следи за посылкой онлайн. Личный кабинет. Простые iOS и Android приложения. Оплата наличными и картой. Работаем с юр. лицами. Аренда курьера на день. <a href="#">Read more</a></p>
-          <div class="mb-4">
-            <a href="#" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
-          </div>
-        </div>
-      </div>
-      <div class="project-section__clip">
-        <div class="project-section__item mb-4 mb-md-0 mx-auto">
-          <img src="@/images/samsung.svg" alt="" class="mw-100 project-section__frame">
-          <img src="@/images/projects/kyc.png" alt="" class="project-section__pic">
-        </div>
-      </div>
-    </section>
+    <main-project-kyc id="project-3"></main-project-kyc>
 
     <section class="js-scroll-block bg-light height-half relative current-shadow" id="team">
       <div class="container py-4">
@@ -149,8 +115,10 @@
 </template>
 
 <script>
-import MainBlock from '@/components/main/MainBlock'
-import mestoProject from '@/components/main/mestoProject'
+import MainPageHead from '@/components/main/MainPageHead'
+import MainProjectMesto from '@/components/main/MainProjectMesto'
+import MainProjectKyc from '@/components/main/MainProjectKyc'
+import MainProjectLinger from '@/components/main/MainProjectLinger'
 
 export default {
   data () {
@@ -159,8 +127,10 @@ export default {
     }
   },
   components: {
-    MainBlock,
-    mestoProject
+    MainPageHead,
+    MainProjectMesto,
+    MainProjectKyc,
+    MainProjectLinger
   },
   mounted () {
     document.addEventListener('scroll', this.getScrollPos)

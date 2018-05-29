@@ -16,7 +16,7 @@
 import parallaxBg from '@/mixins/parallaxBg'
 
 export default {
-  name: 'main-block',
+  name: 'main-page-head',
   mixins: [parallaxBg]
 }
 </script>

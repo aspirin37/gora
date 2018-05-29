@@ -45,7 +45,7 @@
 import parallaxBg from '@/mixins/parallaxBg'
 
 export default {
-  name: 'mesto-project',
+  name: 'mesto-project-mesto',
   mixins: [parallaxBg]
 }
 </script>
