@@ -1,9 +1,6 @@
 <template>
   <div class="js-scroll-block rapallax-bgs" ref="main-block">
-    <img class="rapallax-bgs__image rapallax-bgs__image--1" v-bind:style="parallaxPercent" src="@/images/blured1.png">
-    <img class="rapallax-bgs__image rapallax-bgs__image--2" v-bind:style="parallaxPercent" src="@/images/blured1.png">
-    <img class="rapallax-bgs__image rapallax-bgs__image--3" v-bind:style="parallaxPercent" src="@/images/blured1.png">
-    <section class="height-full project-section container-fluid  d-flex justify-content-center flex-column">
+    <section class="height-full project-section container-fluid  d-flex justify-content-center flex-column rapallax-bgs__content">
       <div class="row py-4 project-section__info">
         <div class="col-12 col-lg-5"></div>
         <div class="col-12 col-lg-5">
@@ -24,7 +21,7 @@
       </div>
     </section>
 
-    <section class="height-full project-section container-fluid d-flex justify-content-center flex-column">
+    <section class="height-full project-section container-fluid d-flex justify-content-center flex-column rapallax-bgs__content">
       <div class="row py-4 project-section__info">
         <div class="col-12 col-lg-5"></div>
         <div class="col-12 col-lg-5">
@@ -38,6 +35,9 @@
         </div>
       </div>
     </section>
+    <img class="rapallax-bgs__image rapallax-bgs__image--1" v-bind:style="parallaxPercent" src="@/images/blured1.png">
+    <img class="rapallax-bgs__image rapallax-bgs__image--2" v-bind:style="parallaxPercent" src="@/images/blured1.png">
+    <img class="rapallax-bgs__image rapallax-bgs__image--3" v-bind:style="parallaxPercent" src="@/images/blured1.png">
   </div>
 </template>
 
