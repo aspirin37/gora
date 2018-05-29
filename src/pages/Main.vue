@@ -8,47 +8,49 @@
       </div>
     </article>
 
-    <article class="bg-light main-section js-scroll-block relative current-shadow" id="services">
+    <article class="bg-light main-section js-scroll-block relative" id="services">
       <div class="container mb-5">
-        <h3>What we do<span class="title-char"></span></h3>
+        <h3 class="text-center">What we do<span class="title-char"></span></h3>
         <p class="font-large">Мы занимаемся разработкой средних и крупных проектов под все популярные платформы: iOS, Android, Web. Основные направления нашей деятельности это разработка мобильных приложений и крупных порталов.</p>
       </div>
       <div class="container-fluid">
         <div class="row align-items-center py-5">
-          <div class="col-12 col-md-6 text-right">
-            <img src="@/images/mobile-app.png" alt="mobile" class="mw-100 service-pic">
+          <div class="col-12 col-md-6 text-center text-md-right">
+            <img src="@/images/mobile-app.png" alt="mobile" class="mw-100 service-pic mb-4">
           </div>
           <div class="col-12 col-md-6">
             <p class="font-large mw-600">Создаем мобильные решения, позволяющие повышать лояльность клиентов и снижать расходы за счет внедрения средств автоматизации и оптимизации процессов.</p>
           </div>
         </div>
         <div class="row align-items-center py-5">
-          <div class="col-12 col-md-6 text-right">
+          <div class="col-12 col-md-6 text-md-right">
             <p class="font-large mw-600 ml-auto">Проектируем архитектуру проекта индивидуально для каждого кейса, учитывая все возможные платформы. Все для того чтобы создать по-настоящему качественный продукт.</p>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 text-center text-md-left">
             <img src="@/images/web-app.png" alt="web" class="mw-100 service-pic">
           </div>
         </div>
       </div>
     </article>
 
+    <div class="bg-white py-4 relative current-shadow">
+      <div class="container">
+        <h3 class="text-center">Lasets jobs<span class="title-char"></span></h3>
+      </div>
+    </div>
+
     <div class="js-scroll-block" id="project-1">
       <section class="height-full project-section container-fluid  d-flex justify-content-center flex-column">
-        <div class="container">
-          <h3>Lasets jobs<span class="title-char"></span></h3>
-        </div>
         <div class="row py-4 project-section__info">
-          <div class="col-12 col-lg-4 text-center">
-            <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
-            <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/apple.svg" alt="apple"></a>
-            <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/web.svg" alt="web"></a>
-          </div>
-          <div class="col-12 col-lg-3"></div>
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-5"></div>
+          <div class="col-12 col-lg-5">
             <h3 class="h1 mb-4">Mesto.Delivery</h3>
-            <p class="font-large">Место — сервис умных доставок день в день по Санкт-Петербургу от 250 руб. Подача 60 мин. Следи за посылкой онлайн. Личный кабинет. Простые iOS и Android приложения. Оплата наличными и картой. Работаем с юр. лицами. Аренда курьера на день.</p>
-            <a href="#">Read more</a>
+            <p class="font-large mb-4">Место — сервис умных доставок день в день по Санкт-Петербургу от 250 руб. Подача 60 мин. Следи за посылкой онлайн. Личный кабинет. Простые iOS и Android приложения. Оплата наличными и картой. Работаем с юр. лицами. Аренда курьера на день. <a href="#">Read more</a></p>
+            <div class="mb-4">
+              <a href="#" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
+              <a href="#" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/apple.svg" alt="apple"></a>
+              <a href="#" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/web.svg" alt="web"></a>
+            </div>
           </div>
         </div>
         <div class="project-section__clip">
@@ -59,14 +61,11 @@
         </div>
       </section>
 
-      <section class="height-full project-section container-fluid align-items-center d-flex justify-content-center flex-column">
+      <section class="height-full project-section container-fluid d-flex justify-content-center flex-column">
         <div class="row py-4 project-section__info">
-          <div class="col-12 col-lg-4 text-right">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum laborum odit aspernatur dignissimos magnam dolor accusantium veritatis tempora suscipit. Ea vel dignissimos inventore saepe enim molestias aliquid in similique quo.</p>
-          </div>
-          <div class="col-12 col-lg-3"></div>
-          <div class="col-12 col-lg-4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum laborum odit aspernatur dignissimos magnam dolor accusantium veritatis tempora suscipit. Ea vel dignissimos inventore saepe enim molestias aliquid in similique quo.</p>
+          <div class="col-12 col-lg-5"></div>
+          <div class="col-12 col-lg-5">
+            <p class="font-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum laborum odit aspernatur dignissimos magnam dolor accusantium veritatis tempora suscipit. Ea vel dignissimos inventore saepe enim molestias aliquid in similique quo.</p>
           </div>
         </div>
         <div class="project-section__clip">
@@ -78,16 +77,15 @@
       </section>
     </div>
 
-    <section class="height-full project-section container-fluid align-items-center js-scroll-block d-flex justify-content-center flex-column" id="project-2">
+    <section class="height-full project-section container-fluid js-scroll-block d-flex justify-content-center flex-column" id="project-2">
       <div class="row py-4 project-section__info">
-        <div class="col-12 col-lg-4 text-center">
-          <a href="https://linger.im/" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/web.svg" alt="web"></a>
-        </div>
-        <div class="col-12 col-lg-3"></div>
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-5"></div>
+        <div class="col-12 col-lg-5">
           <h3 class="h1 mb-4">Linger</h3>
-          <p class="font-large">Место — сервис умных доставок день в день по Санкт-Петербургу от 250 руб. Подача 60 мин. Следи за посылкой онлайн. Личный кабинет. Простые iOS и Android приложения. Оплата наличными и картой. Работаем с юр. лицами. Аренда курьера на день.</p>
-          <a href="#">Read more</a>
+          <p class="font-large mb-4">Первый в мире мессенджер, который говорит на твоем языке. <a href="#">Read more</a></p>
+          <div class="mb-4">
+            <a href="https://linger.im/" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/web.svg" alt="web"></a>
+          </div>
         </div>
       </div>
       <div class="project-section__clip">
@@ -98,29 +96,28 @@
       </div>
     </section>
 
-    <section class="height-full project-section container-fluid align-items-center js-scroll-block d-flex justify-content-center flex-column" id="project-3">
+    <section class="height-full project-section container-fluid js-scroll-block d-flex justify-content-center flex-column" id="project-3">
       <div class="row py-4 project-section__info">
-        <div class="col-12 col-lg-4 text-center">
-          <a href="#" class="dl-link rounded mx-2 p-3"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
-        </div>
-        <div class="col-12 col-lg-3"></div>
-        <div class="col-12 col-lg-4">
-          <h3 class="h1 mb-4">KUC</h3>
-          <p class="font-large">Место — сервис умных доставок день в день по Санкт-Петербургу от 250 руб. Подача 60 мин. Следи за посылкой онлайн. Личный кабинет. Простые iOS и Android приложения. Оплата наличными и картой. Работаем с юр. лицами. Аренда курьера на день.</p>
-          <a href="#">Read more</a>
+        <div class="col-12 col-lg-5"></div>
+        <div class="col-12 col-lg-5">
+          <h3 class="h1 mb-4">KYC</h3>
+          <p class="font-large mb-4">Место — сервис умных доставок день в день по Санкт-Петербургу от 250 руб. Подача 60 мин. Следи за посылкой онлайн. Личный кабинет. Простые iOS и Android приложения. Оплата наличными и картой. Работаем с юр. лицами. Аренда курьера на день. <a href="#">Read more</a></p>
+          <div class="mb-4">
+            <a href="#" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
+          </div>
         </div>
       </div>
       <div class="project-section__clip">
-        <div class="project-section__item">
+        <div class="project-section__item mb-4 mb-md-0 mx-auto">
           <img src="@/images/samsung.svg" alt="" class="mw-100 project-section__frame">
           <img src="@/images/projects/mesto-phone.png" alt="" class="project-section__pic">
         </div>
       </div>
     </section>
 
-    <section class="js-scroll-block bg-white height-half" id="team">
-      <div class="container py-5">
-        <h3>Team<span class="title-char"></span></h3>
+    <section class="js-scroll-block bg-white height-half relative current-shadow" id="team">
+      <div class="container py-4">
+        <h3 class="text-center">Routine<span class="title-char"></span></h3>
       </div>
       <div class="d-flex flex-wrap">
         <div class="team-item">
@@ -178,7 +175,7 @@
         class="side-nav__link current-shadow d-block ml-auto"
         :class="{'bg-dark active': scrolledBlock === 'project-3'}"
         v-on:click.prevent="scrollToItem('project-3', 500)"
-      ><span class="side-nav__text">KUC</span></a>
+      ><span class="side-nav__text">KYC</span></a>
       <a href="#team"
         class="side-nav__link current-shadow d-block ml-auto"
         :class="{'bg-dark active': scrolledBlock === 'team'}"

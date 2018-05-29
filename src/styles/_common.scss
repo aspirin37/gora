@@ -8,6 +8,7 @@
 
 .current-shadow{
   box-shadow: 0 2px 6px rgba(#000, 0.2);
+  z-index: 1;
 }
 
 .cursor-pointer{
@@ -154,7 +155,7 @@ a.current-shadow, .cursor-pointer.current-shadow{
     position: relative;
     // width: 51.66667%;
     @include media-breakpoint-up(md) {
-      left: 45%;
+      left: 25%;
       position: fixed;
       top: 50%;
       transform: translate(-50%, -50%);
@@ -205,11 +206,13 @@ a.current-shadow, .cursor-pointer.current-shadow{
 }
 
 .dl-link{
+  $size: 30px;
+
   background-color: rgba(#000, 0.05);
   display: inline-block;
   &__img{
-    width: 50px;
-    height: 50px;
+    width: $size;
+    height: $size;
   }
   &:hover{
     background-color: rgba(#000, 0.1);
