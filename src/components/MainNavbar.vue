@@ -54,7 +54,7 @@ export default {
     getScrollPos () {
       let scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop
       
-      if (scrollTop > 100) {
+      if (scrollTop > 200) {
         this.showNavbarShadow = true
       } else {
         this.showNavbarShadow = false

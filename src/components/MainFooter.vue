@@ -1,6 +1,13 @@
 <template>
-  <footer class="container-fluid text-center fixed-bottom bg-dark py-4 text-white main-footer">
-    <span>© {{year}} GORA</span>
+  <footer class="fixed-bottom bg-dark py-4 text-white main-footer">
+    <div class="container d-flex justify-content-between">
+      <span>© {{year}} GORA</span>
+      <nav>
+        <a href="#" class="text-light mr-2">Contacts</a>
+        <a href="#" class="text-light mr-2">Careers</a>
+        <a href="#" class="text-light">Portfolio</a>
+      </nav>
+    </div>
   </footer>
 </template>
 
