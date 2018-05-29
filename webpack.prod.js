@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const merge = require('webpack-merge');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = merge(baseWebpackConfig, {
   output: {
@@ -34,6 +35,7 @@ module.exports = merge(baseWebpackConfig, {
   },
   optimization: {
     splitChunks: {
+      chunks: 'all',
       cacheGroups: {
         commons: {
           test: /[\\/]node_modules[\\/]/,
@@ -46,7 +48,8 @@ module.exports = merge(baseWebpackConfig, {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new OptimizeCssAssetsPlugin(),
-    new MiniCssExtractPlugin({ filename: 'css/app.[hash].css' })
+    new MiniCssExtractPlugin({ filename: 'css/app.[hash].css' }),
+    new CopyWebpackPlugin([{ from: 'static/', to: path.resolve(__dirname, 'dist') }])
   ],
   mode: 'production'
 });
