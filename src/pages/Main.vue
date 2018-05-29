@@ -1,12 +1,6 @@
 <template>
   <div>
-    <article class="py-5 text-center height-full d-flex align-items-center js-scroll-block current-shadow" id="main">
-      <div class="w-100 mb-5 container">
-        <h1 class="text-center mw-800 mx-auto">Best mobile & web applications all over<span class="title-char"></span></h1>
-        <p class="text-center mw-600 mx-auto mb-5">We are «GORA» — mobile and web development company focused on modern technologies and knowledge related on delivery, blockchain, e-commerce.</p>
-        <button class="btn btn-theme btn-lg btn-rounded">Keep in touch</button>
-      </div>
-    </article>
+    <main-block id="main"></main-block>
 
     <article class="bg-light main-section js-scroll-block relative" id="services">
       <div class="container mb-5">
@@ -39,43 +33,7 @@
       </div>
     </div>
 
-    <div class="js-scroll-block" id="project-1">
-      <section class="height-full project-section container-fluid  d-flex justify-content-center flex-column">
-        <div class="row py-4 project-section__info">
-          <div class="col-12 col-lg-5"></div>
-          <div class="col-12 col-lg-5">
-            <h3 class="h1 mb-4">Mesto.Delivery</h3>
-            <p class="font-large mb-4">Место — сервис умных доставок день в день по Санкт-Петербургу от 250 руб. Подача 60 мин. Следи за посылкой онлайн. Личный кабинет. Простые iOS и Android приложения. Оплата наличными и картой. Работаем с юр. лицами. Аренда курьера на день. <a href="#">Read more</a></p>
-            <div class="mb-4">
-              <a href="#" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
-              <a href="#" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/apple.svg" alt="apple"></a>
-              <a href="#" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/web.svg" alt="web"></a>
-            </div>
-          </div>
-        </div>
-        <div class="project-section__clip">
-          <div class="project-section__item mb-4 mb-md-0 mx-auto">
-            <img src="@/images/samsung.svg" alt="" class="mw-100 project-section__frame">
-            <img src="@/images/projects/mesto-phone.png" alt="" class="project-section__pic">
-          </div>
-        </div>
-      </section>
-
-      <section class="height-full project-section container-fluid d-flex justify-content-center flex-column">
-        <div class="row py-4 project-section__info">
-          <div class="col-12 col-lg-5"></div>
-          <div class="col-12 col-lg-5">
-            <p class="font-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum laborum odit aspernatur dignissimos magnam dolor accusantium veritatis tempora suscipit. Ea vel dignissimos inventore saepe enim molestias aliquid in similique quo.</p>
-          </div>
-        </div>
-        <div class="project-section__clip">
-          <div class="project-section__item mb-4 mb-md-0 mx-auto">
-            <img src="@/images/samsung.svg" alt="" class="mw-100 project-section__frame">
-            <img src="@/images/projects/mesto-phone.png" alt="" class="project-section__pic">
-          </div>
-        </div>
-      </section>
-    </div>
+    <mesto-project id="project-1"></mesto-project>
 
     <section class="height-full project-section container-fluid js-scroll-block d-flex justify-content-center flex-column" id="project-2">
       <div class="row py-4 project-section__info">
@@ -191,11 +149,18 @@
 </template>
 
 <script>
+import MainBlock from '@/components/main/MainBlock'
+import mestoProject from '@/components/main/mestoProject'
+
 export default {
   data () {
     return {
       scrolledBlock: ''
     }
+  },
+  components: {
+    MainBlock,
+    mestoProject
   },
   mounted () {
     document.addEventListener('scroll', this.getScrollPos)

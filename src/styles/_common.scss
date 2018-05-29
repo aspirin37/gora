@@ -280,3 +280,24 @@ a.current-shadow, .cursor-pointer.current-shadow{
     height: $size/2;
   }
 }
+
+.rapallax-bgs{
+  position: relative;
+  overflow: hidden;
+  &__content{
+    position: relative;
+    z-index: 9;
+  }
+  &__image{
+    z-index: 0;
+    position: absolute;
+    @for $i from 1 through 3 {
+      &--#{$i} {
+        opacity: random(100)/100;
+        transform: scale(random(100)/100);
+        top: random(60) + %;
+        left: 100% - $i*30%;
+      }
+    }
+  }
+}
