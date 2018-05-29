@@ -110,12 +110,12 @@
       <div class="project-section__clip">
         <div class="project-section__item mb-4 mb-md-0 mx-auto">
           <img src="@/images/samsung.svg" alt="" class="mw-100 project-section__frame">
-          <img src="@/images/projects/mesto-phone.png" alt="" class="project-section__pic">
+          <img src="@/images/projects/kyc.png" alt="" class="project-section__pic">
         </div>
       </div>
     </section>
 
-    <section class="js-scroll-block bg-white height-half relative current-shadow" id="team">
+    <section class="js-scroll-block bg-light height-half relative current-shadow" id="team">
       <div class="container py-4">
         <h3 class="text-center">Routine<span class="title-char"></span></h3>
       </div>

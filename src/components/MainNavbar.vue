@@ -1,6 +1,9 @@
 <template>
   <header class="container-fluid fixed-top pt-3" v-click-outside="closeMenu">
-    <div class="bg-navbar d-flex container-fluid justify-content-between align-items-center current-shadow rounded py-2">
+    <div
+      class="bg-navbar d-flex container-fluid justify-content-between align-items-center rounded py-2 navbar-shadow"
+      :class="{'navbar-shadow--showed': showNavbarShadow}"
+    >
       <router-link :to="{name: 'main-page'}" class="d-flex align-items-center link-reset">
         <img src="@/images/logo.svg" alt="logo" class="navbar-logo">
         <strong class="my-0 ml-2 h5 text-dark d-none d-md-inline-block">GORA</strong>
@@ -26,7 +29,8 @@ export default {
   name: 'main-navbar',
   data () {
     return {
-      menuShow: false
+      menuShow: false,
+      showNavbarShadow: false
     }
   },
   props: {
@@ -35,12 +39,27 @@ export default {
       default: () => {}
     }
   },
+  mounted () {
+    document.addEventListener('scroll', this.getScrollPos)
+  },
+  destroyed () {
+    this.removeScrollListener()
+  },
   watch: {
     $route() {
       this.closeMenu()
     }
   },
   methods: {
+    getScrollPos () {
+      let scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop
+      
+      if (scrollTop > 100) {
+        this.showNavbarShadow = true
+      } else {
+        this.showNavbarShadow = false
+      }
+    },
     toggleMenu () {
       this.menuShow = !this.menuShow
     },

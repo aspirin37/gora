@@ -2,7 +2,12 @@ $font-family-base: 'Fira San', sans-serif;
 $headings-font-family: 'Oswald', sans-serif;
 $headings-font-weight: 400;
 
-$gray-100: #FAFCFD;
+$blue: #2B6BA4;
+$pink: #E53061;
+$yellow: #FDED35;
+$main-color: $pink;
+
+$gray-100: #fafafa;
 $gray-200: #CFD8DC;
 $gray-300: #B0BEC5;
 $gray-400: #90A4AE;
@@ -11,14 +16,10 @@ $gray-600: #607D8B;
 $gray-700: #6b696a;
 $gray-800: #444243;
 $gray-900: #263238;
-$blue: #2B6BA4;
-$pink: #E53061;
-$yellow: #FDED35;
 
 $headings-color: $gray-900;
 $body-color: $gray-700;
 $link-color: $blue;
-$main-color: $pink;
 $light: $gray-100;
 $primary: $blue;
 
