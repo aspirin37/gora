@@ -92,3 +92,42 @@
     background-color: $main-color;
   }
 }
+
+.service-block{
+  $img-size: 240px;
+
+  padding-left: $img-size;
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    left: -2%;
+    top: -10%;
+    width: $img-size;
+    height: 120%;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    transform: rotate(5deg);
+  }
+  &--mobile{
+    &:before{
+      background-image: url(../images/mobile-app.png);
+    }
+  }
+  &--web{
+    &:before{
+      background-image: url(../images/web-app.png);
+    }
+  }
+  &--shop{
+    &:before{
+      background-image: url(../images/cart.png);
+    }
+  }
+  &--blockchain{
+    &:before{
+      background-image: url(../images/blockchain.png);
+    }
+  }
+}

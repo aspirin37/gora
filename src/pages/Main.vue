@@ -7,24 +7,24 @@
         <h3 class="text-center">What we do<span class="title-char"></span></h3>
         <p class="font-large">Мы занимаемся разработкой средних и крупных проектов под все популярные платформы: iOS, Android, Web. Основные направления нашей деятельности это разработка мобильных приложений и крупных порталов.</p>
       </div>
-      <div class="container-fluid">
-        <div class="row align-items-center py-5">
-          <div class="col-12 col-md-6 text-center text-md-right">
-            <img src="@/images/mobile-app.png" alt="mobile" class="mw-100 service-pic mb-4">
-          </div>
-          <div class="col-12 col-md-6">
-            <p class="font-large mw-600">Создаем мобильные решения, позволяющие повышать лояльность клиентов и снижать расходы за счет внедрения средств автоматизации и оптимизации процессов.</p>
-          </div>
+      <div class="container">
+        <div class="bg-gradient current-shadow rounded py-4 pr-4 mb-4 overflow-hidden service-block service-block--mobile">
+          <h4 class="text-white">Мобильные приложения</h4>
+          <p class="font-large">Создаем мобильные решения, позволяющие повышать лояльность клиентов и снижать расходы за счет внедрения средств автоматизации и оптимизации процессов.</p>
         </div>
-        <div class="row align-items-center py-5">
-          <div class="col-12 col-md-6 text-md-right">
-            <p class="font-large mw-600 ml-auto">Проектируем архитектуру проекта индивидуально для каждого кейса, учитывая все возможные платформы. Все для того чтобы создать по-настоящему качественный продукт.</p>
-          </div>
-          <div class="col-12 col-md-6 text-center text-md-left">
-            <img src="@/images/web-app.png" alt="web" class="mw-100 service-pic">
-          </div>
+        <div class="bg-gradient current-shadow rounded py-4 pr-4 mb-4 overflow-hidden service-block service-block--web">
+          <h4 class="text-white">Крупные порталы</h4>
+          <p class="font-large">Проектируем архитектуру проекта индивидуально для каждого кейса, учитывая все возможные платформы. Все для того чтобы создать по-настоящему качественный продукт.</p>
         </div>
-        <h5 class="text-center">You can check our latest jobs below</h5>
+        <div class="bg-gradient current-shadow rounded py-4 pr-4 mb-4 overflow-hidden service-block service-block--shop">
+          <h4 class="text-white">Интернет-магазины</h4>
+          <p class="font-large">Разрабатываем полноценные цифровые каналы продаж, интегрированные и автоматизированные решения обеспечивающие бесшовный покупательский опыт в рамках омниканальной стратегии.</p>
+        </div>
+        <div class="bg-gradient current-shadow rounded py-4 pr-4 mb-4 overflow-hidden service-block service-block--blockchain">
+          <h4 class="text-white">Блокчейн</h4>
+          <p class="font-large">Консультируем и разрабатываем проекты с использованием Blockchain технологий. Рассчет токеномики, сопровождение ICO, экспертиза цифровых активов, внедрение FOMO-подхода.</p>
+        </div>
+        <h5 class="text-center mt-5">You can check our latest jobs below</h5>
         <span class="circled-icon scroll-down cursor-pointer" v-on:click="scrollToItem('project-1', 500)"><img src="@/images/arrow-down.svg" alt="pin"></span>
       </div>
     </article>
