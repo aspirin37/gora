@@ -26,7 +26,7 @@
 .feedback-out-leave-active {
   position: absolute;
   transform-origin: top left;
-  transform: rotateY(120deg);
+  transform: rotateY(90deg);
 }
 
 .feedback-in-enter-active {
@@ -37,5 +37,5 @@
 
 .feedback-in-enter{
   transform-origin: top left;
-  transform: rotateY(120deg);
+  transform: rotateY(90deg);
 }
