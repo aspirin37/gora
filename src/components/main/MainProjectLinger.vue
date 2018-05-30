@@ -1,10 +1,13 @@
 <template>
-  <section class="height-full project-section container-fluid js-scroll-block d-flex justify-content-center flex-column rapallax-bgs" ref="main-block">
+  <section class="height-full bg-linger project-section container-fluid js-scroll-block d-flex justify-content-center flex-column rapallax-bgs" ref="main-block">
     <div class="row py-4 project-section__info rapallax-bgs__content">
       <div class="col-12 col-lg-5"></div>
       <div class="col-12 col-lg-5">
-        <h3 class="h1 mb-4">Linger</h3>
-        <p class="font-large mb-4">Первый в мире мессенджер, который говорит на твоем языке. <a href="#">Read more</a></p>
+        <h3 class="h1 mb-4 text-white">Linger</h3>
+        <p class="font-large mb-4 text-white">
+          Первый в мире мессенджер, который говорит на твоем языке.
+          <read-more link="linger"></read-more>
+        </p>
         <div class="mb-4">
           <a href="https://linger.im/" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/web.svg" alt="web"></a>
         </div>
@@ -24,9 +27,13 @@
 
 <script>
 import parallaxBg from '@/mixins/parallaxBg'
+import ReadMore from '@/components/main/ReadMore'
 
 export default {
   name: 'mesto-project-kyc',
-  mixins: [parallaxBg]
+  mixins: [parallaxBg],
+  components: {
+    ReadMore
+  }
 }
 </script>

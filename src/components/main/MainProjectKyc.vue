@@ -1,10 +1,13 @@
 <template>
-  <section class="height-full project-section container-fluid js-scroll-block d-flex justify-content-center flex-column rapallax-bgs" ref="main-block">
+  <section class="height-full bg-kyc project-section container-fluid js-scroll-block d-flex justify-content-center flex-column rapallax-bgs" ref="main-block">
     <div class="row py-4 project-section__info rapallax-bgs__content">
       <div class="col-12 col-lg-5"></div>
       <div class="col-12 col-lg-5">
-        <h3 class="h1 mb-4">KYC</h3>
-        <p class="font-large mb-4">Место — сервис умных доставок день в день по Санкт-Петербургу от 250 руб. Подача 60 мин. Следи за посылкой онлайн. Личный кабинет. Простые iOS и Android приложения. Оплата наличными и картой. Работаем с юр. лицами. Аренда курьера на день. <a href="#">Read more</a></p>
+        <h3 class="h1 mb-4 text-white">KYC</h3>
+        <p class="font-large mb-4 text-white">
+          Место — сервис умных доставок день в день по Санкт-Петербургу от 250 руб. Подача 60 мин. Следи за посылкой онлайн. Личный кабинет. Простые iOS и Android приложения. Оплата наличными и картой. Работаем с юр. лицами. Аренда курьера на день.
+          <router-link :to="{name: 'project', params: {title: 'kyc'}}" class="text-white"><b>Read more...</b></router-link>
+        </p>
         <div class="mb-4">
           <a href="#" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
         </div>

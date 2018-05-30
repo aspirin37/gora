@@ -8,7 +8,7 @@
 
 .current-shadow{
   box-shadow: 0 2px 6px rgba(#000, 0.2);
-  z-index: 1;
+  z-index: 99;
 }
 
 .cursor-pointer{
@@ -37,10 +37,6 @@ a.current-shadow, .cursor-pointer.current-shadow{
   background-color: #fff;
   margin-bottom: 72px;
   padding-top: $header-height;
-}
-
-.top-block-up{
-  margin-top: -$header-height;
 }
 
 .main-footer{
@@ -147,29 +143,6 @@ a.current-shadow, .cursor-pointer.current-shadow{
   }
   &:hover{
     background-color: rgba(#000, 0.1);
-  }
-}
-
-.portfolio-item{
-  height: 400px;
-  overflow: hidden;
-  position: relative;
-  transition: all 0.3s!important;
-  &--disabled{
-    transform: scale(0.8);
-    opacity: 0.8;
-  }
-  &__img{
-    width: 100%;
-    height: auto;
-  }
-  &__description{
-    position: absolute;
-    bottom: 1rem;
-    left: 0;
-    width: calc(100% - 1rem);
-    border-top-right-radius: $border-radius-lg;
-    border-bottom-right-radius: $border-radius-lg;
   }
 }
 

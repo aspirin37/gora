@@ -1,8 +1,8 @@
 <template>
   <div>
-    <main-page-head id="main" class="top-block-up" v-on:scrollDown="scrollToItem('services', 500)"></main-page-head>
+    <main-page-head id="main" v-on:scrollDown="scrollToItem('services', 500)"></main-page-head>
 
-    <article class="bg-light main-section js-scroll-block relative" id="services">
+    <article class="bg-white main-section js-scroll-block relative current-shadow" id="services">
       <div class="container mb-5">
         <h3 class="text-center">What we do<span class="title-char"></span></h3>
         <p class="font-large">Мы занимаемся разработкой средних и крупных проектов под все популярные платформы: iOS, Android, Web. Основные направления нашей деятельности это разработка мобильных приложений и крупных порталов.</p>

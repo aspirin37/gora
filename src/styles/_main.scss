@@ -1,74 +1,8 @@
-.project-section{
-  position: relative;
-  // overflow: hidden;
-  &__clip{
-    clip: rect(auto, auto, auto, auto);
-    height: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    @include media-breakpoint-up(md) {
-      position: absolute;
-    }
-  }
-  &__item{
-    max-width: 300px;
-    max-height: 600px;
-    display: block;
-    text-align: center;
-    vertical-align: middle;
-    position: relative;
-    // width: 51.66667%;
-    @include media-breakpoint-up(md) {
-      left: 25%;
-      position: fixed;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      margin-top: 50px;
-    }
-    @include media-breakpoint-down(lg) {
-      max-width: 200px;
-      max-height: 400px;
-    }
-    @include media-breakpoint-down(md) {
-      max-width: 150px;
-      max-height: 300px;
-    }
-    &:before{
-      content: '';
-      position: absolute;
-      width: 96%;
-      height: 96%;
-      top: 2%;
-      left: 2%;
-      border-radius: 40px;
-      display: block;
-      background-color: transparent;
-      box-shadow: 0 10px 30px rgba(#000, 0.4);
-    }
-  }
-  &__info{
-    position: relative;
-    z-index: 9;
-  }
-  &__frame{
-    position: relative;
-    z-index: 99;
-  }
-  &__pic{
-    position: absolute;
-    z-index: 9;
-    left: 0;
-    top: 0;
-    width: 100%;
-    border-radius: 60px;
-    height: auto;
-    margin-top: -2px;
-    @include media-breakpoint-down(md) {
-      border-radius: 30px;
-    }
-  }
+.top-main-block{
+  margin-top: -$header-height;
+  background-image: url(../images/main-bg.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .team-item{
@@ -78,8 +12,9 @@
   height: $size;
   padding: 50px 30px;
   background-color: #fff;
-  box-shadow: 0 10px 10px rgba(#000, 0.1);
+  box-shadow: 0 2px 4px rgba(#000, 0.1);
   position: relative;
+  transition: box-shadow 0.3s;
   &--rleft{
     transform: rotate(-1deg);
   }
@@ -111,6 +46,7 @@
     }
   }
   &:hover{
+    box-shadow: 0 10px 10px rgba(#000, 0.1);
     .team-item__img{
       img{
         filter: none;
