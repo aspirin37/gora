@@ -43,23 +43,23 @@
       <div class="container">
         <h3 class="text-center mb-5">Routine<span class="title-char"></span></h3>
       </div>
-      <div class="container-fluid d-flex flex-wrap justify-content-around">
-        <div class="team-item mb-5">
+      <div class="container-fluid px-md-5 d-flex flex-wrap justify-content-around">
+        <div class="team-item mb-5 team-item--rleft">
           <div class="team-item__img">
             <img src="@/images/team/team1.jpg" alt="team">
           </div>
         </div>
-        <div class="team-item mb-5">
+        <div class="team-item mb-5 team-item--rright">
           <div class="team-item__img">
             <img src="@/images/team/team2.jpg" alt="team">
           </div>
         </div>
-        <div class="team-item mb-5">
+        <div class="team-item mb-5 team-item--rleft">
           <div class="team-item__img">
             <img src="@/images/team/team3.jpg" alt="team">
           </div>
         </div>
-        <div class="team-item mb-5">
+        <div class="team-item mb-5 team-item--rright">
           <div class="team-item__img">
             <img src="@/images/team/team4.jpg" alt="team">
           </div>

@@ -1,0 +1,147 @@
+.project-section{
+  position: relative;
+  // overflow: hidden;
+  &__clip{
+    clip: rect(auto, auto, auto, auto);
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      position: absolute;
+    }
+  }
+  &__item{
+    max-width: 300px;
+    max-height: 600px;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    // width: 51.66667%;
+    @include media-breakpoint-up(md) {
+      left: 25%;
+      position: fixed;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: 50px;
+    }
+    @include media-breakpoint-down(lg) {
+      max-width: 200px;
+      max-height: 400px;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 150px;
+      max-height: 300px;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      width: 96%;
+      height: 96%;
+      top: 2%;
+      left: 2%;
+      border-radius: 40px;
+      display: block;
+      background-color: transparent;
+      box-shadow: 0 30px 90px rgba(#000, 0.5);
+    }
+  }
+  &__info{
+    position: relative;
+    z-index: 9;
+  }
+  &__frame{
+    position: relative;
+    z-index: 99;
+  }
+  &__pic{
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-radius: 60px;
+    height: auto;
+    margin-top: -2px;
+    @include media-breakpoint-down(md) {
+      border-radius: 30px;
+    }
+  }
+}
+
+.team-item{
+  $size: 300px;
+
+  width: $size;
+  height: $size;
+  padding: 50px 30px;
+  background-color: #fff;
+  box-shadow: 0 10px 10px rgba(#000, 0.1);
+  position: relative;
+  &--rleft{
+    transform: rotate(-1deg);
+  }
+  &--rright{
+    transform: rotate(1deg);
+  }
+  &:before{
+    content: '';
+    width: 100px;
+    height: 30px;
+    background-image: url(../images/stick.svg);
+    background-repeat: no-repeat;
+    background-size: 100px 30px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    margin-left: -50px;
+  }
+  &__img{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    img{
+      position: relative;
+      left: 50%;
+      height: 100%;
+      transform: translate(-50%, 0);
+      filter: grayscale(100%);
+    }
+  }
+  &:hover{
+    .team-item__img{
+      img{
+        filter: none;
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    width: 50%;
+  }
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
+}
+
+.rapallax-bgs{
+  position: relative;
+  overflow: hidden;
+  &__content{
+    position: relative;
+    z-index: 9;
+  }
+  &__image{
+    z-index: 0;
+    position: absolute;
+    @for $i from 1 through 3 {
+      &--#{$i} {
+        opacity: 1 - (random(50)/100);
+        transform: scale(1 - (random(50)/100));
+        top: random(60) + %;
+        left: 100% - $i*30%;
+      }
+    }
+  }
+}
