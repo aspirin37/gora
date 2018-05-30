@@ -29,13 +29,11 @@
       </div>
     </article>
 
-    <div class="relative current-shadow">
-      <main-project-mesto id="project-1"></main-project-mesto>
+    <main-project-mesto id="project-1"></main-project-mesto>
 
-      <main-project-linger id="project-2"></main-project-linger>
+    <main-project-linger id="project-2"></main-project-linger>
 
-      <main-project-kyc id="project-3"></main-project-kyc>
-    </div>
+    <main-project-kyc id="project-3"></main-project-kyc>
 
     <section class="js-scroll-block main-section bg-light height-half" id="team">
       <div class="container">
