@@ -96,7 +96,7 @@
 .service-block{
   $img-size: 240px;
 
-  padding-left: $img-size;
+  padding-left: 2rem;
   position: relative;
   &:before{
     content: '';
@@ -110,24 +110,27 @@
     background-size: cover;
     transform: rotate(5deg);
   }
-  &--mobile{
-    &:before{
-      background-image: url(../images/mobile-app.png);
+  @include media-breakpoint-up(md) {
+    padding-left: $img-size + 30px;
+    &--mobile{
+      &:before{
+        background-image: url(../images/mobile-app.png);
+      }
     }
-  }
-  &--web{
-    &:before{
-      background-image: url(../images/web-app.png);
+    &--web{
+      &:before{
+        background-image: url(../images/web-app.png);
+      }
     }
-  }
-  &--shop{
-    &:before{
-      background-image: url(../images/cart.png);
+    &--shop{
+      &:before{
+        background-image: url(../images/cart.png);
+      }
     }
-  }
-  &--blockchain{
-    &:before{
-      background-image: url(../images/blockchain.png);
+    &--blockchain{
+      &:before{
+        background-image: url(../images/blockchain.png);
+      }
     }
   }
 }

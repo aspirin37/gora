@@ -9,20 +9,20 @@
       </div>
       <div class="container">
         <div class="bg-gradient current-shadow rounded py-4 pr-4 mb-4 overflow-hidden service-block service-block--mobile">
-          <h4 class="text-white">Мобильные приложения</h4>
-          <p class="font-large">Создаем мобильные решения, позволяющие повышать лояльность клиентов и снижать расходы за счет внедрения средств автоматизации и оптимизации процессов.</p>
+          <h5 class="text-white mb-3">Мобильные приложения</h5>
+          <p class="mb-0">Создаем мобильные решения, позволяющие повышать лояльность клиентов и снижать расходы за счет внедрения средств автоматизации и оптимизации процессов.</p>
         </div>
         <div class="bg-gradient current-shadow rounded py-4 pr-4 mb-4 overflow-hidden service-block service-block--web">
-          <h4 class="text-white">Крупные порталы</h4>
-          <p class="font-large">Проектируем архитектуру проекта индивидуально для каждого кейса, учитывая все возможные платформы. Все для того чтобы создать по-настоящему качественный продукт.</p>
+          <h5 class="text-white mb-3">Крупные порталы</h5>
+          <p class="mb-0">Проектируем архитектуру проекта индивидуально для каждого кейса, учитывая все возможные платформы. Все для того чтобы создать по-настоящему качественный продукт.</p>
         </div>
         <div class="bg-gradient current-shadow rounded py-4 pr-4 mb-4 overflow-hidden service-block service-block--shop">
-          <h4 class="text-white">Интернет-магазины</h4>
-          <p class="font-large">Разрабатываем полноценные цифровые каналы продаж, интегрированные и автоматизированные решения обеспечивающие бесшовный покупательский опыт в рамках омниканальной стратегии.</p>
+          <h5 class="text-white mb-3">Интернет-магазины</h5>
+          <p class="mb-0">Разрабатываем полноценные цифровые каналы продаж, интегрированные и автоматизированные решения обеспечивающие бесшовный покупательский опыт в рамках омниканальной стратегии.</p>
         </div>
         <div class="bg-gradient current-shadow rounded py-4 pr-4 mb-4 overflow-hidden service-block service-block--blockchain">
-          <h4 class="text-white">Блокчейн</h4>
-          <p class="font-large">Консультируем и разрабатываем проекты с использованием Blockchain технологий. Рассчет токеномики, сопровождение ICO, экспертиза цифровых активов, внедрение FOMO-подхода.</p>
+          <h5 class="text-white mb-3">Блокчейн</h5>
+          <p class="mb-0">Консультируем и разрабатываем проекты с использованием Blockchain технологий. Рассчет токеномики, сопровождение ICO, экспертиза цифровых активов, внедрение FOMO-подхода.</p>
         </div>
         <h5 class="text-center mt-5">You can check our latest jobs below</h5>
         <span class="circled-icon scroll-down cursor-pointer" v-on:click="scrollToItem('project-1', 500)"><img src="@/images/arrow-down.svg" alt="pin"></span>
@@ -78,7 +78,7 @@
       </div>
     </section>
 
-    <nav class="side-nav">
+    <nav class="side-nav d-none d-md-block">
       <a href="#main"
         class="side-nav__link current-shadow d-block ml-auto"
         :class="{'bg-dark active': scrolledBlock === 'main'}"
