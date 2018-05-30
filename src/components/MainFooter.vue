@@ -3,9 +3,21 @@
     <div class="container d-flex justify-content-between">
       <span>© {{year}} GORA</span>
       <nav>
-        <a href="#" class="text-light mr-2">Contacts</a>
-        <a href="#" class="text-light mr-2">Careers</a>
-        <a href="#" class="text-light">Portfolio</a>
+        <router-link
+          :to="{name: 'careers'}"
+          active-class="text-muted"
+          class="text-light mr-2"
+        >Careers</router-link>
+        <router-link
+          :to="{name: 'portfolio'}"
+          active-class="text-muted"
+          class="text-light mr-2"
+        >Portfolio</router-link>
+        <router-link
+          :to="{name: 'contacts'}"
+          active-class="text-muted"
+          class="text-light mr-2"
+        >Contacts</router-link>
       </nav>
     </div>
   </footer>

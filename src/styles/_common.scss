@@ -179,7 +179,7 @@ a.current-shadow, .cursor-pointer.current-shadow{
       border-radius: 40px;
       display: block;
       background-color: transparent;
-      box-shadow: 0 40px 100px rgba(#000, 0.6);
+      box-shadow: 0 30px 90px rgba(#000, 0.5);
     }
   }
   &__info{
@@ -220,17 +220,43 @@ a.current-shadow, .cursor-pointer.current-shadow{
 }
 
 .team-item{
-  width: 25%;
-  overflow: hidden;
-  &__img{
-    height: 100%;
-    width: auto;
+  $size: 300px;
+
+  width: $size;
+  height: $size;
+  padding: 50px 30px;
+  background-color: #fff;
+  box-shadow: 0 10px 10px rgba(#000, 0.1);
+  position: relative;
+  &:before{
+    content: '';
+    width: 100px;
+    height: 30px;
+    background-image: url(../images/stick.svg);
+    background-repeat: no-repeat;
+    background-size: 100px 30px;
+    position: absolute;
+    top: -15px;
     left: 50%;
-    position: relative;
-    transform: translate(-50%, 0);
-    filter: grayscale(100%);
-    &:hover{
-      filter: none;
+    margin-left: -50px;
+  }
+  &__img{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    img{
+      position: relative;
+      left: 50%;
+      height: 100%;
+      transform: translate(-50%, 0);
+      filter: grayscale(100%);
+    }
+  }
+  &:hover{
+    .team-item__img{
+      img{
+        filter: none;
+      }
     }
   }
   @include media-breakpoint-down(md) {

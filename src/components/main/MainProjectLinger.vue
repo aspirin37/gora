@@ -12,7 +12,7 @@
     </div>
     <div class="project-section__clip">
       <div class="project-section__item mb-4 mb-md-0 mx-auto">
-        <img src="@/images/iphone.svg" alt="" class="mw-100 project-section__frame">
+        <img src="@/images/iphone-light.svg" alt="" class="mw-100 project-section__frame">
         <img src="@/images/projects/linger.png" alt="" class="project-section__pic">
       </div>
     </div>

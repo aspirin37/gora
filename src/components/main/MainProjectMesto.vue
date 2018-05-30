@@ -15,7 +15,7 @@
       </div>
       <div class="project-section__clip">
         <div class="project-section__item mb-4 mb-md-0 mx-auto">
-          <img src="@/images/samsung.svg" alt="" class="mw-100 project-section__frame">
+          <img src="@/images/iphone-light.svg" alt="" class="mw-100 project-section__frame">
           <img src="@/images/projects/mesto-phone.png" alt="" class="project-section__pic">
         </div>
       </div>
@@ -30,7 +30,7 @@
       </div>
       <div class="project-section__clip">
         <div class="project-section__item mb-4 mb-md-0 mx-auto">
-          <img src="@/images/samsung.svg" alt="" class="mw-100 project-section__frame">
+          <img src="@/images/iphone-light.svg" alt="" class="mw-100 project-section__frame">
           <img src="@/images/projects/mesto-phone.png" alt="" class="project-section__pic">
         </div>
       </div>

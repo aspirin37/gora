@@ -29,7 +29,7 @@
 
     <div class="bg-white py-4 relative current-shadow">
       <div class="container">
-        <h3 class="text-center">Lasets jobs<span class="title-char"></span></h3>
+        <h3 class="text-center">Latest jobs<span class="title-char"></span></h3>
       </div>
     </div>
 
@@ -39,22 +39,30 @@
 
     <main-project-kyc id="project-3"></main-project-kyc>
 
-    <section class="js-scroll-block bg-light height-half relative current-shadow" id="team">
-      <div class="container py-4">
-        <h3 class="text-center">Routine<span class="title-char"></span></h3>
+    <section class="js-scroll-block main-section bg-light height-half relative current-shadow" id="team">
+      <div class="container">
+        <h3 class="text-center mb-5">Routine<span class="title-char"></span></h3>
       </div>
-      <div class="d-flex flex-wrap">
-        <div class="team-item">
-          <img src="@/images/team/team1.jpg" alt="team" class="team-item__img">
+      <div class="container-fluid d-flex flex-wrap justify-content-around">
+        <div class="team-item mb-5">
+          <div class="team-item__img">
+            <img src="@/images/team/team1.jpg" alt="team">
+          </div>
         </div>
-        <div class="team-item">
-          <img src="@/images/team/team2.jpg" alt="team" class="team-item__img">
+        <div class="team-item mb-5">
+          <div class="team-item__img">
+            <img src="@/images/team/team2.jpg" alt="team">
+          </div>
         </div>
-        <div class="team-item">
-          <img src="@/images/team/team3.jpg" alt="team" class="team-item__img">
+        <div class="team-item mb-5">
+          <div class="team-item__img">
+            <img src="@/images/team/team3.jpg" alt="team">
+          </div>
         </div>
-        <div class="team-item">
-          <img src="@/images/team/team4.jpg" alt="team" class="team-item__img">
+        <div class="team-item mb-5">
+          <div class="team-item__img">
+            <img src="@/images/team/team4.jpg" alt="team">
+          </div>
         </div>
       </div>
     </section>
