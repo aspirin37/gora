@@ -36,7 +36,11 @@ a.current-shadow, .cursor-pointer.current-shadow{
   z-index: 9;
   background-color: #fff;
   margin-bottom: 72px;
-  padding-top: 72px;
+  padding-top: $header-height;
+}
+
+.top-block-up{
+  margin-top: -$header-height;
 }
 
 .main-footer{
@@ -67,7 +71,7 @@ a.current-shadow, .cursor-pointer.current-shadow{
   height: $size;
   width: $size*6;
   border-radius: $size/2;
-  background-color: $yellow;
+  background-color: $success;
 }
 
 .custom-link{

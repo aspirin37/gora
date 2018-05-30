@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main-page-head id="main"></main-page-head>
+    <main-page-head id="main" class="top-block-up" v-on:scrollDown="scrollToItem('services', 500)"></main-page-head>
 
     <article class="bg-light main-section js-scroll-block relative" id="services">
       <div class="container mb-5">
@@ -24,22 +24,20 @@
             <img src="@/images/web-app.png" alt="web" class="mw-100 service-pic">
           </div>
         </div>
+        <h5 class="text-center">You can check our latest jobs below</h5>
+        <span class="circled-icon scroll-down cursor-pointer" v-on:click="scrollToItem('project-1', 500)"><img src="@/images/arrow-down.svg" alt="pin"></span>
       </div>
     </article>
 
-    <div class="bg-white py-4 relative current-shadow">
-      <div class="container">
-        <h3 class="text-center">Latest jobs<span class="title-char"></span></h3>
-      </div>
+    <div class="relative current-shadow">
+      <main-project-mesto id="project-1"></main-project-mesto>
+
+      <main-project-linger id="project-2"></main-project-linger>
+
+      <main-project-kyc id="project-3"></main-project-kyc>
     </div>
 
-    <main-project-mesto id="project-1"></main-project-mesto>
-
-    <main-project-linger id="project-2"></main-project-linger>
-
-    <main-project-kyc id="project-3"></main-project-kyc>
-
-    <section class="js-scroll-block main-section bg-light height-half relative current-shadow" id="team">
+    <section class="js-scroll-block main-section bg-light height-half" id="team">
       <div class="container">
         <h3 class="text-center mb-5">Routine<span class="title-char"></span></h3>
       </div>
@@ -127,12 +125,11 @@ import MainPageHead from '@/components/main/MainPageHead'
 import MainProjectMesto from '@/components/main/MainProjectMesto'
 import MainProjectKyc from '@/components/main/MainProjectKyc'
 import MainProjectLinger from '@/components/main/MainProjectLinger'
+import scrollTo from '@/mixins/scrollTo'
 
 export default {
   data () {
-    return {
-      scrolledBlock: ''
-    }
+    return {}
   },
   components: {
     MainPageHead,
@@ -140,53 +137,7 @@ export default {
     MainProjectKyc,
     MainProjectLinger
   },
-  mounted () {
-    document.addEventListener('scroll', this.getScrollPos)
-  },
-  destroyed () {
-    this.removeScrollListener()
-  },
-  methods: {
-    getScrollPos () {
-      let activeOffset = window.innerHeight / 2
-      let scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop
-      let project = document.querySelectorAll('.js-scroll-block')
-
-      project.forEach(item => {
-        let topOffset = item.offsetTop
-        let bottomOffset = item.offsetTop + item.clientHeight
-        let blockScrolledOffsetTop = (topOffset <= scrollTop + activeOffset) && (scrollTop <= topOffset + (item.clientHeight - activeOffset))
-
-        if (blockScrolledOffsetTop) {
-          this.scrolledBlock = item.getAttribute('id')
-        }
-      })
-    },
-    removeScrollListener () {
-      document.removeEventListener('scroll', this.getScrollPos)
-    },
-    getElementY (query) {
-      return window.pageYOffset + document.getElementById(query).getBoundingClientRect().top
-    },
-    scrollToItem (element, duration) {
-      let startingY = window.pageYOffset
-      let elementY = this.getElementY(element)
-      let diff = elementY - startingY
-      let start
-
-      window.requestAnimationFrame(function step(timestamp) {
-        if (!start) start = timestamp
-
-        let time = timestamp - start
-        let percent = Math.min(time / duration, 1)
-
-        window.scrollTo(0, startingY + diff * percent)
-
-        if (time < duration) {
-          window.requestAnimationFrame(step)
-        }
-      })
-    }
-  }
+  mixins: [scrollTo],
+  methods: {}
 }
 </script>
