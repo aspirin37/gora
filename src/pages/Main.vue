@@ -2,7 +2,7 @@
   <div>
     <main-page-head id="main" v-on:scrollDown="scrollToItem('services', 500)"></main-page-head>
 
-    <article class="bg-white main-section js-scroll-block relative current-shadow" id="services">
+    <article class="height-full bg-white main-section js-scroll-block relative current-shadow d-flex flex-column justify-content-around" id="services">
       <div class="container mb-5">
         <h3 class="text-center">What we do<span class="title-char"></span></h3>
         <p class="font-large text-center">
@@ -48,6 +48,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="container">
         <h5 class="text-center mt-5">You can check our latest jobs below</h5>
         <span class="circled-icon scroll-down cursor-pointer" v-on:click="scrollToItem('project-1', 500)"><img src="@/images/arrow-down.svg" alt="pin"></span>
       </div>
