@@ -21,8 +21,8 @@
         >Portfolio</router-link>
         <router-link
           :to="{name: 'contacts'}"
-          class="btn btn-pink btn-sm btn-rounded d-block d-md-inline-block"
-        >Contacts Us</router-link>
+          class="btn btn-theme btn-sm btn-rounded d-block d-md-inline-block"
+        >Contact Us</router-link>
       </nav>
     </div>
   </header>

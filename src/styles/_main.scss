@@ -71,6 +71,7 @@
   &__image{
     z-index: 0;
     position: absolute;
+    pointer-events: none;
     @for $i from 1 through 3 {
       &--#{$i} {
         opacity: 1 - (random(50)/100);
