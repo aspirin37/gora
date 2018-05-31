@@ -7,6 +7,7 @@
       </transition>
     </main>
     <main-footer></main-footer>
+    <modals-container class="modal-z-index relative" />
   </div>
 </template>
 

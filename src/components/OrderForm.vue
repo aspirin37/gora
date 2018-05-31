@@ -1,0 +1,104 @@
+<template>
+  <form>
+    <p class="mb-2">Что вас интересует?</p>
+    <div class="row mb-3 flex-wrap">
+      <label class="col choose-input mb-2">
+        <input type="radio" name="form1" value="Комплексная работа" class="choose-input__input" checked>
+        <span class="choose-input__text">Комплексная работа</span>
+      </label>
+      <label class="col choose-input mb-2">
+        <input type="radio" name="form1" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
+        <span class="choose-input__text">Аутсорс или аутстафф разработчиков</span>
+      </label>
+    </div>
+    <p class="mb-2">Планируемый годовой бюджет, руб.</p>
+    <div class="row mb-3 flex-wrap">
+      <label class="col choose-input mb-2">
+        <input type="radio" name="form2" value="Комплексная работа" class="choose-input__input" checked>
+        <span class="choose-input__text text-nowrap">1 — 3 млн</span>
+      </label>
+      <label class="col choose-input mb-2">
+        <input type="radio" name="form2" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
+        <span class="choose-input__text text-nowrap">3 — 5 млн</span>
+      </label>
+      <label class="col choose-input mb-2">
+        <input type="radio" name="form2" value="Комплексная работа" class="choose-input__input">
+        <span class="choose-input__text text-nowrap">5 — 10 млн</span>
+      </label>
+      <label class="col choose-input mb-2">
+        <input type="radio" name="form2" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
+        <span class="choose-input__text text-nowrap">10 — 30 млн</span>
+      </label>
+      <label class="col choose-input mb-2">
+        <input type="radio" name="form2" value="Комплексная работа" class="choose-input__input">
+        <span class="choose-input__text text-nowrap">30 — 50 млн</span>
+      </label>
+      <label class="col choose-input mb-2">
+        <input type="radio" name="form2" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
+        <span class="choose-input__text text-nowrap">50— 100 млн</span>
+      </label>
+    </div>
+    <p class="mb-2">Платформы</p>
+    <div class="row mb-3 flex-wrap">
+      <label class="col choose-input mb-2">
+        <input type="radio" name="form3" value="Комплексная работа" class="choose-input__input" checked>
+        <span class="choose-input__text">iOS</span>
+      </label>
+      <label class="col choose-input mb-2">
+        <input type="radio" name="form3" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
+        <span class="choose-input__text">Android</span>
+      </label>
+      <label class="col choose-input mb-2">
+        <input type="radio" name="form3" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
+        <span class="choose-input__text">Web</span>
+      </label>
+    </div>
+    <p class="mb-2">Дополнительные услуги</p>
+    <div class="row mb-3 flex-wrap">
+      <label class="col choose-input mb-2">
+        <input type="radio" name="form4" value="Комплексная работа" class="choose-input__input" checked>
+        <span class="choose-input__text">Юзабилити-тестирование</span>
+      </label>
+      <label class="col choose-input mb-2">
+        <input type="radio" name="form4" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
+        <span class="choose-input__text">Продвижение</span>
+      </label>
+      <label class="col choose-input mb-2">
+        <input type="radio" name="form4" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
+        <span class="choose-input__text">Поддержка</span>
+      </label>
+    </div>
+    <p class="mb-2">Описание задачи</p>
+    <div class="mb-3">
+      <textarea rows="3" class="form-control"></textarea>
+    </div>
+    <div class="row mb-3 align-items-center">
+      <div class="col-12 col-md-3 col-lg-2 text-md-right">
+        <span>Name</span>
+      </div>
+      <div class="col-12 col-md-9 col-lg-10">
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row mb-3 align-items-center">
+      <div class="col-12 col-md-3 col-lg-2 text-md-right">
+        <span>Phone</span>
+      </div>
+      <div class="col-12 col-md-9 col-lg-10">
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row mb-3 align-items-center">
+      <div class="col-12 col-md-3 col-lg-2 text-md-right">
+        <span>Email</span>
+      </div>
+      <div class="col-12 col-md-9 col-lg-10">
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="text-right">
+      <button class="btn btn-link link-reset" type="submit">Cancel</button>
+      <button class="btn btn-theme" type="submit">Send</button>
+    </div>
+  </form>
+</template>

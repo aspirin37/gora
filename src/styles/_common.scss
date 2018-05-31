@@ -179,3 +179,31 @@ a.current-shadow, .cursor-pointer.current-shadow{
 .z-index-9{
   z-index: 9;
 }
+
+.modal-z-index{
+  z-index: $zindex-modal-backdrop;
+}
+
+.choose-input{
+  text-align: center;
+  margin-bottom: 0;
+  cursor: pointer;
+  &__input{
+    display: none;
+    &:checked + .choose-input__text{
+      border-color: $main-color;
+      box-shadow: inset 0px 0px 0 3px $main-color;
+      position: relative;
+      z-index: 9;
+    }
+  }
+  &__text{
+    padding: 13px;
+    border: 2px solid $gray-200;
+    display: block;
+    height: 100%;
+    &:hover{
+      background-color: $gray-100;
+    }
+  }
+}

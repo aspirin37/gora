@@ -4,7 +4,7 @@
     class="d-block portfolio-item my-3 link-reset cursor-pointer current-shadow rounded bg-light"
   >
     <img src="@/images/team.jpeg" alt="portfolio" class="portfolio-item__pic">
-    <div class="portfolio-item__description px-4 pt-3 bg-white current-shadow">
+    <div class="portfolio-item__description px-4 pt-3 bg-white">
       <h5><b>{{info.title}}</b></h5>
       <p>{{info.description}}</p>
     </div>

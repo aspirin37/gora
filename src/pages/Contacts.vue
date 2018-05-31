@@ -16,7 +16,7 @@
             <span class="circled-icon mr-3"><img src="@/images/mailbox.svg" alt="pin"></span>
             <p class="font-large"><a class="text-white" href="mailto:hi@a3technology.ru">hi@a3technology.ru</a></p>
           </div>
-          <button class="btn btn-light mt-4">Order project</button>
+          <button class="btn btn-light mt-4" v-on:click="showOrderModal">Order project</button>
         </div>
       </div>
       <div class="w-100 d-flex align-items-stretch feedback-form">
@@ -42,6 +42,7 @@
 
 <script>
 import ContactForm from '@/components/contacts/ContactForm'
+import OrderForm from '@/components/OrderForm'
 
 export default {
   data () {
@@ -50,7 +51,22 @@ export default {
     }
   },
   components: {
-    ContactForm
+    ContactForm,
+    OrderForm
+  },
+  methods: {
+    showOrderModal () {
+      this.$modal.show(OrderForm, {
+      }, {
+        height: 'auto',
+        scrollable: true,
+        width: '100%',
+        adaptive: true,
+        maxWidth: 1000,
+        classes: 'p-4 bg-white my-3 modal-z-index',
+        name: 'order'
+      })
+    }
   }
 }
 </script>
