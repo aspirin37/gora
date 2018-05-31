@@ -157,8 +157,25 @@ a.current-shadow, .cursor-pointer.current-shadow{
   background-color: rgba(#fff, 0.8);
   text-align: center;
   display: inline-block;
+  position: relative;
   img{
     width: $size/2;
     height: $size/2;
   }
+  &:before{
+    content: '';
+    width: $size*1.2;
+    height: $size*1.2;
+    background-color: inherit;
+    opacity: 0.2;
+    position: absolute;
+    z-index: -1;
+    left: -$size/10;
+    top: -$size/10;
+    border-radius: 50%;
+  }
+}
+
+.z-index-9{
+  z-index: 9;
 }

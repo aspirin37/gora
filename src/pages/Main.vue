@@ -5,24 +5,48 @@
     <article class="bg-white main-section js-scroll-block relative current-shadow" id="services">
       <div class="container mb-5">
         <h3 class="text-center">What we do<span class="title-char"></span></h3>
-        <p class="font-large">Мы занимаемся разработкой средних и крупных проектов под все популярные платформы: iOS, Android, Web. Основные направления нашей деятельности это разработка мобильных приложений и крупных порталов.</p>
+        <p class="font-large text-center">
+          Консультируем, разрабатываем и поддерживаем крупные проекты под iOS, Android и Web платформы.
+        </p>
       </div>
-      <div class="container">
-        <div class="bg-gradient current-shadow rounded py-4 pr-4 mb-4 overflow-hidden service-block service-block--mobile">
-          <h5 class="text-white mb-3">Мобильные приложения</h5>
-          <p class="mb-0">Создаем мобильные решения, позволяющие повышать лояльность клиентов и снижать расходы за счет внедрения средств автоматизации и оптимизации процессов.</p>
-        </div>
-        <div class="bg-gradient current-shadow rounded py-4 pr-4 mb-4 overflow-hidden service-block service-block--web">
-          <h5 class="text-white mb-3">Крупные порталы</h5>
-          <p class="mb-0">Проектируем архитектуру проекта индивидуально для каждого кейса, учитывая все возможные платформы. Все для того чтобы создать по-настоящему качественный продукт.</p>
-        </div>
-        <div class="bg-gradient current-shadow rounded py-4 pr-4 mb-4 overflow-hidden service-block service-block--shop">
-          <h5 class="text-white mb-3">Интернет-магазины</h5>
-          <p class="mb-0">Разрабатываем полноценные цифровые каналы продаж, интегрированные и автоматизированные решения обеспечивающие бесшовный покупательский опыт в рамках омниканальной стратегии.</p>
-        </div>
-        <div class="bg-gradient current-shadow rounded py-4 pr-4 mb-4 overflow-hidden service-block service-block--blockchain">
-          <h5 class="text-white mb-3">Блокчейн</h5>
-          <p class="mb-0">Консультируем и разрабатываем проекты с использованием Blockchain технологий. Рассчет токеномики, сопровождение ICO, экспертиза цифровых активов, внедрение FOMO-подхода.</p>
+      <div class="container-fluid px-md-5">
+        <div class="row align-items-stretch">
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4">
+              <div class="relative z-index-9">
+                <span class="circled-icon bg-theme mb-3"><img src="@/images/mobile-phone.svg" alt="pin"></span>
+                <h5 class="mb-3">Mobile Applications</h5>
+                <p class="mb-0">Мобильные решения под iOS и Android средней и высокой сложности.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4">
+              <div class="relative z-index-9">
+                <span class="circled-icon bg-theme mb-3"><img src="@/images/laptop.svg" alt="pin"></span>
+                <h5 class="mb-3">Large Web Services</h5>
+                <p class="mb-0">Сервисы согласно последним тенденциям в вебе: кроссбраузерный, легкоподдерживаемый SPA с функционалом любой сложности.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4">
+              <div class="relative z-index-9">
+                <span class="circled-icon bg-theme mb-3"><img src="@/images/shopping.svg" alt="pin"></span>
+                <h5 class="mb-3">E-commerce</h5>
+                <p class="mb-0">Интернет-магазины и торговые площадки с каталогом, поиском и личным кабинетом.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4">
+              <div class="relative z-index-9">
+                <span class="circled-icon bg-theme mb-3"><img src="@/images/blockchain.svg" alt="pin"></span>
+                <h5 class="mb-3">Blockchain</h5>
+                <p class="mb-0">Рассчет токеномики, сопровождение ICO, экспертиза цифровых активов, внедрение FOMO-подхода.</p>
+              </div>
+            </div>
+          </div>
         </div>
         <h5 class="text-center mt-5">You can check our latest jobs below</h5>
         <span class="circled-icon scroll-down cursor-pointer" v-on:click="scrollToItem('project-1', 500)"><img src="@/images/arrow-down.svg" alt="pin"></span>

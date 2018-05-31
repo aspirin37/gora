@@ -13,3 +13,7 @@
     font-size: $font-size-base;
   }
 }
+
+.gradient-text{
+  @include gradient-text(linear-gradient(to right, darken($main-color, 90%), mix(darken($main-color, 40%), $blue)), 'light', $main-color);
+}

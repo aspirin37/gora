@@ -3,7 +3,7 @@
     <h3 class="mb-5">Contacts<span class="title-char"></span></h3>
     <div class="d-flex align-items-stretch flex-wrap flex-md-nowrap">
       <div class="bg-gradient p-4 p-lg-5 w-100 d-flex align-items-center rounded-left">
-        <div>
+        <div class="relative z-index-9">
           <div class="d-flex mb-2">
             <span class="circled-icon mr-3"><img src="@/images/map-pin.svg" alt="pin"></span>
             <p class="font-large">Большой проспект ПС, 29, с 10 до 20<small class="d-block">Санкт-Петербург</small></p>
