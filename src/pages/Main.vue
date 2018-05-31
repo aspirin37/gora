@@ -6,7 +6,7 @@
       <div class="container mb-5">
         <h3 class="text-center">What we do<span class="title-char"></span></h3>
         <p class="font-large text-center">
-          Консультируем, разрабатываем и поддерживаем крупные проекты под iOS, Android и Web платформы.
+          We advise, develop and support large projects for iOS, Android and Web platforms
         </p>
       </div>
       <div class="container-fluid px-md-5">
@@ -16,7 +16,7 @@
               <div class="relative z-index-9">
                 <span class="circled-icon bg-theme mb-3"><img src="@/images/mobile-phone.svg" alt="pin"></span>
                 <h5 class="mb-3">Mobile Applications</h5>
-                <p class="mb-0">Мобильные решения под iOS и Android средней и высокой сложности.</p>
+                <p class="mb-0">Middle and high complexity mobile solutions for iOS and Android platforms.</p>
               </div>
             </div>
           </div>
@@ -25,7 +25,7 @@
               <div class="relative z-index-9">
                 <span class="circled-icon bg-theme mb-3"><img src="@/images/laptop.svg" alt="pin"></span>
                 <h5 class="mb-3">Large Web Services</h5>
-                <p class="mb-0">Сервисы согласно последним тенденциям в вебе: кроссбраузерный, легкоподдерживаемый SPA с функционалом любой сложности.</p>
+                <p class="mb-0">Cross Browser, easy to maintain SPA with any complexity of functionality.</p>
               </div>
             </div>
           </div>
@@ -34,7 +34,7 @@
               <div class="relative z-index-9">
                 <span class="circled-icon bg-theme mb-3"><img src="@/images/shopping.svg" alt="pin"></span>
                 <h5 class="mb-3">E-commerce</h5>
-                <p class="mb-0">Интернет-магазины и торговые площадки с каталогом, поиском и личным кабинетом.</p>
+                <p class="mb-0">Internet shops and marketplaces with catalogue, searching and personal account.</p>
               </div>
             </div>
           </div>
@@ -43,7 +43,7 @@
               <div class="relative z-index-9">
                 <span class="circled-icon bg-theme mb-3"><img src="@/images/blockchain.svg" alt="pin"></span>
                 <h5 class="mb-3">Blockchain</h5>
-                <p class="mb-0">Рассчет токеномики, сопровождение ICO, экспертиза цифровых активов, внедрение FOMO-подхода.</p>
+                <p class="mb-0">Calculation of Tokenomics, ICO support, examination of digital assets, implementation of the FOMO approach.</p>
               </div>
             </div>
           </div>
