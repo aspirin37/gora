@@ -1,71 +1,71 @@
 <template>
   <form>
     <p class="mb-2">Что вас интересует?</p>
-    <div class="row mb-3 flex-wrap">
-      <label class="col choose-input mb-2">
+    <div class="row px-2 mb-3 flex-wrap">
+      <label class="col px-1 choose-input mb-2">
         <input type="radio" name="form1" value="Комплексная работа" class="choose-input__input" checked>
-        <span class="choose-input__text">Комплексная работа</span>
+        <span class="choose-input__text rounded">Комплексная работа</span>
       </label>
-      <label class="col choose-input mb-2">
+      <label class="col px-1 choose-input mb-2">
         <input type="radio" name="form1" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
-        <span class="choose-input__text">Аутсорс или аутстафф разработчиков</span>
+        <span class="choose-input__text rounded">Аутсорс или аутстафф разработчиков</span>
       </label>
     </div>
     <p class="mb-2">Планируемый годовой бюджет, руб.</p>
-    <div class="row mb-3 flex-wrap">
-      <label class="col choose-input mb-2">
+    <div class="row px-2 mb-3 flex-wrap">
+      <label class="col px-1 choose-input mb-2">
         <input type="radio" name="form2" value="Комплексная работа" class="choose-input__input" checked>
-        <span class="choose-input__text text-nowrap">1 — 3 млн</span>
+        <span class="choose-input__text rounded text-nowrap">1 — 3 млн</span>
       </label>
-      <label class="col choose-input mb-2">
+      <label class="col px-1 choose-input mb-2">
         <input type="radio" name="form2" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
-        <span class="choose-input__text text-nowrap">3 — 5 млн</span>
+        <span class="choose-input__text rounded text-nowrap">3 — 5 млн</span>
       </label>
-      <label class="col choose-input mb-2">
+      <label class="col px-1 choose-input mb-2">
         <input type="radio" name="form2" value="Комплексная работа" class="choose-input__input">
-        <span class="choose-input__text text-nowrap">5 — 10 млн</span>
+        <span class="choose-input__text rounded text-nowrap">5 — 10 млн</span>
       </label>
-      <label class="col choose-input mb-2">
+      <label class="col px-1 choose-input mb-2">
         <input type="radio" name="form2" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
-        <span class="choose-input__text text-nowrap">10 — 30 млн</span>
+        <span class="choose-input__text rounded text-nowrap">10 — 30 млн</span>
       </label>
-      <label class="col choose-input mb-2">
+      <label class="col px-1 choose-input mb-2">
         <input type="radio" name="form2" value="Комплексная работа" class="choose-input__input">
-        <span class="choose-input__text text-nowrap">30 — 50 млн</span>
+        <span class="choose-input__text rounded text-nowrap">30 — 50 млн</span>
       </label>
-      <label class="col choose-input mb-2">
+      <label class="col px-1 choose-input mb-2">
         <input type="radio" name="form2" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
-        <span class="choose-input__text text-nowrap">50— 100 млн</span>
+        <span class="choose-input__text rounded text-nowrap">50— 100 млн</span>
       </label>
     </div>
     <p class="mb-2">Платформы</p>
-    <div class="row mb-3 flex-wrap">
-      <label class="col choose-input mb-2">
+    <div class="row px-2 mb-3 flex-wrap">
+      <label class="col px-1 choose-input mb-2">
         <input type="radio" name="form3" value="Комплексная работа" class="choose-input__input" checked>
-        <span class="choose-input__text">iOS</span>
+        <span class="choose-input__text rounded">iOS</span>
       </label>
-      <label class="col choose-input mb-2">
+      <label class="col px-1 choose-input mb-2">
         <input type="radio" name="form3" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
-        <span class="choose-input__text">Android</span>
+        <span class="choose-input__text rounded">Android</span>
       </label>
-      <label class="col choose-input mb-2">
+      <label class="col px-1 choose-input mb-2">
         <input type="radio" name="form3" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
-        <span class="choose-input__text">Web</span>
+        <span class="choose-input__text rounded">Web</span>
       </label>
     </div>
     <p class="mb-2">Дополнительные услуги</p>
-    <div class="row mb-3 flex-wrap">
-      <label class="col choose-input mb-2">
+    <div class="row px-2 mb-3 flex-wrap">
+      <label class="col px-1 choose-input mb-2">
         <input type="radio" name="form4" value="Комплексная работа" class="choose-input__input" checked>
-        <span class="choose-input__text">Юзабилити-тестирование</span>
+        <span class="choose-input__text rounded">Юзабилити-тестирование</span>
       </label>
-      <label class="col choose-input mb-2">
+      <label class="col px-1 choose-input mb-2">
         <input type="radio" name="form4" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
-        <span class="choose-input__text">Продвижение</span>
+        <span class="choose-input__text rounded">Продвижение</span>
       </label>
-      <label class="col choose-input mb-2">
+      <label class="col px-1 choose-input mb-2">
         <input type="radio" name="form4" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
-        <span class="choose-input__text">Поддержка</span>
+        <span class="choose-input__text rounded">Поддержка</span>
       </label>
     </div>
     <p class="mb-2">Описание задачи</p>
@@ -97,7 +97,7 @@
       </div>
     </div>
     <div class="text-right">
-      <button class="btn btn-link link-reset" type="submit">Cancel</button>
+      <button class="btn btn-link link-reset" type="button" v-on:click="$emit('close')">Cancel</button>
       <button class="btn btn-theme" type="submit">Send</button>
     </div>
   </form>

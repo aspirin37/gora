@@ -62,8 +62,8 @@ export default {
         scrollable: true,
         width: '100%',
         adaptive: true,
-        maxWidth: 1000,
-        classes: 'p-4 bg-white my-3 modal-z-index',
+        maxWidth: 870,
+        classes: 'p-4 bg-white my-3 modal-z-index rounded',
         name: 'order'
       })
     }

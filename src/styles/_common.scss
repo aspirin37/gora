@@ -56,6 +56,12 @@ a.current-shadow, .cursor-pointer.current-shadow{
   color: #fff;
 }
 
+.bg-image{
+  background-image: url(../images/rock-bg.png);
+  background-repeat: repeat;
+  background-size: 150px 150px;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -192,13 +198,13 @@ a.current-shadow, .cursor-pointer.current-shadow{
     display: none;
     &:checked + .choose-input__text{
       border-color: $main-color;
-      box-shadow: inset 0px 0px 0 3px $main-color;
+      background-color: rgba($main-color, 0.05);
       position: relative;
       z-index: 9;
     }
   }
   &__text{
-    padding: 13px;
+    padding: $input-btn-padding-y $input-btn-padding-x;
     border: 2px solid $gray-200;
     display: block;
     height: 100%;
