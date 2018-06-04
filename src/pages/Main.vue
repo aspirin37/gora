@@ -120,21 +120,16 @@
         :class="{'bg-dark active': scrolledBlock === 'services'}"
         v-on:click.prevent="scrollToItem('services', 500)"
       ><span class="side-nav__text">Services</span></a>
-      <a href="#project-mesto"
-        class="side-nav__link current-shadow d-block ml-auto"
-        :class="{'bg-dark active': scrolledBlock === 'project-mesto'}"
-        v-on:click.prevent="scrollToItem('project-mesto', 500)"
-      ><span class="side-nav__text">Mesto.Delivery</span></a>
-      <a href="#project-linger"
-        class="side-nav__link current-shadow d-block ml-auto"
-        :class="{'bg-dark active': scrolledBlock === 'project-linger'}"
-        v-on:click.prevent="scrollToItem('project-linger', 500)"
-      ><span class="side-nav__text">Linger</span></a>
-      <a href="#project-kyc"
-        class="side-nav__link current-shadow d-block ml-auto"
-        :class="{'bg-dark active': scrolledBlock === 'project-kyc'}"
-        v-on:click.prevent="scrollToItem('project-kyc', 500)"
-      ><span class="side-nav__text">KYC</span></a>
+
+      <!-- Projects nav -->
+      <a :href="`#project-${project.path}`"
+        v-for="(project, index) in portfolioItems"
+        :key="`proj-${index}`"
+        :class="['side-nav__link current-shadow d-block ml-auto', {'bg-dark active': scrolledBlock === `project-${project.path}`}]"
+        v-on:click.prevent="scrollToItem(`project-${project.path}`, 500)"
+      ><span class="side-nav__text">{{project.title}}</span></a>
+      <!-- Projects nav -->
+
       <a href="#team"
         class="side-nav__link current-shadow d-block ml-auto"
         :class="{'bg-dark active': scrolledBlock === 'team'}"

@@ -33,7 +33,7 @@ const store = new Vuex.Store({
       {
         id: 3,
         type: 1,
-        title: 'kyc',
+        title: 'KYC',
         description: 'Первый в мире мессенджер, который говорит на твоем языке.',
         path: 'kyc',
         dlLinks: {
