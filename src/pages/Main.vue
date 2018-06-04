@@ -159,7 +159,7 @@ export default {
   },
   computed: {
     portfolioItems () {
-      return this.$store.getters.projectsByIds([1, 2, 3])
+      return this.$store.getters.itemsByArrayValues('projects', 'id', [1, 2, 3])
     }
   },
   mixins: [scrollTo],

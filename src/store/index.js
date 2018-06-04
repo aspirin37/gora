@@ -69,11 +69,11 @@ const store = new Vuex.Store({
     ]
   },
   getters: {
-    projectsByIds: state => (ids) => {
-      console.log(ids)
-      return state.projects.filter(item => {
-        return ids.indexOf(item.id) !== -1
-      })
+    itemsByArrayValues: state => (prop, key, values) => {
+      return state[prop].filter(item => values.indexOf(item[key]) !== -1)
+    },
+    itemByValue: state => (prop, key, value) => {
+      return state[prop].filter(item => item[key] === value)
     }
   },
   actions: {},
