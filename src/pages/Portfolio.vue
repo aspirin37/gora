@@ -2,11 +2,11 @@
   <section class="container py-5">
     <h3 class="mb-5">Portfolio<span class="title-char"></span></h3>
     <nav-tabs :links="portfolioTabs" v-on:clicked="activeTab = $event" class="bg-light mb-4"></nav-tabs>
-    <div class="row">
-      <div class="col-12 col-sm-6 col-md-4" v-for="(item, index) in portfolioItems" :key="`portfolio-${index}`">
-        <portfolio-item :info="item" :class="{'portfolio-item--disabled': isDisabledTab(item.type)}"></portfolio-item>
-      </div>
-    </div>
+    <portfolio-item
+      v-for="(item, index) in portfolioItems" :key="`portfolio-${index}`"
+      :info="item"
+      :hide="isDisabledTab(item.type)"
+    ></portfolio-item>
   </section>
 </template>
 
@@ -24,7 +24,7 @@ export default {
         {type: 1, title: 'Linger', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', link: 'linger'},
         {type: 2, title: 'Eurasia', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.', link: 'eurasia'},
         {type: 2, title: 'Finteam', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', link: 'finteam'},
-        {type: 1, title: 'KUC', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', link: 'kuc'},
+        {type: 1, title: 'KYC', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', link: 'kyc'},
         {type: 1, title: 'Mesto', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', link: 'mesto'}
       ]
     }

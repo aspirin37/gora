@@ -6,6 +6,10 @@
   background: rgba(darken($yellow, 30%), 0.4);
 }
 
+.h-0{
+  height: 0!important;
+}
+
 .current-shadow{
   box-shadow: 0 2px 6px rgba(#000, 0.2);
   z-index: 99;

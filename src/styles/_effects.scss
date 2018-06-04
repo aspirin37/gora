@@ -39,3 +39,8 @@
   transform-origin: top left;
   transform: rotateY(90deg);
 }
+
+.portfolio-item-enter,
+.portfolio-item-leave-active {
+  height: 0!important;
+}

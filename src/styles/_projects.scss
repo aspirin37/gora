@@ -1,23 +1,19 @@
 .portfolio-item{
-  height: 400px;
+  $size: 300px;
+
   overflow: hidden;
   position: relative;
-  transition: all 0.3s!important;
-  &--disabled{
-    transform: scale(0.8);
-    opacity: 0.8;
-  }
-  &__img{
-    width: 100%;
-    height: auto;
-  }
-  &__description{
-    position: absolute;
-    bottom: 1rem;
-    left: 0;
-    width: calc(100% - 1rem);
-    border-top-right-radius: $border-radius-lg;
-    border-bottom-right-radius: $border-radius-lg;
+  height: $size;
+  transition: all 0.3s ease-out;
+  &__pic{
+    height: $size;
+    img{
+      width: 200px;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      margin-left: -100px;
+    }
   }
 }
 
@@ -105,4 +101,12 @@
 
 .bg-mesto{
   background: linear-gradient(to right, #8744c8, #009a86);
+}
+
+.bg-finteam{
+  background: linear-gradient(to right, #f44336, #fae100);
+}
+
+.bg-eurasia{
+  background: linear-gradient(to right, #4eb04f, #31459b);
 }
