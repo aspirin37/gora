@@ -51,15 +51,20 @@
       </div>
       <div class="container">
         <h5 class="text-center mt-5">You can check our latest jobs below</h5>
-        <span class="circled-icon scroll-down cursor-pointer" v-on:click="scrollToItem('project-1', 500)"><img src="@/images/arrow-down.svg" alt="pin"></span>
+        <span class="circled-icon scroll-down cursor-pointer" v-on:click="scrollToItem('projects', 500)"><img src="@/images/arrow-down.svg" alt="pin"></span>
       </div>
     </article>
 
-    <main-project-mesto id="project-1"></main-project-mesto>
-
-    <main-project-linger id="project-2"></main-project-linger>
-
-    <main-project-kyc id="project-3"></main-project-kyc>
+    <!-- Portfolio -->
+    <div id="projects">
+      <main-project-view
+        v-for="(project, index) in portfolioItems"
+        :info="project"
+        :key="`project-${index}`"
+        :id="`project-${project.path}`"
+      ></main-project-view>
+    </div>
+    <!-- /Portfolio -->
 
     <section class="js-scroll-block main-section bg-light height-half" id="team">
       <div class="container">
@@ -115,20 +120,20 @@
         :class="{'bg-dark active': scrolledBlock === 'services'}"
         v-on:click.prevent="scrollToItem('services', 500)"
       ><span class="side-nav__text">Services</span></a>
-      <a href="#project-1"
+      <a href="#project-mesto"
         class="side-nav__link current-shadow d-block ml-auto"
-        :class="{'bg-dark active': scrolledBlock === 'project-1'}"
-        v-on:click.prevent="scrollToItem('project-1', 500)"
+        :class="{'bg-dark active': scrolledBlock === 'project-mesto'}"
+        v-on:click.prevent="scrollToItem('project-mesto', 500)"
       ><span class="side-nav__text">Mesto.Delivery</span></a>
-      <a href="#project-2"
+      <a href="#project-linger"
         class="side-nav__link current-shadow d-block ml-auto"
-        :class="{'bg-dark active': scrolledBlock === 'project-2'}"
-        v-on:click.prevent="scrollToItem('project-2', 500)"
+        :class="{'bg-dark active': scrolledBlock === 'project-linger'}"
+        v-on:click.prevent="scrollToItem('project-linger', 500)"
       ><span class="side-nav__text">Linger</span></a>
-      <a href="#project-3"
+      <a href="#project-kyc"
         class="side-nav__link current-shadow d-block ml-auto"
-        :class="{'bg-dark active': scrolledBlock === 'project-3'}"
-        v-on:click.prevent="scrollToItem('project-3', 500)"
+        :class="{'bg-dark active': scrolledBlock === 'project-kyc'}"
+        v-on:click.prevent="scrollToItem('project-kyc', 500)"
       ><span class="side-nav__text">KYC</span></a>
       <a href="#team"
         class="side-nav__link current-shadow d-block ml-auto"
@@ -146,9 +151,7 @@
 
 <script>
 import MainPageHead from '@/components/main/MainPageHead'
-import MainProjectMesto from '@/components/main/MainProjectMesto'
-import MainProjectKyc from '@/components/main/MainProjectKyc'
-import MainProjectLinger from '@/components/main/MainProjectLinger'
+import MainProjectView from '@/components/main/MainProjectView'
 import scrollTo from '@/mixins/scrollTo'
 
 export default {
@@ -157,9 +160,12 @@ export default {
   },
   components: {
     MainPageHead,
-    MainProjectMesto,
-    MainProjectKyc,
-    MainProjectLinger
+    MainProjectView
+  },
+  computed: {
+    portfolioItems () {
+      return this.$store.getters.projectsByIds([1, 2, 3])
+    }
   },
   mixins: [scrollTo],
   methods: {}

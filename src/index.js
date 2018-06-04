@@ -1,4 +1,5 @@
 import styles from './styles/app.scss'
+import store from '@/store'
 import Vue from 'vue'
 import App from './App'
 import router from './router'
@@ -10,6 +11,7 @@ Vue.use(vClickOutside)
 
 new Vue({
   el: '#app',
+  store,
   router,
   template: '<App/>',
   components: { App }

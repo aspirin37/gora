@@ -18,20 +18,17 @@ export default {
   data () {
     return {
       portfolioTabs: ['All', 'Mobile Apps', 'Web Projects'],
-      activeTab: 0,
-      portfolioItems: [
-        {type: 2, title: 'Mesto', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', link: 'mesto'},
-        {type: 1, title: 'Linger', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', link: 'linger'},
-        {type: 2, title: 'Eurasia', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.', link: 'eurasia'},
-        {type: 2, title: 'Finteam', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', link: 'finteam'},
-        {type: 1, title: 'KYC', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', link: 'kyc'},
-        {type: 1, title: 'Mesto', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', link: 'mesto'}
-      ]
+      activeTab: 0
     }
   },
   components: {
     NavTabs,
     PortfolioItem
+  },
+  computed: {
+    portfolioItems () {
+      return this.$store.state.projects
+    }
   },
   methods: {
     isDisabledTab (type) {

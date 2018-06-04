@@ -8,7 +8,7 @@
       <div class="col-12 col-lg-5">
         <h3 class="h1 mb-4 text-white">{{info.title}}</h3>
         <p class="font-large mb-4 text-white">
-          {{info.text}}
+          {{info.description}}
           <read-more :link="info.path"></read-more>
         </p>
         <div class="mb-4">
