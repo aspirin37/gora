@@ -58,6 +58,20 @@ const store = new Vuex.Store({
           web: 'https://eurasia-congress.org/'
         }
       }
+    ],
+    careers: [
+      {
+        title: 'Developer',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tempore dolorem vero iure tenetur, fuga est quaerat aut eius sed praesentium perferendis voluptatum. Eius perspiciatis consequuntur aperiam, at dicta officiis!'
+      },
+      {
+        title: 'Developer',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tempore dolorem vero iure tenetur, fuga est quaerat aut eius sed praesentium perferendis voluptatum. Eius perspiciatis consequuntur aperiam, at dicta officiis!'
+      },
+      {
+        title: 'Developer',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tempore dolorem vero iure tenetur, fuga est quaerat aut eius sed praesentium perferendis voluptatum. Eius perspiciatis consequuntur aperiam, at dicta officiis!'
+      }
     ]
   },
   getters: {

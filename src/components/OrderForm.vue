@@ -41,30 +41,30 @@
     <p class="mb-2">Платформы</p>
     <div class="row px-2 mb-3 flex-wrap">
       <label class="col px-1 choose-input mb-2">
-        <input type="radio" name="form3" value="Комплексная работа" class="choose-input__input" checked>
+        <input type="checkbox" name="form3" value="Комплексная работа" class="choose-input__input" checked>
         <span class="choose-input__text rounded">iOS</span>
       </label>
       <label class="col px-1 choose-input mb-2">
-        <input type="radio" name="form3" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
+        <input type="checkbox" name="form3" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
         <span class="choose-input__text rounded">Android</span>
       </label>
       <label class="col px-1 choose-input mb-2">
-        <input type="radio" name="form3" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
+        <input type="checkbox" name="form3" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
         <span class="choose-input__text rounded">Web</span>
       </label>
     </div>
     <p class="mb-2">Дополнительные услуги</p>
     <div class="row px-2 mb-3 flex-wrap">
       <label class="col px-1 choose-input mb-2">
-        <input type="radio" name="form4" value="Комплексная работа" class="choose-input__input" checked>
+        <input type="checkbox" name="form4" value="Комплексная работа" class="choose-input__input" checked>
         <span class="choose-input__text rounded">Юзабилити-тестирование</span>
       </label>
       <label class="col px-1 choose-input mb-2">
-        <input type="radio" name="form4" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
+        <input type="checkbox" name="form4" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
         <span class="choose-input__text rounded">Продвижение</span>
       </label>
       <label class="col px-1 choose-input mb-2">
-        <input type="radio" name="form4" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
+        <input type="checkbox" name="form4" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
         <span class="choose-input__text rounded">Поддержка</span>
       </label>
     </div>
