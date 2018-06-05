@@ -3,11 +3,9 @@
     <article class="container py-5 mw-800">
       <h1 class="mb-5">{{projectInfo.title}}<span class="title-char"></span></h1>
       <p class="font-large">{{projectInfo.description}}</p>
-      <div class="mb-5">
-        <a href="#" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
-        <a href="#" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/apple.svg" alt="apple"></a>
-        <a href="#" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/web.svg" alt="web"></a>
-      </div>
+
+      <project-links class="mb-5" :info="projectInfo.dlLinks"></project-links>
+
       <div class="mb-4">
         <img src="@/images/team.jpeg" alt="" class="mw-100">
       </div>
@@ -19,10 +17,12 @@
 
 <script>
 import ProjectContact from '@/components/portfolio/ProjectContact'
+import ProjectLinks from '@/components/portfolio/ProjectLinks'
 
 export default {
   components: {
-    ProjectContact
+    ProjectContact,
+    ProjectLinks
   },
   computed: {
     projectPath () {

@@ -12,7 +12,7 @@
       <div class="container-fluid px-md-5">
         <div class="row align-items-stretch">
           <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4">
+            <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4" v-on:click="showOrderModal">
               <div class="relative z-index-9">
                 <span class="circled-icon bg-theme mb-3"><img src="@/images/mobile-phone.svg" alt="pin"></span>
                 <h5 class="mb-3">Mobile Applications</h5>
@@ -21,7 +21,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4">
+            <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4" v-on:click="showOrderModal">
               <div class="relative z-index-9">
                 <span class="circled-icon bg-theme mb-3"><img src="@/images/laptop.svg" alt="pin"></span>
                 <h5 class="mb-3">Large Web Services</h5>
@@ -30,7 +30,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4">
+            <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4" v-on:click="showOrderModal">
               <div class="relative z-index-9">
                 <span class="circled-icon bg-theme mb-3"><img src="@/images/shopping.svg" alt="pin"></span>
                 <h5 class="mb-3">E-commerce</h5>
@@ -39,7 +39,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4">
+            <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4" v-on:click="showOrderModal">
               <div class="relative z-index-9">
                 <span class="circled-icon bg-theme mb-3"><img src="@/images/blockchain.svg" alt="pin"></span>
                 <h5 class="mb-3">Blockchain</h5>
@@ -147,6 +147,7 @@
 <script>
 import MainPageHead from '@/components/main/MainPageHead'
 import MainProjectView from '@/components/main/MainProjectView'
+import OrderForm from '@/components/OrderForm'
 import scrollTo from '@/mixins/scrollTo'
 
 export default {
@@ -155,7 +156,8 @@ export default {
   },
   components: {
     MainPageHead,
-    MainProjectView
+    MainProjectView,
+    OrderForm
   },
   computed: {
     portfolioItems () {
@@ -163,6 +165,19 @@ export default {
     }
   },
   mixins: [scrollTo],
-  methods: {}
+  methods: {
+    showOrderModal () {
+      this.$modal.show(OrderForm, {
+      }, {
+        height: 'auto',
+        scrollable: true,
+        width: '100%',
+        adaptive: true,
+        maxWidth: 870,
+        classes: 'p-4 bg-white my-3 modal-z-index rounded',
+        name: 'order'
+      })
+    }
+  }
 }
 </script>

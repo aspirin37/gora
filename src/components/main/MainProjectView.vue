@@ -11,11 +11,7 @@
           {{info.description}}
           <read-more :link="info.path"></read-more>
         </p>
-        <div class="mb-4">
-          <a href="#" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/android.svg" alt="android"></a>
-          <a href="#" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/apple.svg" alt="apple"></a>
-          <a href="#" class="dl-link rounded mr-2 px-4 py-2"><img class="dl-link__img" src="@/images/web.svg" alt="web"></a>
-        </div>
+        <project-links class="mb-4" :info="info.dlLinks"></project-links>
       </div>
     </div>
     <div class="project-section__clip">
@@ -33,6 +29,7 @@
 <script>
 import parallaxBg from '@/mixins/parallaxBg'
 import ReadMore from '@/components/main/ReadMore'
+import ProjectLinks from '@/components/portfolio/ProjectLinks'
 
 export default {
   name: 'main-project-view',
@@ -44,7 +41,8 @@ export default {
   },
   mixins: [parallaxBg],
   components: {
-    ReadMore
+    ReadMore,
+    ProjectLinks
   }
 }
 </script>
