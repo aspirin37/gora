@@ -7,14 +7,14 @@
     >
       <div :class="['mt-3 h-100 rounded-top overflow-hidden', `bg-${info.path}`]">
         <div class="row h-100 align-items-center">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 col-lg-5 order-2 order-md-1">
             <div class="portfolio-item__pic">
               <img src="@/images/iphone-light.svg" alt="" class="mw-100 project-section__frame">
               <img :src="require(`@/images/projects/${info.path}.png`)" alt="" class="project-section__pic">
             </div>
           </div>
-          <div class="col-12 col-md-6">
-            <div class="p-4">
+          <div class="col-12 col-md-6 col-lg-7 order-1 order-md-2">
+            <div class="px-4 pt-4 pb-md-4 pb-2">
               <h5 class="text-white"><b>{{info.title}}</b></h5>
               <p class="text-white">{{info.description}}</p>
             </div>

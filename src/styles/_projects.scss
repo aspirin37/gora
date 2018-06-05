@@ -5,8 +5,13 @@
   position: relative;
   height: $size;
   transition: all 0.3s ease-out;
+  @include media-breakpoint-down(md) {
+    height: auto;
+  }
   &__pic{
     height: $size;
+    overflow: hidden;
+    position: relative;
     img{
       width: 200px;
       position: absolute;
@@ -86,7 +91,7 @@
     height: auto;
     margin-top: -2px;
     @include media-breakpoint-down(md) {
-      border-radius: 30px;
+      border-radius: 40px;
     }
   }
 }

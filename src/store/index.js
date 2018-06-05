@@ -34,7 +34,7 @@ const store = new Vuex.Store({
         id: 3,
         type: 1,
         title: 'KYC',
-        description: 'Первый в мире мессенджер, который говорит на твоем языке.',
+        description: 'KYC Legal is a service that allows to verify users. It is based on blockchain technology as a tool for protecting and validating personal data of Internet users.',
         path: 'kyc',
         dlLinks: {
           android: '',
@@ -46,7 +46,7 @@ const store = new Vuex.Store({
         id: 4,
         type: 2,
         title: 'Finteam',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+        description: 'Забота о финансах и современная бухгалтерия.',
         path: 'finteam',
         dlLinks: {
           android: '',
@@ -58,7 +58,7 @@ const store = new Vuex.Store({
         id: 5,
         type: 2,
         title: 'Eurasia',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+        description: 'Способствовать развитию большого евразийского партнёрства – Большой Евразии – через создание системы диалога неправительственных организаций.',
         path: 'eurasia',
         dlLinks: {
           android: '',
