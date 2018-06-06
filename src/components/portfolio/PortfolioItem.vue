@@ -17,6 +17,7 @@
             <div class="px-4 pt-4 pb-md-4 pb-2">
               <h5 class="text-white"><b>{{info.title}}</b></h5>
               <p class="text-white">{{info.description}}</p>
+              <project-tags :tags="info.tags" class="mb-4 text-white" :isDarkIcons="true"></project-tags>
             </div>
           </div>
         </div>
@@ -26,11 +27,15 @@
 </template>
 
 <script>
+import ProjectTags from '@/components/portfolio/ProjectTags'
+
 export default {
   name: 'portfolio-item',
   data () {
-    return {
-    }
+    return {}
+  },
+  components: {
+    ProjectTags
   },
   props: {
     info: {
