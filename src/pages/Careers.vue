@@ -1,7 +1,7 @@
 <template>
   <section class="container py-5">
     <h3 class="mb-5">Careers<span class="title-char"></span></h3>
-    <collapse class="mb-3" v-for="career in careers">
+    <collapse class="mb-3" v-for="(career, index) in careers" :key="`career-${index}`">
       <div slot="header">{{career.title}}</div>
       <div slot="content">{{career.description}}</div>
     </collapse>

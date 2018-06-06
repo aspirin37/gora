@@ -60,12 +60,6 @@ a.current-shadow, .cursor-pointer.current-shadow{
   color: #fff;
 }
 
-.bg-image{
-  background-image: url(../images/rock-bg.png);
-  background-repeat: repeat;
-  background-size: 150px 150px;
-}
-
 .overflow-hidden{
   overflow: hidden;
 }
@@ -144,15 +138,9 @@ a.current-shadow, .cursor-pointer.current-shadow{
 
 .dl-link{
   $size: 30px;
-
-  background-color: rgba(#000, 0.05);
-  display: inline-block;
   &__img{
     width: $size;
     height: $size;
-  }
-  &:hover{
-    background-color: rgba(#000, 0.1);
   }
 }
 

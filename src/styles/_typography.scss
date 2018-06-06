@@ -9,8 +9,10 @@
 
 .font-large{
   font-size: $font-size-lg;
+  line-height: 1.8;
   @include media-breakpoint-down(md) {
     font-size: $font-size-base;
+    line-height: 1.5;
   }
 }
 

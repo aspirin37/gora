@@ -4,7 +4,7 @@
       <h1 class="mb-5">{{projectInfo.title}}<span class="title-char"></span></h1>
       <p class="font-large">{{projectInfo.description}}</p>
 
-      <project-links class="mb-5" :info="projectInfo.dlLinks"></project-links>
+      <project-links class="mb-5" :info="projectInfo.dlLinks" :isDarkIcons="true"></project-links>
 
       <div class="mb-4">
         <img src="@/images/team.jpeg" alt="" class="mw-100">

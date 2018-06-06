@@ -10,18 +10,19 @@
       </router-link>
       <a href="#" v-on:click.prevent="toggleMenu" class="d-md-none hamburger-menu" :class="{'animate': menuShow}"></a>
       <nav class="navbar-menu rounded py-4 py-md-0" :class="{'navbar-menu--opened': menuShow}">
-        <a href="tel:+7 (812) 408-25-47"
-          active-class="bg-light"
-          class="px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block font-large align-middle"
-        >+7 (812) 408-25-47</a>
+        <router-link
+          :to="{name: 'careers'}"
+          active-class="text-theme"
+          class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
+        >Careers</router-link>
         <router-link
           :to="{name: 'portfolio'}"
-          active-class="bg-light"
+          active-class="text-theme"
           class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
         >Portfolio</router-link>
         <router-link
           :to="{name: 'contacts'}"
-          class="btn btn-theme btn-sm btn-rounded d-block d-md-inline-block"
+          class="btn btn-theme btn-sm btn-rounded d-block d-md-inline-block ml-md-4"
         >Contact Us</router-link>
       </nav>
     </div>

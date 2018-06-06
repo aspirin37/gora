@@ -1,7 +1,13 @@
 <template>
   <div>
-    <a :href="info[property]" target="_blank" class="dl-link rounded mr-2 px-4 py-2" v-for="(property, index) in Object.keys(info)" :key="`link-${index}`">
-      <img class="dl-link__img" :src="require(`@/images/${property}.svg`)" alt="link">
+    <a
+      :href="info[property]"
+      :key="`link-${index}`"
+      target="_blank"
+      class="dl-link rounded mr-4"
+      v-for="(property, index) in Object.keys(info)"
+    >
+      <img class="dl-link__img" :src="require(`@/images/${property}${isDarkIcons ? '-color' : ''}.svg`)" alt="link">
     </a>
   </div>
 </template>
@@ -15,6 +21,10 @@ export default {
     info: {
       type: Object,
       default: () => {}
+    },
+    isDarkIcons: {
+      type: Boolean,
+      default: false
     }
   }
 }
