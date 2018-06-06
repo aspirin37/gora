@@ -8,7 +8,7 @@
 
       <p class="font-large mb-4">{{projectInfo.description}}</p>
 
-      <project-tags :tags="projectInfo.tags" class="mb-4" :isDarkIcons="true"></project-tags>
+      <project-tags :tags="projectInfo.tags" class="mb-5" :isDarkIcons="true"></project-tags>
 
       <div class="bg-light rounded px-4 py-3 mb-5">
         <span>Project's goal:</span>
