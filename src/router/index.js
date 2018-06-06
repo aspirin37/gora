@@ -5,6 +5,7 @@ import Portfolio from '@/pages/Portfolio'
 import Contacts from '@/pages/Contacts'
 import Project from '@/pages/Project'
 import Careers from '@/pages/Careers'
+import News from '@/pages/News'
 
 Vue.use(Router)
 
@@ -33,6 +34,11 @@ var router = new Router({
       path: '/portfolio/:title',
       name: 'project',
       component: Project
+    },
+    {
+      path: '/news',
+      name: 'news',
+      component: News
     },
     {
       path: '/contacts',

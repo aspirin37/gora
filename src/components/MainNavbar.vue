@@ -11,15 +11,20 @@
       <a href="#" v-on:click.prevent="toggleMenu" class="d-md-none hamburger-menu" :class="{'animate': menuShow}"></a>
       <nav class="navbar-menu rounded py-4 py-md-0" :class="{'navbar-menu--opened': menuShow}">
         <router-link
-          :to="{name: 'careers'}"
-          active-class="text-theme"
-          class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
-        >Careers</router-link>
-        <router-link
           :to="{name: 'portfolio'}"
           active-class="text-theme"
           class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
         >Portfolio</router-link>
+        <router-link
+          :to="{name: 'news'}"
+          active-class="text-theme"
+          class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
+        >News</router-link>
+        <router-link
+          :to="{name: 'careers'}"
+          active-class="text-theme"
+          class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
+        >Careers</router-link>
         <router-link
           :to="{name: 'contacts'}"
           class="btn btn-theme btn-sm btn-rounded d-block d-md-inline-block ml-md-4"

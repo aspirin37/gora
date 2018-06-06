@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="{name: 'project', params: {title: link}}" class="text-white"><b>Read more...</b></router-link>
+  <router-link :to="{name: 'project', params: {title: link}}" class="text-white"><b><u>Read more...</u></b></router-link>
 </template>
 
 <script>
