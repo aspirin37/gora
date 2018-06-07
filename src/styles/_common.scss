@@ -10,6 +10,11 @@
   height: 0!important;
 }
 
+.overflow-x{
+  overflow: hidden;
+  overflow-x: auto;
+}
+
 .current-shadow{
   box-shadow: 0 2px 6px rgba(#000, 0.2);
   z-index: 99;
@@ -45,6 +50,7 @@ a.current-shadow, .cursor-pointer.current-shadow{
 
 .main-footer{
   z-index: 1;
+  min-height: 72px;
 }
 
 .height-full{

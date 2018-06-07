@@ -1,26 +1,23 @@
 <template>
-  <footer class="fixed-bottom bg-dark py-4 text-white main-footer">
-    <div class="container d-flex justify-content-between">
+  <footer class="fixed-bottom bg-dark py-2 text-white main-footer d-flex align-items-center">
+    <div class="container d-flex justify-content-between flex-wrap">
       <span>© {{year}} GORA</span>
       <nav>
-        <a href="tel:+7 (812) 408-25-47"
-          class="text-light mr-2"
-        >+7 (812) 408-25-47</a>
-        <router-link
-          :to="{name: 'careers'}"
-          active-class="text-muted"
-          class="text-light mr-2"
-        >Careers</router-link>
         <router-link
           :to="{name: 'portfolio'}"
           active-class="text-muted"
           class="text-light mr-2"
-        >Portfolio</router-link>
+        >{{$t('navbar.portfolio')}}</router-link>
+        <router-link
+          :to="{name: 'careers'}"
+          active-class="text-muted"
+          class="text-light mr-2"
+        >{{$t('navbar.careers')}}</router-link>
         <router-link
           :to="{name: 'contacts'}"
           active-class="text-muted"
           class="text-light mr-2"
-        >Contacts</router-link>
+        >{{$t('navbar.contact')}}</router-link>
       </nav>
     </div>
   </footer>

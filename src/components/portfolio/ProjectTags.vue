@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="overflow-x text-nowrap">
     <span
       :key="`tag-${index}`"
-      class="tag mr-2 mb-2 text-nowrap"
+      class="tag mr-2 mb-2 text-nowrap d-inline-block"
       v-for="(tag, index) in tags"
     >
       {{tag}}
