@@ -5,13 +5,15 @@
       :class="{'navbar-shadow--showed': showNavbarShadow}"
     >
       <div class="d-flex align-items-center">
-        <router-link :to="{name: 'main-page'}" class="d-flex align-items-center link-reset mr-3 mr-lg-5">
+        <router-link :to="{name: 'main-page'}" class="d-flex align-items-center link-reset mr-4 mr-lg-5">
           <img src="@/images/logo.svg" alt="logo" class="navbar-logo">
           <strong class="my-0 ml-2 h5 text-dark d-none d-md-inline-block">GORA</strong>
         </router-link>
         <languages></languages>
       </div>
-      <a href="#" v-on:click.prevent="toggleMenu" class="d-md-none hamburger-menu" :class="{'animate': menuShow}"></a>
+      <a href="#" v-on:click.prevent="toggleMenu" class="d-lg-none hamburger-menu__outer">
+        <span :class="['d-inline-block hamburger-menu', {'animate': menuShow}]"></span>
+      </a>
       <nav class="navbar-menu rounded py-4 py-md-0" :class="{'navbar-menu--opened': menuShow}">
         <router-link
           :to="{name: 'portfolio'}"

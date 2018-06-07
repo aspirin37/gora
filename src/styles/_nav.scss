@@ -102,7 +102,7 @@
 }
 
 .navbar-menu{
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     display: none;
     position: absolute;
     top: 110%;
@@ -137,9 +137,11 @@ $bar-spacing: 8px;
   position: relative;
   background: $gray-800;
   transition: all 0ms 300ms;
-  
   &.animate {
     background: #fff; 
+  }
+  &__outer{
+    height: $bar-width;
   }
 }
 
