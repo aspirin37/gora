@@ -212,3 +212,10 @@ a.current-shadow, .cursor-pointer.current-shadow{
     }
   }
 }
+
+.sm-icon{
+  $size: 1.5rem;
+
+  width: $size;
+  height: $size;
+}

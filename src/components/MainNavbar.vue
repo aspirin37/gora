@@ -4,37 +4,42 @@
       class="bg-navbar d-flex container-fluid justify-content-between align-items-center rounded py-2 navbar-shadow"
       :class="{'navbar-shadow--showed': showNavbarShadow}"
     >
-      <router-link :to="{name: 'main-page'}" class="d-flex align-items-center link-reset">
-        <img src="@/images/logo.svg" alt="logo" class="navbar-logo">
-        <strong class="my-0 ml-2 h5 text-dark d-none d-md-inline-block">GORA</strong>
-      </router-link>
+      <div class="d-flex align-items-center">
+        <router-link :to="{name: 'main-page'}" class="d-flex align-items-center link-reset mr-3 mr-lg-5">
+          <img src="@/images/logo.svg" alt="logo" class="navbar-logo">
+          <strong class="my-0 ml-2 h5 text-dark d-none d-md-inline-block">GORA</strong>
+        </router-link>
+        <languages></languages>
+      </div>
       <a href="#" v-on:click.prevent="toggleMenu" class="d-md-none hamburger-menu" :class="{'animate': menuShow}"></a>
       <nav class="navbar-menu rounded py-4 py-md-0" :class="{'navbar-menu--opened': menuShow}">
         <router-link
           :to="{name: 'portfolio'}"
           active-class="text-theme"
           class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
-        >Portfolio</router-link>
+        >{{$t('navbar.portfolio')}}</router-link>
         <router-link
           :to="{name: 'news'}"
           active-class="text-theme"
           class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
-        >News</router-link>
+        >{{$t('navbar.news')}}</router-link>
         <router-link
           :to="{name: 'careers'}"
           active-class="text-theme"
           class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
-        >Careers</router-link>
+        >{{$t('navbar.careers')}}</router-link>
         <router-link
           :to="{name: 'contacts'}"
           class="btn btn-theme btn-sm btn-rounded d-block d-md-inline-block ml-md-4"
-        >Contact Us</router-link>
+        >{{$t('navbar.contact')}}</router-link>
       </nav>
     </div>
   </header>
 </template>
 
 <script>
+import Languages from '@/components/utils/Languages'
+
 export default {
   name: 'main-navbar',
   data () {
@@ -48,6 +53,9 @@ export default {
       type: Object,
       default: () => {}
     }
+  },
+  components: {
+    Languages
   },
   mounted () {
     document.addEventListener('scroll', this.getScrollPos)

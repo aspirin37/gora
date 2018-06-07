@@ -5,6 +5,25 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
+    currentLanguage: 'en',
+    languages: [
+      {
+        code: 'ru',
+        title: 'Русский'
+      },
+      {
+        code: 'en',
+        title: 'English'
+      },
+      {
+        code: 'de',
+        title: 'Deutsch'
+      },
+      {
+        code: 'fr',
+        title: 'Francais'
+      }
+    ],
     projects: [
       {
         id: 1,
@@ -132,8 +151,17 @@ const store = new Vuex.Store({
       return state[prop].filter(item => item[key] === value)
     }
   },
-  actions: {},
-  mutations: {}
+  actions: {
+    setCurrentLanguage ({ commit }, options) {
+      commit('CHANGE_VALUE', options)
+      Vue.i18n.set(store.state.currentLanguage)
+    }
+  },
+  mutations: {
+    CHANGE_VALUE (state, options) {
+      state[options.key] = options.value
+    }
+  }
 })
 
 export default store
