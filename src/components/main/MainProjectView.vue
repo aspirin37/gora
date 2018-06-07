@@ -1,6 +1,6 @@
 <template>
   <section
-    :class="['height-full project-section container-fluid js-scroll-block d-flex justify-content-center flex-column rapallax-bgs', `bg-${info.path}`]"
+    :class="['height-full-lg project-section container-fluid js-scroll-block d-flex justify-content-center flex-column rapallax-bgs', `bg-${info.path}`]"
     ref="main-block"
   >
     <div class="row py-4 project-section__info rapallax-bgs__content">
@@ -9,7 +9,7 @@
         <h3 class="h1 mb-4 text-white">{{info.title}}</h3>
         <p class="font-large mb-4 text-white">
           {{info.description}}
-          <read-more :link="info.path"></read-more>
+          <read-more :link="{name: 'project', params: {title: info.path}}"></read-more>
         </p>
         <project-links class="mb-4" :info="info.dlLinks"></project-links>
       </div>
@@ -20,9 +20,7 @@
         <img :src="require(`@/images/projects/${info.path}.png`)" alt="" class="project-section__pic">
       </div>
     </div>
-    <img class="rapallax-bgs__image rapallax-bgs__image--1" v-bind:style="parallaxPercent" :src="require(`@/images/blured-${info.path}.png`)">
-    <img class="rapallax-bgs__image rapallax-bgs__image--2" v-bind:style="parallaxPercent" :src="require(`@/images/blured-${info.path}.png`)">
-    <img class="rapallax-bgs__image rapallax-bgs__image--3" v-bind:style="parallaxPercent" :src="require(`@/images/blured-${info.path}.png`)">
+    <img class="rapallax-bgs__image" v-bind:style="parallaxPercent" :src="require(`@/images/blured-${info.path}.png`)">
   </section>
 </template>
 

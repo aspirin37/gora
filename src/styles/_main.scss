@@ -72,14 +72,10 @@
     z-index: 0;
     position: absolute;
     pointer-events: none;
-    @for $i from 1 through 3 {
-      &--#{$i} {
-        opacity: 1 - (random(50)/100);
-        transform: scale(1 - (random(50)/100));
-        top: random(60) + %;
-        left: 100% - $i*30%;
-      }
-    }
+    top: 45%;
+    right: 30%;
+    transform: scale(3);
+    opacity: 0.5;
   }
 }
 

@@ -92,6 +92,36 @@ const store = new Vuex.Store({
         title: 'Developer',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tempore dolorem vero iure tenetur, fuga est quaerat aut eius sed praesentium perferendis voluptatum. Eius perspiciatis consequuntur aperiam, at dicta officiis!'
       }
+    ],
+    news: [
+      {
+        id: '432',
+        title: 'News item title',
+        date: '07.06.2018',
+        preview: '/images/team.jpeg',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae accusamus modi voluptatibus explicabo esse voluptatem numquam voluptates quisquam illo, ducimus vero tenetur ipsa corrupti quis distinctio minima, architecto minus molestiae.'
+      },
+      {
+        id: '642',
+        title: 'News item title',
+        date: '07.06.2018',
+        preview: '/images/team.jpeg',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae accusamus modi voluptatibus explicabo esse voluptatem numquam voluptates quisquam illo, ducimus vero tenetur ipsa corrupti quis distinctio minima, architecto minus molestiae.'
+      },
+      {
+        id: '623',
+        title: 'News item title',
+        date: '07.06.2018',
+        preview: '/images/team.jpeg',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae accusamus modi voluptatibus explicabo esse voluptatem numquam voluptates quisquam illo, ducimus vero tenetur ipsa corrupti quis distinctio minima, architecto minus molestiae.'
+      },
+      {
+        id: '152',
+        title: 'News item title',
+        date: '07.06.2018',
+        preview: '/images/team.jpeg',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae accusamus modi voluptatibus explicabo esse voluptatem numquam voluptates quisquam illo, ducimus vero tenetur ipsa corrupti quis distinctio minima, architecto minus molestiae.'
+      }
     ]
   },
   getters: {

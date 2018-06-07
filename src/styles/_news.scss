@@ -1,0 +1,12 @@
+.preview-pic{
+  $size: 200px;
+
+  width: $size;
+  min-width: $size;
+  height: $size;
+  overflow: hidden;
+  img{
+    height: 100%;
+    width: auto;
+  }
+}

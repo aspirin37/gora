@@ -6,6 +6,7 @@ import Contacts from '@/pages/Contacts'
 import Project from '@/pages/Project'
 import Careers from '@/pages/Careers'
 import News from '@/pages/News'
+import NewsItem from '@/pages/NewsItem'
 
 Vue.use(Router)
 
@@ -39,6 +40,11 @@ var router = new Router({
       path: '/news',
       name: 'news',
       component: News
+    },
+    {
+      path: '/news/:id',
+      name: 'news-item',
+      component: NewsItem
     },
     {
       path: '/contacts',

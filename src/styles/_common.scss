@@ -51,6 +51,13 @@ a.current-shadow, .cursor-pointer.current-shadow{
   min-height: 100vh;
 }
 
+.height-full-lg{
+  min-height: 140vh;
+  @include media-breakpoint-down(md) {
+    min-height: 100vh;
+  }
+}
+
 .height-half{
   min-height: 50vh;
 }
