@@ -14,7 +14,7 @@
               <span class="circled-icon bg-theme mb-3"><img src="@/images/mobile-phone.svg" alt="pin"></span>
               <h5 class="mb-3">{{$t('titles.mobile')}}</h5>
               <p class="mb-0">{{$t('subtitles.mobile')}}</p>
-              <a href="#" v-on:click.prevent="showOrderModal" class="link-dotted"><b>{{$t('titles.getit')}}</b></a>
+              <a href="#" v-on:click.prevent="showOrderModal(['ios', 'android'])" class="link-dotted"><b>{{$t('titles.getit')}}</b></a>
             </div>
           </div>
         </div>
@@ -24,7 +24,7 @@
               <span class="circled-icon bg-theme mb-3"><img src="@/images/laptop.svg" alt="pin"></span>
               <h5 class="mb-3">{{$t('titles.web')}}</h5>
               <p class="mb-0">{{$t('subtitles.web')}}</p>
-              <a href="#" v-on:click.prevent="showOrderModal" class="link-dotted"><b>{{$t('titles.getit')}}</b></a>
+              <a href="#" v-on:click.prevent="showOrderModal(['web'])" class="link-dotted"><b>{{$t('titles.getit')}}</b></a>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@
               <span class="circled-icon bg-theme mb-3"><img src="@/images/shopping.svg" alt="pin"></span>
               <h5 class="mb-3">{{$t('titles.ecommerce')}}</h5>
               <p class="mb-0">{{$t('subtitles.ecommerce')}}</p>
-              <a href="#" v-on:click.prevent="showOrderModal" class="link-dotted"><b>{{$t('titles.getit')}}</b></a>
+              <a href="#" v-on:click.prevent="showOrderModal(['web'])" class="link-dotted"><b>{{$t('titles.getit')}}</b></a>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@
               <span class="circled-icon bg-theme mb-3"><img src="@/images/blockchain.svg" alt="pin"></span>
               <h5 class="mb-3">{{$t('titles.blockchain')}}</h5>
               <p class="mb-0">{{$t('subtitles.blockchain')}}</p>
-              <a href="#" v-on:click.prevent="showOrderModal" class="link-dotted"><b>{{$t('titles.getit')}}</b></a>
+              <a href="#" v-on:click.prevent="showOrderModal(['web'])" class="link-dotted"><b>{{$t('titles.getit')}}</b></a>
             </div>
           </div>
         </div>
@@ -69,8 +69,9 @@ export default {
     OrderForm
   },
   methods: {
-    showOrderModal () {
+    showOrderModal (platform) {
       this.$modal.show(OrderForm, {
+        defaultPlatforms: platform
       }, {
         height: 'auto',
         scrollable: true,

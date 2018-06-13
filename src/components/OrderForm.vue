@@ -35,36 +35,36 @@
       </label>
       <label class="col px-1 choose-input mb-2">
         <input type="radio" name="form2" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
-        <span class="choose-input__text rounded text-nowrap">50— 100 млн</span>
+        <span class="choose-input__text rounded text-nowrap">50 — 100 млн</span>
       </label>
     </div>
     <p class="mb-2">{{$t('order.platforms')}}</p>
     <div class="row px-2 mb-3 flex-wrap">
       <label class="col px-1 choose-input mb-2">
-        <input type="checkbox" name="form3" value="ios" class="choose-input__input" checked>
+        <input type="checkbox" name="form3" value="ios" class="choose-input__input" checked v-model="platforms">
         <span class="choose-input__text rounded">iOS</span>
       </label>
       <label class="col px-1 choose-input mb-2">
-        <input type="checkbox" name="form3" value="android" class="choose-input__input">
+        <input type="checkbox" name="form3" value="android" class="choose-input__input" v-model="platforms">
         <span class="choose-input__text rounded">Android</span>
       </label>
       <label class="col px-1 choose-input mb-2">
-        <input type="checkbox" name="form3" value="web" class="choose-input__input">
+        <input type="checkbox" name="form3" value="web" class="choose-input__input" v-model="platforms">
         <span class="choose-input__text rounded">Web</span>
       </label>
     </div>
     <p class="mb-2">{{$t('order.additional')}}</p>
     <div class="row px-2 mb-3 flex-wrap">
       <label class="col px-1 choose-input mb-2">
-        <input type="checkbox" name="form4" value="Комплексная работа" class="choose-input__input" checked>
+        <input type="checkbox" name="form4" :value="$t('order.testing')" class="choose-input__input">
         <span class="choose-input__text rounded">{{$t('order.testing')}}</span>
       </label>
       <label class="col px-1 choose-input mb-2">
-        <input type="checkbox" name="form4" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
+        <input type="checkbox" name="form4" :value="$t('order.promotion')" class="choose-input__input">
         <span class="choose-input__text rounded">{{$t('order.promotion')}}</span>
       </label>
       <label class="col px-1 choose-input mb-2">
-        <input type="checkbox" name="form4" value="Аутсорс или аутстафф разработчиков" class="choose-input__input">
+        <input type="checkbox" name="form4" :value="$t('order.support')" class="choose-input__input">
         <span class="choose-input__text rounded">{{$t('order.support')}}</span>
       </label>
     </div>
@@ -102,3 +102,22 @@
     </div>
   </form>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      platforms: []
+    }
+  },
+  props: {
+    defaultPlatforms: {
+      type: Array,
+      default: () => []
+    }
+  },
+  mounted () {
+    this.platforms = this.defaultPlatforms
+  }
+}
+</script>
