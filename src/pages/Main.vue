@@ -94,18 +94,19 @@
       </div>
     </section>
 
-    <section class="js-scroll-block main-section bg-white current-shadow height-half d-flex align-items-center" id="contact">
-      <div class="container text-center">
-        <h3>{{$t('titles.contact')}}<span class="title-char"></span></h3>
-        <p class="font-large mb-4">{{$t('subtitles.contact')}}</p>
-        <form class="mw-600 mx-auto">
+    <section class="js-scroll-block main-section bg-dark height-half d-flex align-items-center" id="contact">
+      <div class="container">
+        <h3 class="text-white text-center">{{$t('titles.contact')}}<span class="title-char"></span></h3>
+        <p class="font-large mb-4 text-white text-center">{{$t('subtitles.contact')}}</p>
+        <contact-form-full></contact-form-full>
+        <!-- <form class="mw-600 mx-auto">
           <div class="mb-3 input-group">
             <input type="text" class="form-control form-control-lg rounded-left-lg" required placeholder="Name or phone">
             <div class="input-group-append">
               <button class="btn btn-theme btn-lg rounded-left-0">Send</button>
             </div>
           </div>
-        </form>
+        </form> -->
       </div>
     </section>
 
@@ -148,6 +149,7 @@
 import MainPageHead from '@/components/main/MainPageHead'
 import MainProjectView from '@/components/main/MainProjectView'
 import OrderForm from '@/components/OrderForm'
+import ContactFormFull from '@/components/contacts/ContactFormFull'
 import scrollTo from '@/mixins/scrollTo'
 
 export default {
@@ -157,7 +159,8 @@ export default {
   components: {
     MainPageHead,
     MainProjectView,
-    OrderForm
+    OrderForm,
+    ContactFormFull
   },
   computed: {
     portfolioItems () {

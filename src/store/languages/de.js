@@ -19,7 +19,10 @@ const site = {
     "credits": "Honor",
     "release": "Veröffentlichungsdatum",
     "doyouwant": "Willst du etwas Ähnliches?",
-    "send": "Senden"
+    "send": "Senden",
+    "name": "Name",
+    "phone": "Telefon",
+    "message": "Botschaft"
   },
   "subtitles": {
     "contact": "Wir freuen uns, Ihnen zu antworten!",
