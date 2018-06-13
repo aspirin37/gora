@@ -22,6 +22,7 @@ const site = {
     "send": "Send",
     "name": "Name",
     "phone": "Phone",
+    "email": "Email",
     "message": "Message",
     "getit": "Get It",
     "join": "Join Us"
@@ -42,7 +43,17 @@ const site = {
     "email": "hi@a3technology.ru"
   },
   "order": {
-    "order": "Order project"
+    "order": "Order project",
+    "type": "What do you would like?",
+    "fulljob": "Complex work",
+    "outsource": "Outsourcing and outstaff developers",
+    "budget": "Year' budget",
+    "platforms": "Platforms",
+    "additional": "Additional services",
+    "testing": "Usability-testing",
+    "promotion": "Promotion",
+    "support": "Support",
+    "description": "Description"
   },
   "projects": {
     "kyc": {

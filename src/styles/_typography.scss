@@ -19,3 +19,12 @@
 .gradient-text{
   @include gradient-text(linear-gradient(to right, darken($main-color, 90%), mix(darken($main-color, 40%), $blue)), 'light', $main-color);
 }
+
+.link-dotted{
+  border-bottom: 1px dashed $blue;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    border-bottom: none;
+  }
+}
