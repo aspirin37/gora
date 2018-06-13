@@ -13,7 +13,7 @@ export default {
   },
   computed: {
     parallaxPercent () {
-      return `margin-top:${(this.scrolledWindow - this.blockOffsetTop) / (this.blockHeight / 100).toFixed(1) / 5}%`
+      return `margin-top:${((this.scrolledWindow - this.blockOffsetTop) / (this.blockHeight / 100) / 5).toFixed(2)}%`
     }
   },
   destroyed () {

@@ -51,7 +51,7 @@
   box-shadow: 0 0 rgba(#000, 0);
   transition: box-shadow 0.3s;
   &--showed{
-    box-shadow: 0 3px 9px rgba(#000, 0.2);
+    box-shadow: 0 3px 2px 0 rgba(#000, 0.2);
   }
 }
 
@@ -174,4 +174,25 @@ $bar-spacing: 8px;
   bottom: 0;
   transform: rotate(-45deg);
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+
+.navbar-link{
+  position: relative;
+  &:after{
+    content: '';
+    width: 0;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $main-color;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1rem;
+    transition: width 0.3s;
+  }
+  &--active{
+    &:after{
+      width: 2rem;
+    }
+  }
 }

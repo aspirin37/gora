@@ -17,23 +17,23 @@
       <nav class="navbar-menu rounded py-4 py-md-0" :class="{'navbar-menu--opened': menuShow}">
         <router-link
           :to="{name: 'portfolio'}"
-          active-class="text-theme"
-          class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
+          active-class="text-theme navbar-link--active"
+          class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block navbar-link"
         >{{$t('titles.portfolio')}}</router-link>
         <router-link
           :to="{name: 'team'}"
-          active-class="text-theme"
-          class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
+          active-class="text-theme navbar-link--active"
+          class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block navbar-link"
         >{{$t('titles.team')}}</router-link>
         <router-link
           :to="{name: 'news'}"
-          active-class="text-theme"
-          class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
+          active-class="text-theme navbar-link--active"
+          class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block navbar-link"
         >{{$t('titles.news')}}</router-link>
         <router-link
           :to="{name: 'careers'}"
-          active-class="text-theme"
-          class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
+          active-class="text-theme navbar-link--active"
+          class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block navbar-link"
         >{{$t('titles.careers')}}</router-link>
         <router-link
           :to="{name: 'contacts'}"
