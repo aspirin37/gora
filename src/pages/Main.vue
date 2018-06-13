@@ -4,7 +4,7 @@
 
     <article class="height-full bg-white main-section js-scroll-block relative current-shadow d-flex flex-column justify-content-around" id="services">
       <div class="container mb-5">
-        <h3 class="text-center">What we do<span class="title-char"></span></h3>
+        <h3 class="text-center">{{$t('titles.whatwedo')}}<span class="title-char"></span></h3>
         <p class="font-large text-center">
           We advise, develop and support large projects for iOS, Android and Web platforms
         </p>
@@ -15,7 +15,7 @@
             <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4" v-on:click="showOrderModal">
               <div class="relative z-index-9">
                 <span class="circled-icon bg-theme mb-3"><img src="@/images/mobile-phone.svg" alt="pin"></span>
-                <h5 class="mb-3">Mobile Applications</h5>
+                <h5 class="mb-3">{{$t('titles.mobile')}}</h5>
                 <p class="mb-0">Middle and high complexity mobile solutions for iOS and Android platforms.</p>
               </div>
             </div>
@@ -24,7 +24,7 @@
             <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4" v-on:click="showOrderModal">
               <div class="relative z-index-9">
                 <span class="circled-icon bg-theme mb-3"><img src="@/images/laptop.svg" alt="pin"></span>
-                <h5 class="mb-3">Large Web Services</h5>
+                <h5 class="mb-3">{{$t('titles.web')}}</h5>
                 <p class="mb-0">Cross Browser, easy to maintain SPA with any complexity of functionality.</p>
               </div>
             </div>
@@ -33,7 +33,7 @@
             <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4" v-on:click="showOrderModal">
               <div class="relative z-index-9">
                 <span class="circled-icon bg-theme mb-3"><img src="@/images/shopping.svg" alt="pin"></span>
-                <h5 class="mb-3">E-commerce</h5>
+                <h5 class="mb-3">{{$t('titles.ecommerce')}}</h5>
                 <p class="mb-0">Internet shops and marketplaces with catalogue, searching and personal account.</p>
               </div>
             </div>
@@ -42,7 +42,7 @@
             <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4" v-on:click="showOrderModal">
               <div class="relative z-index-9">
                 <span class="circled-icon bg-theme mb-3"><img src="@/images/blockchain.svg" alt="pin"></span>
-                <h5 class="mb-3">Blockchain</h5>
+                <h5 class="mb-3">{{$t('titles.blockchain')}}</h5>
                 <p class="mb-0">Calculation of Tokenomics, ICO support, examination of digital assets, implementation of the FOMO approach.</p>
               </div>
             </div>
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="container">
-        <h5 class="text-center mt-5">You can check our latest jobs below</h5>
+        <h5 class="text-center mt-5">{{$t('titles.checkjobs')}}</h5>
         <span class="circled-icon scroll-down cursor-pointer" v-on:click="scrollToItem('projects', 500)"><img src="@/images/arrow-down.svg" alt="pin"></span>
       </div>
     </article>
@@ -68,7 +68,7 @@
 
     <section class="js-scroll-block main-section bg-light height-half" id="team">
       <div class="container">
-        <h3 class="text-center mb-5">Routine<span class="title-char"></span></h3>
+        <h3 class="text-center mb-5">{{$t('titles.team')}}<span class="title-char"></span></h3>
       </div>
       <div class="container-fluid px-md-5 d-flex flex-wrap justify-content-around">
         <div class="team-item mb-5 team-item--rleft">
@@ -96,7 +96,7 @@
 
     <section class="js-scroll-block main-section bg-white current-shadow height-half d-flex align-items-center" id="contact">
       <div class="container text-center">
-        <h3>Contact Us<span class="title-char"></span></h3>
+        <h3>{{$t('titles.contact')}}<span class="title-char"></span></h3>
         <p class="font-large mb-4">Our pleasure to answer you!</p>
         <form class="mw-600 mx-auto">
           <div class="mb-3 input-group">
@@ -119,7 +119,7 @@
         class="side-nav__link border d-block ml-auto"
         :class="{'bg-dark active': scrolledBlock === 'services'}"
         v-on:click.prevent="scrollToItem('services', 500)"
-      ><span class="side-nav__text">Services</span></a>
+      ><span class="side-nav__text">{{$t('titles.whatwedo')}}</span></a>
 
       <!-- Projects nav -->
       <a :href="`#project-${project.path}`"
@@ -134,12 +134,12 @@
         class="side-nav__link border d-block ml-auto"
         :class="{'bg-dark active': scrolledBlock === 'team'}"
         v-on:click.prevent="scrollToItem('team', 500)"
-      ><span class="side-nav__text">Team</span></a>
+      ><span class="side-nav__text">{{$t('titles.team')}}</span></a>
       <a href="#contact"
         class="side-nav__link border d-block ml-auto"
         :class="{'bg-dark active': scrolledBlock === 'contact'}"
         v-on:click.prevent="scrollToItem('contact', 500)"
-      ><span class="side-nav__text">Contact</span></a>
+      ><span class="side-nav__text">{{$t('titles.contact')}}</span></a>
     </nav>
   </div>
 </template>

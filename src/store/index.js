@@ -66,7 +66,8 @@ const store = new Vuex.Store({
         credits: ['Ivan Ivanov', 'Sergey Sergeev', 'Petr Petrov', 'Alexander Alexandrov'],
         date: '06.06.2018',
         dlLinks: {
-          android: 'https://play.google.com/store/apps/details?id=ru.global.id.client'
+          android: 'https://play.google.com/store/apps/details?id=ru.global.id.client',
+          web: 'https://kyc.legal/'
         }
       },
       {

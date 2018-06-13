@@ -6,10 +6,11 @@
     <div class="row py-4 project-section__info rapallax-bgs__content">
       <div class="col-12 col-lg-5"></div>
       <div class="col-12 col-lg-5">
-        <h3 class="h1 mb-4 text-white">{{info.title}}</h3>
+        <h3 class="h1 mb-4 text-white">
+          <router-link :to="{name: 'project', params: {title: info.path}}" class="text-white">{{info.title}}</router-link>
+        </h3>
         <p class="font-large mb-4 text-white">
           {{info.description}}
-          <read-more :link="{name: 'project', params: {title: info.path}}"></read-more>
         </p>
         <project-links class="mb-4" :info="info.dlLinks"></project-links>
       </div>
@@ -26,7 +27,6 @@
 
 <script>
 import parallaxBg from '@/mixins/parallaxBg'
-import ReadMore from '@/components/main/ReadMore'
 import ProjectLinks from '@/components/portfolio/ProjectLinks'
 
 export default {
@@ -39,7 +39,6 @@ export default {
   },
   mixins: [parallaxBg],
   components: {
-    ReadMore,
     ProjectLinks
   }
 }

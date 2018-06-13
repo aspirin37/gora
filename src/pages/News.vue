@@ -1,6 +1,6 @@
 <template>
   <div class="container py-5">
-    <h3 class="mb-5">News<span class="title-char"></span></h3>
+    <h3 class="mb-5">{{$t('titles.news')}}<span class="title-char"></span></h3>
     <news-preview-item
       v-for="(item, index) in news"
       :key="`item-${index}`"

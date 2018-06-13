@@ -19,21 +19,21 @@
           :to="{name: 'portfolio'}"
           active-class="text-theme"
           class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
-        >{{$t('navbar.portfolio')}}</router-link>
+        >{{$t('titles.portfolio')}}</router-link>
         <router-link
           :to="{name: 'news'}"
           active-class="text-theme"
           class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
-        >{{$t('navbar.news')}}</router-link>
+        >{{$t('titles.news')}}</router-link>
         <router-link
           :to="{name: 'careers'}"
           active-class="text-theme"
           class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
-        >{{$t('navbar.careers')}}</router-link>
+        >{{$t('titles.careers')}}</router-link>
         <router-link
           :to="{name: 'contacts'}"
           class="btn btn-theme btn-sm btn-rounded d-block d-md-inline-block ml-md-4"
-        >{{$t('navbar.contact')}}</router-link>
+        >{{$t('titles.contact')}}</router-link>
       </nav>
     </div>
   </header>
