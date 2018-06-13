@@ -2,58 +2,7 @@
   <div>
     <main-page-head id="main" v-on:scrollDown="scrollToItem('services', 500)"></main-page-head>
 
-    <article class="height-full bg-white main-section js-scroll-block relative current-shadow d-flex flex-column justify-content-around" id="services">
-      <div class="container mb-5">
-        <h3 class="text-center">{{$t('titles.whatwedo')}}<span class="title-char"></span></h3>
-        <p class="font-large text-center">
-          {{$t('subtitles.whatwedo')}}
-        </p>
-      </div>
-      <div class="container-fluid px-md-5">
-        <div class="row align-items-stretch">
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4" v-on:click="showOrderModal">
-              <div class="relative z-index-9">
-                <span class="circled-icon bg-theme mb-3"><img src="@/images/mobile-phone.svg" alt="pin"></span>
-                <h5 class="mb-3">{{$t('titles.mobile')}}</h5>
-                <p class="mb-0">{{$t('subtitles.mobile')}}</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4" v-on:click="showOrderModal">
-              <div class="relative z-index-9">
-                <span class="circled-icon bg-theme mb-3"><img src="@/images/laptop.svg" alt="pin"></span>
-                <h5 class="mb-3">{{$t('titles.web')}}</h5>
-                <p class="mb-0">{{$t('subtitles.web')}}</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4" v-on:click="showOrderModal">
-              <div class="relative z-index-9">
-                <span class="circled-icon bg-theme mb-3"><img src="@/images/shopping.svg" alt="pin"></span>
-                <h5 class="mb-3">{{$t('titles.ecommerce')}}</h5>
-                <p class="mb-0">{{$t('subtitles.ecommerce')}}</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="bg-light cursor-pointer h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4" v-on:click="showOrderModal">
-              <div class="relative z-index-9">
-                <span class="circled-icon bg-theme mb-3"><img src="@/images/blockchain.svg" alt="pin"></span>
-                <h5 class="mb-3">{{$t('titles.blockchain')}}</h5>
-                <p class="mb-0">{{$t('subtitles.blockchain')}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <h5 class="text-center mt-5">{{$t('titles.checkjobs')}}</h5>
-        <span class="circled-icon scroll-down cursor-pointer" v-on:click="scrollToItem('projects', 500)"><img src="@/images/arrow-down.svg" alt="pin"></span>
-      </div>
-    </article>
+    <main-page-services id="services"></main-page-services>
 
     <!-- Portfolio -->
     <div id="projects">
@@ -148,7 +97,7 @@
 <script>
 import MainPageHead from '@/components/main/MainPageHead'
 import MainProjectView from '@/components/main/MainProjectView'
-import OrderForm from '@/components/OrderForm'
+import MainPageServices from '@/components/main/MainPageServices'
 import ContactFormFull from '@/components/contacts/ContactFormFull'
 import scrollTo from '@/mixins/scrollTo'
 
@@ -159,7 +108,7 @@ export default {
   components: {
     MainPageHead,
     MainProjectView,
-    OrderForm,
+    MainPageServices,
     ContactFormFull
   },
   computed: {
@@ -169,18 +118,6 @@ export default {
   },
   mixins: [scrollTo],
   methods: {
-    showOrderModal () {
-      this.$modal.show(OrderForm, {
-      }, {
-        height: 'auto',
-        scrollable: true,
-        width: '100%',
-        adaptive: true,
-        maxWidth: 870,
-        classes: 'p-4 bg-white my-3 modal-z-index rounded',
-        name: 'order'
-      })
-    }
   }
 }
 </script>

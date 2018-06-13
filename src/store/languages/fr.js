@@ -22,7 +22,8 @@ const site = {
     "send": "Envoyer",
     "name": "Prénom",
     "phone": "Téléphone",
-    "message": "Message"
+    "message": "Message",
+    "getit": "Trouver"
   },
   "subtitles": {
     "contact": "Notre plaisir de vous répondre!",
