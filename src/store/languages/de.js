@@ -12,7 +12,7 @@ const site = {
     "web": "Internetdienste",
     "ecommerce": "E-Commerce",
     "blockchain": "Blockchain",
-    "team": "Routine",
+    "team": "Mannschaft",
     "feedback": "Feedback abschicken",
     "whatwedo": "Was wir tun",
     "checkjobs": "Sie können unsere neuesten Jobs unten sehen",
@@ -23,7 +23,8 @@ const site = {
     "name": "Name",
     "phone": "Telefon",
     "message": "Botschaft",
-    "getit": "Hole es"
+    "getit": "Hole es",
+    "join": "Begleiten Sie uns"
   },
   "subtitles": {
     "contact": "Wir freuen uns, Ihnen zu antworten!",

@@ -23,7 +23,8 @@ const site = {
     "name": "Prénom",
     "phone": "Téléphone",
     "message": "Message",
-    "getit": "Trouver"
+    "getit": "Trouver",
+    "join": "Rejoignez-nous"
   },
   "subtitles": {
     "contact": "Notre plaisir de vous répondre!",

@@ -2,7 +2,7 @@
   <div>
     <main-page-head id="main" v-on:scrollDown="scrollToItem('services', 500)"></main-page-head>
 
-    <main-page-services id="services"></main-page-services>
+    <main-page-services id="services" v-on:scrollDown="scrollToItem('projects', 500)"></main-page-services>
 
     <!-- Portfolio -->
     <div id="projects">
@@ -40,6 +40,9 @@
             <img src="@/images/team/team4.jpg" alt="team">
           </div>
         </div>
+      </div>
+      <div class="container text-center">
+        <router-link tag="button" :to="{name: 'team'}" class="btn btn-light">More about team</router-link>
       </div>
     </section>
 

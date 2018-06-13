@@ -12,7 +12,7 @@ const site = {
     "web": "Web Services",
     "ecommerce": "E-commerce",
     "blockchain": "Blockchain",
-    "team": "Routine",
+    "team": "Team",
     "feedback": "Send feedback",
     "whatwedo": "What we do",
     "checkjobs": "You can check our latest jobs below",
@@ -23,7 +23,8 @@ const site = {
     "name": "Name",
     "phone": "Phone",
     "message": "Message",
-    "getit": "Get It"
+    "getit": "Get It",
+    "join": "Join Us"
   },
   "subtitles": {
     "contact": "Our pleasure to answer you!",

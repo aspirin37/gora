@@ -52,7 +52,7 @@
     </div>
     <div class="container">
       <h5 class="text-center mt-5">{{$t('titles.checkjobs')}}</h5>
-      <span class="circled-icon scroll-down cursor-pointer" v-on:click="scrollToItem('projects', 500)"><img src="@/images/arrow-down.svg" alt="pin"></span>
+      <span class="circled-icon scroll-down cursor-pointer" v-on:click="$emit('scrollDown')"><img src="@/images/arrow-down.svg" alt="pin"></span>
     </div>
   </article>
 </template>

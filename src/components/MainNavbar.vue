@@ -1,7 +1,7 @@
 <template>
-  <header class="container-fluid fixed-top pt-3" v-click-outside="closeMenu">
+  <header class="fixed-top" v-click-outside="closeMenu">
     <div
-      class="bg-navbar d-flex container-fluid justify-content-between align-items-center rounded py-2 navbar-shadow"
+      class="bg-navbar d-flex container-fluid justify-content-between align-items-center py-2 navbar-shadow"
       :class="{'navbar-shadow--showed': showNavbarShadow}"
     >
       <div class="d-flex align-items-center">
@@ -20,6 +20,11 @@
           active-class="text-theme"
           class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
         >{{$t('titles.portfolio')}}</router-link>
+        <router-link
+          :to="{name: 'team'}"
+          active-class="text-theme"
+          class="py-2 px-4 mb-2 mb-md-0 link-reset rounded text-dark d-block d-md-inline-block"
+        >{{$t('titles.team')}}</router-link>
         <router-link
           :to="{name: 'news'}"
           active-class="text-theme"
