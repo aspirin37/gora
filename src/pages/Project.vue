@@ -24,9 +24,9 @@
       </div>
       <p class="font-large mb-4">{{projectInfo.description}}</p>
 
-      <h5>Credits</h5>
+      <h5>{{$t('titles.credits')}}</h5>
       <p>{{projectInfo.credits.join(', ')}}</p>
-      <p>Release date: <time>{{projectInfo.date}}</time></p>
+      <p>{{$t('titles.release')}}: <time>{{projectInfo.date}}</time></p>
     </article>
     <project-contact></project-contact>
   </div>

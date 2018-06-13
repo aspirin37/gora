@@ -16,7 +16,7 @@
           <div class="col-12 col-md-6 col-lg-7 order-1 order-md-2">
             <div class="pr-4 pr-lg-5 pl-4 pl-md-0 pt-4 pb-md-4 pb-2">
               <h5 class="text-white"><b>{{info.title}}</b></h5>
-              <p class="text-white">{{info.description}}</p>
+              <p class="text-white">{{$t(`projects.${info.path}.description`)}}</p>
               <project-tags :tags="info.tags" class="mb-4 text-white" :isDarkIcons="true"></project-tags>
             </div>
           </div>

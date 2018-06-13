@@ -9,7 +9,7 @@
     <div class="form-group">
       <textarea class="form-control" placeholder="Message"></textarea>
     </div>
-    <button type="submit" class="btn btn-theme w-100">Send</button>
+    <button type="submit" class="btn btn-theme w-100">{{$t('titles.send')}}</button>
   </form>
 </template>
 

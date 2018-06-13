@@ -16,7 +16,7 @@
             <span class="circled-icon mr-3"><img src="@/images/mailbox.svg" alt="pin"></span>
             <p class="font-large"><a class="text-white" :href="`mailto:${$t('contacts.email')}`">{{$t('contacts.email')}}</a></p>
           </div>
-          <button class="btn btn-light mt-4" v-on:click="showOrderModal">Order project</button>
+          <button class="btn btn-light mt-4" v-on:click="showOrderModal">{{$t('order.order')}}</button>
         </div>
       </div>
       <div class="w-100 d-flex align-items-stretch feedback-form">

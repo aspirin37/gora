@@ -122,6 +122,7 @@ a.current-shadow, .cursor-pointer.current-shadow{
 }
 
 .btn{
+  text-transform: uppercase;
   box-shadow: 0 2px 4px rgba(#000, 0.2);
   &:hover{
     box-shadow: 0 2px 8px rgba(#000, 0.3);

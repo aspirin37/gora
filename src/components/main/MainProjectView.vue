@@ -10,7 +10,7 @@
           <router-link :to="{name: 'project', params: {title: info.path}}" class="text-white">{{info.title}}</router-link>
         </h3>
         <p class="font-large mb-4 text-white">
-          {{info.description}}
+          {{$t(`projects.${info.path}.description`)}}
         </p>
         <project-links class="mb-4" :info="info.dlLinks"></project-links>
       </div>
