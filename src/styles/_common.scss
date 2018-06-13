@@ -158,6 +158,23 @@ a.current-shadow, .cursor-pointer.current-shadow{
   }
 }
 
+.animated-circle{
+  @keyframes circle-anim{
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 5px;
+    }
+    75% {
+      margin-top: 0;
+    }
+  }
+  img{
+    animation: circle-anim 0.8s infinite;
+  }
+}
+
 .circled-icon{
   $size: 2rem;
 

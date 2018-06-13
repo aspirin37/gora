@@ -4,7 +4,7 @@
       <h1 class="text-center mw-800 mx-auto">{{$t('title')}}<span class="title-char"></span></h1>
       <p class="text-center mw-600 mx-auto">{{$t('subtitle')}}</p>
     </div>
-    <span class="circled-icon scroll-down cursor-pointer" v-on:click="$emit('scrollDown')">
+    <span class="circled-icon scroll-down cursor-pointer animated-circle" v-on:click="$emit('scrollDown')">
       <img src="@/images/arrow-down.svg" alt="pin">
     </span>
   </article>
