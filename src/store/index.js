@@ -24,6 +24,7 @@ const store = new Vuex.Store({
         title: 'Francais'
       }
     ],
+    email: 'hi@gora.studio',
     projects: [
       {
         id: 1,

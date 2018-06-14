@@ -12,7 +12,7 @@
         </div>
         <div class="d-flex mb-2">
           <span class="circled-icon mr-3"><img src="@/images/mailbox.svg" alt="pin"></span>
-          <p class="font-large"><a class="text-white" :href="`mailto:${$t('contacts.email')}`">{{$t('contacts.email')}}</a></p>
+          <p class="font-large"><a class="text-white" :href="`mailto:${email}`">{{email}}</a></p>
         </div>
         <button class="btn btn-light btn-rounded mt-4 btn-lg" v-on:click="showOrderModal">{{$t('order.order')}}</button>
       </div>
@@ -51,6 +51,11 @@ export default {
     ContactForm,
     OrderForm
   },
+  computed: {
+    email () {
+      return this.$store.state.email
+    }
+  },
   methods: {
     showOrderModal () {
       this.$modal.show(OrderForm, {
@@ -60,7 +65,7 @@ export default {
         width: '100%',
         adaptive: true,
         maxWidth: 870,
-        classes: 'p-4 bg-white my-3 modal-z-index rounded',
+        classes: 'p-4 mt-3 bg-white modal-z-index rounded',
         name: 'order'
       })
     }

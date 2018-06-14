@@ -39,8 +39,7 @@ const site = {
     "address": "Bolshoy prospect PS, 29, von 10:00 bis 20:00",
     "city": "Saint-Petersburg",
     "country": "Russland",
-    "phone": "+7 (812) 408-25-47",
-    "email": "hi@a3technology.ru"
+    "phone": "+7 (812) 408-25-47"
   },
   "order": {
     "order": "Bestellen Sie ein Projekt",
