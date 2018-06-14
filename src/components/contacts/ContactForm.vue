@@ -36,7 +36,7 @@ export default {
       this.$http.post('https://gora.studio/mailer/mail.php', options).then(response => {
         this.$emit('sended', true)
       }).catch(error => {
-        this.errorMessage = error
+        this.errorMessage = error.statusText
       })
       
     }
