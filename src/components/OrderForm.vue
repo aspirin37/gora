@@ -97,7 +97,7 @@
       </div>
     </div>
     <div class="text-right">
-      <button class="btn btn-link link-reset" type="button" v-on:click="$emit('close')">Cancel</button>
+      <button class="btn btn-link link-reset" type="button" v-on:click="$emit('close')">{{$t('titles.cancel')}}</button>
       <button class="btn btn-theme" type="submit">{{$t('titles.send')}}</button>
     </div>
   </form>

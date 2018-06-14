@@ -21,6 +21,7 @@ const site = {
     "release": "Release date",
     "doyouwant": "Do you want something similar?",
     "send": "Send",
+    "cancel": "Cancel",
     "name": "Name",
     "phone": "Phone",
     "email": "Email",

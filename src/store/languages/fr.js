@@ -21,6 +21,7 @@ const site = {
     "release": "Date de sortie",
     "doyouwant": "Voulez-vous quelque chose de similaire?",
     "send": "Envoyer",
+    "cancel": "Annuler",
     "name": "Prénom",
     "phone": "Téléphone",
     "email": "Email",

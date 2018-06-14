@@ -4,7 +4,7 @@
     <div class="d-flex flex-wrap justify-content-around">
       <div class="mb-5 mw-100">
         <div class="team-item mb-2 team-item--rleft">
-          <div class="team-item__img">
+          <div class="team-item__img bg-light">
             <img src="@/images/team/artem.jpg" alt="team">
           </div>
         </div>
@@ -13,7 +13,7 @@
       </div>
       <div class="mb-5 mw-100">
         <div class="team-item mb-2 team-item--rright">
-          <div class="team-item__img">
+          <div class="team-item__img bg-light">
             <img src="@/images/team/andrey.jpg" alt="team">
           </div>
         </div>
@@ -22,7 +22,7 @@
       </div>
       <div class="mb-5 mw-100">
         <div class="team-item mb-2 team-item--rleft">
-          <div class="team-item__img">
+          <div class="team-item__img bg-light">
             <img src="@/images/team/julia.jpg" alt="team">
           </div>
         </div>
@@ -31,7 +31,7 @@
       </div>
       <div class="mb-5 mw-100">
         <div class="team-item mb-2 team-item--rright">
-          <div class="team-item__img">
+          <div class="team-item__img bg-light">
             <img src="@/images/team/slava.jpg" alt="team">
           </div>
         </div>
@@ -40,7 +40,7 @@
       </div>
       <div class="mb-5 mw-100">
         <div class="team-item mb-2 team-item--rleft">
-          <div class="team-item__img">
+          <div class="team-item__img bg-light">
             <img src="@/images/team/andrey2.jpg" alt="team">
           </div>
         </div>
@@ -49,7 +49,7 @@
       </div>
       <div class="mb-5 mw-100">
         <div class="team-item mb-2 team-item--rright">
-          <div class="team-item__img">
+          <div class="team-item__img bg-light">
             <img src="@/images/team/nastya.jpg" alt="team">
           </div>
         </div>

@@ -5,7 +5,7 @@
       :class="{'navbar-shadow--showed': showNavbarShadow}"
     >
       <div class="d-flex align-items-center">
-        <router-link :to="{name: 'main-page'}" class="d-flex align-items-center link-reset mr-4 mr-lg-5">
+        <router-link :to="{name: 'main-page'}" class="d-flex align-items-center link-reset mr-4 mr-lg-5 pr-xl-5">
           <img src="@/images/logo.svg" alt="logo" class="navbar-logo">
           <strong class="my-0 ml-2 h5 text-dark d-none d-md-inline-block">GORA</strong>
         </router-link>
