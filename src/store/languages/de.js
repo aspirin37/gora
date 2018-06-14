@@ -1,4 +1,5 @@
 const site = {
+  "sitetitle": "GORA - Mobile und Web Entwicklung",
   "title": "Beste mobile und Web-Anwendungen überall",
   "subtitle": "Wir sind «GORA» - ein Unternehmen für mobile und Web-Entwicklung, das sich auf moderne Technologien und Wissen in Bezug auf Lieferung, Blockchain, E-Commerce konzentriert.",
   "currency": "€",

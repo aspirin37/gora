@@ -31,6 +31,9 @@ export default {
       return this.$store.state.currentLanguage
     }
   },
+  beforeMount () {
+    this.setSiteMeta(this.currentLanguage)
+  },
   methods: {
     switchLanguage (val) {
       let options = {
@@ -38,6 +41,12 @@ export default {
         value: val
       }
       this.$store.dispatch('setCurrentLanguage', options)
+      this.setSiteMeta(val)
+    },
+    setSiteMeta (lang) {
+      let titleInst = document.getElementsByTagName('title')[0]
+
+      titleInst.innerHTML = this.$t('sitetitle')
     }
   }
 }

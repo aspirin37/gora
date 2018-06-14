@@ -1,4 +1,5 @@
 const site = {
+  "sitetitle": "GORA - Mobile and Web development",
   "title": "Best mobile & web applications all over",
   "subtitle": "We are «GORA» — mobile and web development company focused on modern technologies and knowledge related on delivery, blockchain, e-commerce.",
   "currency": "€",

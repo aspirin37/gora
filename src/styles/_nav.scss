@@ -137,7 +137,6 @@ $bar-spacing: 8px;
 .hamburger-menu {
   position: relative;
   background: $gray-800;
-  transition: all 0ms 300ms;
   &.animate {
     background: #fff; 
   }
@@ -147,7 +146,7 @@ $bar-spacing: 8px;
 }
 
 .hamburger-menu:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: $bar-spacing;
@@ -156,7 +155,7 @@ $bar-spacing: 8px;
 }
 
 .hamburger-menu:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: $bar-spacing;
