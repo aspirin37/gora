@@ -6,7 +6,7 @@
         <project-links :info="projectInfo.dlLinks" class="py-2" :isDarkIcons="true"></project-links>
       </div>
 
-      <p class="font-large mb-4">{{projectInfo.description}}</p>
+      <p class="font-large mb-4">{{$t(`projects.${path}.description`)}}</p>
 
       <project-tags :tags="projectInfo.tags" class="mb-5" :isDarkIcons="true"></project-tags>
 
@@ -15,14 +15,11 @@
         <p class="font-large mb-0 text-dark">{{projectInfo.goal}}</p>
       </div>
 
-      <div class="mb-4">
-        <img src="@/images/team.jpeg" alt="" class="w-100">
+      <div class="portfolio-item__pic bg-light mb-4">
+        <img src="@/images/iphone-light.svg" alt="" class="mw-100 project-section__frame">
+        <img :src="require(`@/images/projects/${path}.png`)" alt="" class="project-section__pic">
       </div>
-      <p class="font-large mb-4">{{projectInfo.description}}</p>
-      <div class="mb-4">
-        <img src="@/images/team.jpeg" alt="" class="w-100">
-      </div>
-      <p class="font-large mb-4">{{projectInfo.description}}</p>
+      <p class="font-large mb-4">{{$t(`projects.${path}.description`)}}</p>
 
       <h5>{{$t('titles.credits')}}</h5>
       <p>{{projectInfo.credits.join(', ')}}</p>
@@ -49,6 +46,10 @@ export default {
     },
     projectInfo () {
       return this.$store.getters.itemsByArrayValues('projects', 'path', this.projectPath)[0]
+    },
+    path () {
+      console.log(this.$route)
+      return this.$route.params.title
     }
   }
 }
