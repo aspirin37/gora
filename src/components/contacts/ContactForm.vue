@@ -26,13 +26,14 @@ export default {
   },
   methods: {
     sendFeedback () {
-      let options = {
-        phone: this.feedPhone,
-        name: this.feedName
-      }
+      let options = new FormData()
+
+      options.append('phone', this.feedPhone)
+      options.append('name', this.feedName)
       if (this.feedMessage) {
-        options.message = this.feedMessage
+        options.append('message', this.feedMessage)
       }
+      console.log(JSON.stringify(options))
       this.$http.post('https://gora.studio/mailer/mail.php', JSON.stringify(options)).then(response => {
         this.$emit('sended', true)
       }).catch(error => {
