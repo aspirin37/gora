@@ -20,6 +20,23 @@ export default {
   components: {
     MainNavbar,
     MainFooter
+  },
+  beforeMount () {
+    this.checkLanguage()
+  },
+  methods: {
+    checkLanguage () {
+      let lang = window.navigator.language
+
+      if (lang) {
+        let options = {
+          key: 'currentLanguage',
+          value: lang.substring(0, 2)
+        }
+
+        this.$store.dispatch('setCurrentLanguage', options)
+      }
+    }
   }
 }
 </script>

@@ -67,9 +67,6 @@ export default {
   mounted () {
     document.addEventListener('scroll', this.getScrollPos)
   },
-  destroyed () {
-    this.removeScrollListener()
-  },
   watch: {
     $route() {
       this.closeMenu()
