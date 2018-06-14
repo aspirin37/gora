@@ -33,7 +33,7 @@ export default {
       if (this.feedMessage) {
         options.message = this.feedMessage
       }
-      this.$http.post('https://gora.studio/mailer/mail.php', options).then(response => {
+      this.$http.post('https://gora.studio/mailer/mail.php', JSON.stringify(options)).then(response => {
         this.$emit('sended', true)
       }).catch(error => {
         this.errorMessage = error.statusText
