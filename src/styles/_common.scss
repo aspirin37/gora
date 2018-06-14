@@ -245,14 +245,26 @@ a.current-shadow, .cursor-pointer.current-shadow{
 }
 
 .rounded-outer{
+  &__left{
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+  }
+  &__right{
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }
   @include media-breakpoint-up(md) {
     &__left{
       border-top-left-radius: $border-radius;
       border-bottom-left-radius: $border-radius;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
     }
     &__right{
       border-top-right-radius: $border-radius;
       border-bottom-right-radius: $border-radius;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
     }
   }
 }

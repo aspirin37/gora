@@ -8,8 +8,8 @@
     </div>
     <div class="container-fluid px-md-5">
       <div class="row align-items-stretch">
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="bg-light h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4">
+        <div class="col-12 col-md-6 col-xl-3 mb-4">
+          <div class="bg-light h-100 rounded py-4 mx-2 overflow-hidden px-4 px-xl-5">
             <div class="relative z-index-9">
               <span class="circled-icon bg-theme mb-3"><img src="@/images/mobile-phone.svg" alt="pin"></span>
               <h5 class="mb-3">{{$t('titles.mobile')}}</h5>
@@ -18,8 +18,8 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="bg-light h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4">
+        <div class="col-12 col-md-6 col-xl-3 mb-4">
+          <div class="bg-light h-100 rounded py-4 mx-2 overflow-hidden px-4 px-xl-5">
             <div class="relative z-index-9">
               <span class="circled-icon bg-theme mb-3"><img src="@/images/laptop.svg" alt="pin"></span>
               <h5 class="mb-3">{{$t('titles.web')}}</h5>
@@ -28,8 +28,8 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="bg-light h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4">
+        <div class="col-12 col-md-6 col-xl-3 mb-4">
+          <div class="bg-light h-100 rounded py-4 mx-2 overflow-hidden px-4 px-xl-5">
             <div class="relative z-index-9">
               <span class="circled-icon bg-theme mb-3"><img src="@/images/shopping.svg" alt="pin"></span>
               <h5 class="mb-3">{{$t('titles.ecommerce')}}</h5>
@@ -38,8 +38,8 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="bg-light h-100 rounded py-4 pr-4 mx-2 overflow-hidden px-5 py-4">
+        <div class="col-12 col-md-6 col-xl-3 mb-4">
+          <div class="bg-light h-100 rounded py-4 mx-2 overflow-hidden px-4 px-xl-5">
             <div class="relative z-index-9">
               <span class="circled-icon bg-theme mb-3"><img src="@/images/blockchain.svg" alt="pin"></span>
               <h5 class="mb-3">{{$t('titles.blockchain')}}</h5>

@@ -5,7 +5,7 @@
       <div class="mb-5 mw-100">
         <div class="team-item mb-2 team-item--rleft">
           <div class="team-item__img">
-            <img src="@/images/team/team2.jpg" alt="team">
+            <img src="@/images/team/artem.jpg" alt="team">
           </div>
         </div>
         <h5 class="text-center">Artem</h5>
@@ -14,7 +14,7 @@
       <div class="mb-5 mw-100">
         <div class="team-item mb-2 team-item--rright">
           <div class="team-item__img">
-            <img src="@/images/team/team1.jpg" alt="team">
+            <img src="@/images/team/andrey.jpg" alt="team">
           </div>
         </div>
         <h5 class="text-center">Andrey</h5>
@@ -23,7 +23,7 @@
       <div class="mb-5 mw-100">
         <div class="team-item mb-2 team-item--rleft">
           <div class="team-item__img">
-            <img src="@/images/team/team3.jpg" alt="team">
+            <img src="@/images/team/julia.jpg" alt="team">
           </div>
         </div>
         <h5 class="text-center">Julia</h5>
@@ -32,29 +32,29 @@
       <div class="mb-5 mw-100">
         <div class="team-item mb-2 team-item--rright">
           <div class="team-item__img">
-            <img src="@/images/team/team2.jpg" alt="team">
+            <img src="@/images/team/slava.jpg" alt="team">
           </div>
         </div>
-        <h5 class="text-center">Artem</h5>
-        <p class="text-center">GORA CEO</p>
+        <h5 class="text-center">Slava</h5>
+        <p class="text-center">Frontend Developer</p>
       </div>
       <div class="mb-5 mw-100">
         <div class="team-item mb-2 team-item--rleft">
           <div class="team-item__img">
-            <img src="@/images/team/team1.jpg" alt="team">
+            <img src="@/images/team/andrey2.jpg" alt="team">
           </div>
         </div>
-        <h5 class="text-center">Artem</h5>
-        <p class="text-center">GORA CEO</p>
+        <h5 class="text-center">Andrey</h5>
+        <p class="text-center">Mesto Chief</p>
       </div>
       <div class="mb-5 mw-100">
         <div class="team-item mb-2 team-item--rright">
           <div class="team-item__img">
-            <img src="@/images/team/team2.jpg" alt="team">
+            <img src="@/images/team/nastya.jpg" alt="team">
           </div>
         </div>
-        <h5 class="text-center">Artem</h5>
-        <p class="text-center">GORA CEO</p>
+        <h5 class="text-center">Nastya</h5>
+        <p class="text-center">Finance specialist</p>
       </div>
     </div>
     <div class="text-center">

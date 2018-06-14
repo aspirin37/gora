@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-dark py-5 text-white d-flex align-items-center">
+  <footer class="bg-dark py-4 py-md-5 text-white d-flex align-items-center">
     <div class="container d-flex justify-content-between flex-wrap">
       <span>© 2016-{{year}} GORA</span>
       <nav>
