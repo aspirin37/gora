@@ -157,6 +157,7 @@ const store = new Vuex.Store({
     setCurrentLanguage ({ commit }, options) {
       commit('CHANGE_VALUE', options)
       Vue.i18n.set(store.state.currentLanguage)
+      window.sessionStorage.setItem(options.key, options.value)
     }
   },
   mutations: {

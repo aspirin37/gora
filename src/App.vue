@@ -25,7 +25,21 @@ export default {
     this.checkLanguage()
   },
   methods: {
-    checkLanguage () {
+    checkStorageLanguage () {
+      let lang = window.sessionStorage.currentLanguage
+
+      if (lang) {
+        let options = {
+          key: 'currentLanguage',
+          value: lang
+        }
+
+        this.$store.dispatch('setCurrentLanguage', options)
+      } else {
+        this.checkBrowserLanguage()
+      }
+    },
+    checkBrowserLanguage () {
       let lang = window.navigator.language
 
       if (lang) {
@@ -36,6 +50,9 @@ export default {
 
         this.$store.dispatch('setCurrentLanguage', options)
       }
+    },
+    checkLanguage () {
+      this.checkStorageLanguage()
     }
   }
 }
