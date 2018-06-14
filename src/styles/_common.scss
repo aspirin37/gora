@@ -41,16 +41,9 @@ a.current-shadow, .cursor-pointer.current-shadow{
 }
 
 .main-content{
-  position: relative;
-  z-index: 9;
   background-color: #fff;
-  margin-bottom: 72px;
   padding-top: $header-height;
-}
-
-.main-footer{
-  z-index: 1;
-  min-height: 72px;
+  min-height: calc(100vh - 120px);
 }
 
 .height-full{
@@ -161,18 +154,25 @@ a.current-shadow, .cursor-pointer.current-shadow{
 .animated-circle{
   @keyframes circle-anim{
     0% {
-      margin-top: 0;
+      margin-bottom: 0;
+      transform: scale(1, 1);
+    }
+    35% {
+      transform: scale(1, 1);
     }
     50% {
-      margin-top: 5px;
+      margin-bottom: -10px;
+      transform: scale(1.1, 0.9);
     }
     75% {
-      margin-top: 0;
+      transform: scale(0.9, 1.1);
+    }
+    100% {
+      margin-bottom: 0;
+      transform: scale(1, 1);
     }
   }
-  img{
-    animation: circle-anim 0.8s infinite;
-  }
+  animation: circle-anim 1s infinite;
 }
 
 .circled-icon{
@@ -242,4 +242,17 @@ a.current-shadow, .cursor-pointer.current-shadow{
 
   width: $size;
   height: $size;
+}
+
+.rounded-outer{
+  @include media-breakpoint-up(md) {
+    &__left{
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+    &__right{
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+  }
 }

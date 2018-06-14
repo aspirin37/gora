@@ -42,7 +42,7 @@ const site = {
     "phone": "+7 (812) 408-25-47"
   },
   "order": {
-    "order": "Bestellen Sie ein Projekt",
+    "order": "ein Projekt bestellen",
     "type": "Was möchtest du?",
     "fulljob": "Komplexe Arbeit",
     "outsource": "Outsourcing- und Outstaff-Entwickler",

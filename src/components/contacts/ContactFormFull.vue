@@ -1,6 +1,6 @@
 <template>
-  <div class="d-flex align-items-stretch flex-wrap flex-md-nowrap">
-    <div class="bg-gradient p-4 p-lg-5 w-100 d-flex align-items-center rounded-left text-left">
+  <div class="d-flex align-items-stretch flex-wrap flex-md-nowrap rounded-outer">
+    <div class="bg-gradient p-4 p-lg-5 w-100 d-flex align-items-center text-left rounded-outer__left rounded-md-left">
       <div class="relative z-index-9">
         <div class="d-flex mb-2">
           <span class="circled-icon mr-3"><img src="@/images/map-pin.svg" alt="pin"></span>
@@ -14,12 +14,12 @@
           <span class="circled-icon mr-3"><img src="@/images/mailbox.svg" alt="pin"></span>
           <p class="font-large"><a class="text-white" :href="`mailto:${email}`">{{email}}</a></p>
         </div>
-        <button class="btn btn-light btn-rounded mt-4 btn-lg" v-on:click="showOrderModal">{{$t('order.order')}}</button>
+        <button class="btn btn-light btn-rounded mt-4 btn-lg px-3 px-md-4" v-on:click="showOrderModal">{{$t('order.order')}}</button>
       </div>
     </div>
     <div class="w-100 d-flex align-items-stretch feedback-form">
       <transition name="feedback-in">
-        <div class="px-4 px-lg-5 py-4 current-shadow w-100 rounded-right bg-white text-center d-flex align-items-center justify-content-center" v-if="feedbackSended">
+        <div class="px-4 px-lg-5 py-4 current-shadow w-100 bg-white text-center d-flex align-items-center justify-content-center rounded-outer__right" v-if="feedbackSended">
           <div>
             <span class="circled-icon mb-3 bg-success"><img src="@/images/check-done.svg" alt="done"></span>
             <div><b>Message sended.</b></div>
@@ -28,7 +28,7 @@
         </div>
       </transition>
       <transition name="feedback-out">
-        <div class="px-4 px-lg-5 py-4 current-shadow w-100 rounded-right bg-white" v-if="!feedbackSended">
+        <div class="px-4 px-lg-5 py-4 current-shadow w-100 bg-white rounded-outer__right" v-if="!feedbackSended">
           <h5 class="mb-4">{{$t('titles.feedback')}}</h5>
           <contact-form v-on:sended="feedbackSended = $event"></contact-form>
         </div>
