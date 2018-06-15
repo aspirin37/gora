@@ -121,28 +121,28 @@ const store = new Vuex.Store({
         id: '432',
         title: 'News item title',
         date: '07.06.2018',
-        preview: '/images/team.jpeg',
+        preview: '/images/blured-linger.png',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae accusamus modi voluptatibus explicabo esse voluptatem numquam voluptates quisquam illo, ducimus vero tenetur ipsa corrupti quis distinctio minima, architecto minus molestiae.'
       },
       {
         id: '642',
         title: 'News item title',
         date: '07.06.2018',
-        preview: '/images/team.jpeg',
+        preview: '/images/blured-linger.png',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae accusamus modi voluptatibus explicabo esse voluptatem numquam voluptates quisquam illo, ducimus vero tenetur ipsa corrupti quis distinctio minima, architecto minus molestiae.'
       },
       {
         id: '623',
         title: 'News item title',
         date: '07.06.2018',
-        preview: '/images/team.jpeg',
+        preview: '/images/blured-linger.png',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae accusamus modi voluptatibus explicabo esse voluptatem numquam voluptates quisquam illo, ducimus vero tenetur ipsa corrupti quis distinctio minima, architecto minus molestiae.'
       },
       {
         id: '152',
         title: 'News item title',
         date: '07.06.2018',
-        preview: '/images/team.jpeg',
+        preview: '/images/blured-linger.png',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae accusamus modi voluptatibus explicabo esse voluptatem numquam voluptates quisquam illo, ducimus vero tenetur ipsa corrupti quis distinctio minima, architecto minus molestiae.'
       }
     ]

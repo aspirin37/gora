@@ -145,9 +145,34 @@ a.current-shadow, .cursor-pointer.current-shadow{
 
 .dl-link{
   $size: 30px;
+  position: relative;
+  width: $size;
+  height: $size;
+  @extend .link-reset;
+  display: inline-block;
   &__img{
     width: $size;
     height: $size;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: opacity 0.2s;
+    &--front{
+      opacity: 1;
+    }
+    &--back{
+      opacity: 0;
+    }
+  }
+  &:hover{
+    .dl-link__img{
+      &--front{
+        opacity: 0;
+      }
+      &--back{
+        opacity: 1;
+      }
+    }
   }
 }
 

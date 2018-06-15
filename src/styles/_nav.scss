@@ -177,6 +177,11 @@ $bar-spacing: 8px;
 
 .navbar-link{
   position: relative;
+  &:hover{
+    &:after{
+      width: 1rem;
+    }
+  }
   &:after{
     content: '';
     width: 0;
