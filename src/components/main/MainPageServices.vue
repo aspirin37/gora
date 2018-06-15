@@ -49,6 +49,14 @@
           </div>
         </div>
       </div>
+      <div class="bg-light rounded py-4 mx-auto overflow-hidden px-4 px-xl-5 service-block">
+        <div class="relative z-index-9 d-flex align-items-center">
+          <span class="circled-icon bg-theme mr-3 mb-3"><img src="@/images/binoculars.svg" alt="pin"></span>
+          <h5 class="mb-3">{{$t('titles.outsource')}}</h5>
+        </div>
+        <p class="mb-0">{{$t('subtitles.outsource')}}</p>
+        <a href="#" v-on:click.prevent="showOrderModal(['ios', 'android'])" class="link-dotted"><b>{{$t('titles.getit')}}</b></a>
+      </div>
     </div>
     <div class="container">
       <h5 class="text-center mt-5">{{$t('titles.checkjobs')}}</h5>

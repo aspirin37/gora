@@ -27,7 +27,8 @@ const site = {
     "email": "Email",
     "message": "Message",
     "getit": "Trouver",
-    "join": "Rejoignez-nous"
+    "join": "Rejoignez-nous",
+    "outsource": "Outsource"
   },
   "subtitles": {
     "contact": "Notre plaisir de vous répondre!",
@@ -35,7 +36,8 @@ const site = {
     "web": "Cross Browser, facile à entretenir SPA avec toute la complexité de la fonctionnalité.",
     "ecommerce": "Magasins Internet et marketplaces avec catalogue, recherche et compte personnel.",
     "blockchain": "Calcul de Tokenomics, support ICO, examen des actifs numériques, mise en place de l'approche FOMO.",
-    "whatwedo": "Nous conseillons, développons et supportons de grands projets pour les plateformes iOS, Android et Web"
+    "whatwedo": "Nous conseillons, développons et supportons de grands projets pour les plateformes iOS, Android et Web",
+    "outsource": "Les développeurs ayant une connaissance approfondie des technologies modernes."
   },
   "contacts": {
     "address": "Bolshoy prospect PS, 29",

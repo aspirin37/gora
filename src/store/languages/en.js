@@ -27,7 +27,8 @@ const site = {
     "email": "Email",
     "message": "Message",
     "getit": "Get It",
-    "join": "Join Us"
+    "join": "Join Us",
+    "outsource": "Outsource"
   },
   "subtitles": {
     "contact": "Our pleasure to answer you!",
@@ -35,7 +36,8 @@ const site = {
     "web": "Cross Browser, easy to maintain SPA with any complexity of functionality.",
     "ecommerce": "Internet shops and marketplaces with catalogue, searching and personal account.",
     "blockchain": "Calculation of Tokenomics, ICO support, examination of digital assets, implementation of the FOMO approach.",
-    "whatwedo": "We advise, develop and support large projects for iOS, Android and Web platforms"
+    "whatwedo": "We advise, develop and support large projects for iOS, Android and Web platforms",
+    "outsource": "Developers with deep knowledge of modern technologies."
   },
   "contacts": {
     "address": "Bolshoy prospect PS, 29",
