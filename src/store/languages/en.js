@@ -41,7 +41,9 @@ const site = {
     "address": "Bolshoy prospect PS, 29, from 10:00 to 20:00",
     "city": "Saint-Petersburg",
     "country": "Russia",
-    "phone": "+7 (812) 408-25-47"
+    "phone": "+7 (812) 408-25-47",
+    "sendedtitle": "Message sent",
+    "sendedsubtitle": "We will contact you soon"
   },
   "order": {
     "order": "Order project",

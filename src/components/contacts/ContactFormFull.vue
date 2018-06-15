@@ -22,8 +22,8 @@
         <div class="px-4 px-lg-5 py-4 current-shadow w-100 bg-white text-center d-flex align-items-center justify-content-center rounded-outer__right" v-if="feedbackSended">
           <div>
             <span class="circled-icon mb-3 bg-success"><img src="@/images/check-done.svg" alt="done"></span>
-            <div><b>Message sended.</b></div>
-            <p>We will contact you soon.</p>
+            <div><b>{{$t('contacts.sendedtitle')}}</b></div>
+            <p>{{$t('contacts.sendedsubtitle')}}</p>
           </div>
         </div>
       </transition>

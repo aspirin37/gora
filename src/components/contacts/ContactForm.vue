@@ -1,5 +1,6 @@
 <template>
-  <form v-on:submit.prevent="sendFeedback">
+  <form v-on:submit.prevent="sendFeedback" class="relative">
+    <loader v-if="!messageSended"></loader>
     <div class="form-group">
       <input type="text" class="form-control" :placeholder="$t('titles.name')" v-model="feedName" required>
     </div>
@@ -15,27 +16,34 @@
 </template>
 
 <script>
+import Loader from '@/components/utils/Loader'
+
 export default {
   data () {
     return {
       feedName: '',
       feedPhone: '',
       feedMessage: '',
-      errorMessage: ''
+      errorMessage: '',
+      messageSended: true
     }
+  },
+  components: {
+    Loader
   },
   methods: {
     sendFeedback () {
+      this.messageSended = false
       let options = new FormData()
 
       options.append('phone', this.feedPhone)
       options.append('name', this.feedName)
       if (this.feedMessage) {
-        options.append('message', this.feedMessage)
+        options.append('description', this.feedMessage)
       }
-      console.log(options)
       this.$http.post('https://gora.studio/mailer/mail.php', options).then(response => {
         this.$emit('sended', true)
+        this.messageSended = true
       }).catch(error => {
         this.errorMessage = error.statusText
       })
