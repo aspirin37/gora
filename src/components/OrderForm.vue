@@ -1,8 +1,7 @@
 <template>
-  <form class="relative">
+  <form class="relative" v-on:submit.prevent="sendRequest">
     <loader v-if="!messageSended"></loader>
     <p class="mb-2">{{$t('order.type')}}</p>
-    {{orderWhat}}
     <div class="row px-2 mb-3 flex-wrap">
       <label class="col px-1 choose-input mb-2">
         <input type="radio" name="form1" :value="$t('order.fulljob')" class="choose-input__input" checked v-model="orderWhat">
@@ -14,35 +13,13 @@
       </label>
     </div>
     <p class="mb-2">{{$t('order.budget')}}, {{$t('currency')}}</p>
-    {{orderBudget}}
     <div class="row px-2 mb-3 flex-wrap">
-      <label class="col px-1 choose-input mb-2">
-        <input type="radio" name="form2" value="1 — 3" class="choose-input__input" checked v-model="orderBudget">
-        <span class="choose-input__text rounded text-nowrap">1 — 3 млн</span>
-      </label>
-      <label class="col px-1 choose-input mb-2">
-        <input type="radio" name="form2" value="3 — 5" class="choose-input__input" v-model="orderBudget">
-        <span class="choose-input__text rounded text-nowrap">3 — 5 млн</span>
-      </label>
-      <label class="col px-1 choose-input mb-2">
-        <input type="radio" name="form2" value="5 — 10" class="choose-input__input" v-model="orderBudget">
-        <span class="choose-input__text rounded text-nowrap">5 — 10 млн</span>
-      </label>
-      <label class="col px-1 choose-input mb-2">
-        <input type="radio" name="form2" value="10 — 30" class="choose-input__input" v-model="orderBudget">
-        <span class="choose-input__text rounded text-nowrap">10 — 30 млн</span>
-      </label>
-      <label class="col px-1 choose-input mb-2">
-        <input type="radio" name="form2" value="30 — 50" class="choose-input__input" v-model="orderBudget">
-        <span class="choose-input__text rounded text-nowrap">30 — 50 млн</span>
-      </label>
-      <label class="col px-1 choose-input mb-2">
-        <input type="radio" name="form2" value="50 — 100" class="choose-input__input" v-model="orderBudget">
-        <span class="choose-input__text rounded text-nowrap">50 — 100 млн</span>
+      <label class="col px-1 choose-input mb-2" v-for="(price, index) in $t('order.prices')" :key="`price-${index}`">
+        <input type="radio" name="form2" :value="price" class="choose-input__input" checked v-model="orderBudget">
+        <span class="choose-input__text rounded text-nowrap">{{price}}</span>
       </label>
     </div>
     <p class="mb-2">{{$t('order.platforms')}}</p>
-    {{orderPlatform}}
     <div class="row px-2 mb-3 flex-wrap">
       <label class="col px-1 choose-input mb-2">
         <input type="checkbox" name="form3" value="ios" class="choose-input__input" checked v-model="orderPlatform">
@@ -58,7 +35,6 @@
       </label>
     </div>
     <p class="mb-2">{{$t('order.additional')}}</p>
-    {{orderAdditional}}
     <div class="row px-2 mb-3 flex-wrap">
       <label class="col px-1 choose-input mb-2">
         <input type="checkbox" name="form4" :value="$t('order.testing')" class="choose-input__input" v-model="orderAdditional">
@@ -82,7 +58,7 @@
         <span>{{$t('titles.name')}}</span>
       </div>
       <div class="col-12 col-md-9 col-lg-10">
-        <input type="text" class="form-control" v-model="orderName">
+        <input type="text" class="form-control" v-model="orderName" required>
       </div>
     </div>
     <div class="row mb-3 align-items-center">
@@ -90,7 +66,7 @@
         <span>{{$t('titles.phone')}}</span>
       </div>
       <div class="col-12 col-md-9 col-lg-10">
-        <input type="text" class="form-control" v-model="orderPhone">
+        <input type="text" class="form-control" v-model="orderPhone" required>
       </div>
     </div>
     <div class="row mb-3 align-items-center">
@@ -118,6 +94,10 @@ export default {
       messageSended: true,
       orderWhat: '',
       orderBudget: '',
+      orderEmail: '',
+      orderName: '',
+      orderPhone: '',
+      orderDescription: '',
       orderPlatform: [],
       orderAdditional: []
     }
@@ -141,8 +121,9 @@ export default {
 
       options.append('phone', this.orderPhone)
       options.append('name', this.orderName)
+      options.append('type', 2)
       if (this.orderBudget) {
-        options.append('budget', this.orderBudget)
+        options.append('budget', `${this.orderBudget} ${this.$t('currency')}`)
       }
       if (this.orderPlatform) {
         options.append('platform', this.orderPlatform)

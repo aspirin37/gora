@@ -58,7 +58,8 @@ const site = {
     "testing": "Usability-Tests",
     "promotion": "Beförderung",
     "support": "Unterstützung",
-    "description": "Beschreibung"
+    "description": "Beschreibung",
+    "prices": ["1 — 3 mln", "3 — 5 mln", "5 — 10 mln", "10 — 30 mln", "30 — 50 mln", "50 — 100 mln"]
   },
   "projects": {
     "kyc": {
