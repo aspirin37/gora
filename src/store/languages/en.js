@@ -38,7 +38,7 @@ const site = {
     "whatwedo": "We advise, develop and support large projects for iOS, Android and Web platforms"
   },
   "contacts": {
-    "address": "Bolshoy prospect PS, 29, from 10:00 to 20:00",
+    "address": "Bolshoy prospect PS, 29",
     "city": "Saint-Petersburg",
     "country": "Russia",
     "phone": "+7 (812) 408-25-47",

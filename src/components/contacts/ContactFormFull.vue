@@ -4,7 +4,10 @@
       <div class="relative z-index-9">
         <div class="d-flex mb-2">
           <span class="circled-icon mr-3"><img src="@/images/map-pin.svg" alt="pin"></span>
-          <p class="font-large">{{$t('contacts.address')}}<small class="d-block">{{$t('contacts.city')}}, {{$t('contacts.country')}}</small></p>
+          <p class="font-large">
+            <a href="https://goo.gl/maps/gBLnfeFcxDH2" class="text-white" target="_blank">{{$t('contacts.address')}}</a>
+            <small class="d-block">{{$t('contacts.city')}}, {{$t('contacts.country')}}</small>
+          </p>
         </div>
         <div class="d-flex mb-2">
           <span class="circled-icon mr-3"><img src="@/images/telephone.svg" alt="pin"></span>
