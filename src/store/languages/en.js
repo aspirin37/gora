@@ -59,7 +59,7 @@ const site = {
     "promotion": "Promotion",
     "support": "Support",
     "description": "Description",
-    "prices": ["1 — 3 mln", "3 — 5 mln", "5 — 10 mln", "10 — 30 mln", "30 — 50 mln", "50 — 100 mln"]
+    "prices": ["1 — 2 mln", "2 — 5 mln", "5 — 10 mln", "10 — 30 mln", "30 — 50 mln", "50 — 100 mln"]
   },
   "projects": {
     "kyc": {
