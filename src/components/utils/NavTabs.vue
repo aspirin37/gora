@@ -24,10 +24,18 @@ export default {
       default: () => []
     }
   },
+  mounted () {
+    let ind = this.$route.query.tab
+
+    if (ind) {
+      this.emitLink(+ind)
+    }
+  },
   methods: {
     emitLink (index) {
       this.activeLink = index
-      this.$emit('clicked', index)
+      this.$router.push({query: {tab: this.activeLink || null}})
+      this.$emit('clicked', this.activeLink)
     }
   }
 }
