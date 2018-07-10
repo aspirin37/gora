@@ -62,7 +62,7 @@ const store = new Vuex.Store({
         id: 3,
         type: 1,
         title: 'KYC Legal',
-        description: 'KYC Legal - сервис, который позволяет проводить верификацию пользователя и предотвращает мошенничество. Технология блокчейн лежит в основе сервиса в качестве инструмента защиты и подтверждения достоверности личных данных пользователей сети.',
+        description: 'Сервис, который позволяет проводить верификацию пользователя и предотвращает мошенничество. Технология блокчейн лежит в основе сервиса в качестве инструмента защиты и подтверждения достоверности личных данных пользователей сети.',
         path: 'kyc',
         goal: 'Create project better than anybody able to.',
         tags: ['Android', 'Application', 'Mesto'],
@@ -76,7 +76,7 @@ const store = new Vuex.Store({
       {
         id: 4,
         type: 2,
-        title: 'fin<b>.team</b>',
+        title: 'fin.team',
         description: 'Забота о финансах и современная бухгалтерия.',
         path: 'finteam',
         goal: 'Create project better than anybody able to.',
