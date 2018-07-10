@@ -18,7 +18,7 @@
           </div>
         </div>
         <h5 class="text-center">Andrey</h5>
-        <p class="text-center">Backend Developer</p>
+        <p class="text-center">Backend guru</p>
       </div>
       <div class="mb-5 mw-100">
         <div class="team-item mb-2 team-item--rleft">
@@ -27,7 +27,7 @@
           </div>
         </div>
         <h5 class="text-center">Julia</h5>
-        <p class="text-center">Android Developer</p>
+        <p class="text-center">Android dev</p>
       </div>
       <div class="mb-5 mw-100">
         <div class="team-item mb-2 team-item--rright">
@@ -36,7 +36,7 @@
           </div>
         </div>
         <h5 class="text-center">Slava</h5>
-        <p class="text-center">Frontend Developer</p>
+        <p class="text-center">Frontend dev</p>
       </div>
       <div class="mb-5 mw-100">
         <div class="team-item mb-2 team-item--rleft">
@@ -45,7 +45,7 @@
           </div>
         </div>
         <h5 class="text-center">Andrey</h5>
-        <p class="text-center">Mesto Chief</p>
+        <p class="text-center">iOS dev</p>
       </div>
       <div class="mb-5 mw-100">
         <div class="team-item mb-2 team-item--rright">
@@ -54,7 +54,7 @@
           </div>
         </div>
         <h5 class="text-center">Nastya</h5>
-        <p class="text-center">Finance specialist</p>
+        <p class="text-center">PM wizard</p>
       </div>
     </div>
     <div class="text-center">
