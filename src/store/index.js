@@ -104,16 +104,16 @@ const store = new Vuex.Store({
     ],
     careers: [
       {
-        title: 'Developer',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tempore dolorem vero iure tenetur, fuga est quaerat aut eius sed praesentium perferendis voluptatum. Eius perspiciatis consequuntur aperiam, at dicta officiis!'
+        title: 'Frontend',
+        description: 'Всегда открыты для опытных frontend-разработчиков. Если вы верстаете с любовью к мелочам и используйте современный фреймворк - присылайте резюме на hi@gora.studio и мы обязательно с вами свяжемся.'
       },
       {
-        title: 'Developer',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tempore dolorem vero iure tenetur, fuga est quaerat aut eius sed praesentium perferendis voluptatum. Eius perspiciatis consequuntur aperiam, at dicta officiis!'
+        title: 'iOS',
+        description: 'Всегда открыты для опытных iOS-разработчиков. Смотрели все выступления Стива Джобса и онлайн трансляции WWDC, безудержно кодите на Swift и нет-нет, на Obj-C - присылайте резюме на hi@gora.studio и мы обязательно с вами свяжемся.'
       },
       {
-        title: 'Developer',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tempore dolorem vero iure tenetur, fuga est quaerat aut eius sed praesentium perferendis voluptatum. Eius perspiciatis consequuntur aperiam, at dicta officiis!'
+        title: 'Android',
+        description: 'Всегда открыты для опытных Android-разработчиков. Любите проекты посложнее, знаете Android Studio лучше всех, не боитесь новых ощущений - присылайте резюме на hi@gora.studio и мы обязательно с вами свяжемся.'
       }
     ],
     news: [
