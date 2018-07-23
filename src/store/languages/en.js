@@ -43,7 +43,7 @@ const site = {
     "address": "Bolshoy prospect PS, 29",
     "city": "Saint-Petersburg",
     "country": "Russia",
-    "phone": "+7 (812) 408-25-47",
+    "phone": "+7 (495) 131-0856",
     "sendedtitle": "Message sent",
     "sendedsubtitle": "We will contact you soon"
   },
