@@ -36,6 +36,8 @@ var router = new Router({
                     router.app.$store.dispatch('setCurrentLanguage', options)
                     let titleInst = document.getElementsByTagName('title')[0]
                     titleInst.innerHTML = router.app.$t('sitetitle')
+                    let metaDescription = document.querySelector('meta[name="description"]')
+                    console.log(metaDescription)
                     next()
                 } else {
                     next('ru')
