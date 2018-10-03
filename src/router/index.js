@@ -28,13 +28,18 @@ var router = new Router({
                 template: '<router-view/>'
             },
             beforeEnter(from, to, next) {
-                // console.log(from, to)
-                let options = {
-                    key: 'currentLanguage',
-                    value: from.params.lang
+                let supportedLangs = ['ru', 'en', 'de', 'fr']
+                if(supportedLangs.includes(from.params.lang)) {
+                    let options = {
+                        key: 'currentLanguage',
+                        value: from.params.lang
+                    }
+                    store.dispatch('setCurrentLanguage', options)
+                    next()
+                } else {
+                    next('ru')
                 }
-                store.dispatch('setCurrentLanguage', options)
-                next()
+
             },
             children: [{
                     path: '',
