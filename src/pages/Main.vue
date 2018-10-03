@@ -102,11 +102,7 @@ import scrollTo from '@/mixins/scrollTo'
 export default {
     data() {
         return {
-            metaInfo: {
-                meta: [
-                    { name: 'description', content: 'foo' }
-                ]
-            }
+
         }
     },
     components: {

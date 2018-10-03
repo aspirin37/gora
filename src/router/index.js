@@ -37,7 +37,7 @@ var router = new Router({
                     let titleInst = document.getElementsByTagName('title')[0]
                     titleInst.innerHTML = router.app.$t('sitetitle')
                     let metaDescription = document.querySelector('meta[name="description"]')
-                    console.log(metaDescription)
+                    metaDescription.content = '111'
                     next()
                 } else {
                     next('ru')
