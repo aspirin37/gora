@@ -8,7 +8,6 @@ import Careers from '@/pages/Careers'
 import News from '@/pages/News'
 import NewsItem from '@/pages/NewsItem'
 import Team from '@/pages/Team'
-import store from '@/store'
 
 Vue.use(Router)
 
@@ -34,7 +33,9 @@ var router = new Router({
                         key: 'currentLanguage',
                         value: from.params.lang
                     }
-                    store.dispatch('setCurrentLanguage', options)
+                    router.app.$store.dispatch('setCurrentLanguage', options)
+                    let titleInst = document.getElementsByTagName('title')[0]
+                    titleInst.innerHTML = router.app.$t('sitetitle')
                     next()
                 } else {
                     next('ru')

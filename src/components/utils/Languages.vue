@@ -40,8 +40,8 @@ export default {
                 value: val
             }
             this.$store.dispatch('setCurrentLanguage', options)
-            // console.log(this.$route)
-            this.$route.params.lang = val
+            console.log(this.$route)
+            this.$router.push({ params: { lang: val } })
             this.setSiteMeta(val)
         },
         setSiteMeta(lang) {
