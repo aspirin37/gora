@@ -8,62 +8,78 @@ import Careers from '@/pages/Careers'
 import News from '@/pages/News'
 import NewsItem from '@/pages/NewsItem'
 import Team from '@/pages/Team'
+import store from '@/store'
 
 Vue.use(Router)
 
 var router = new Router({
-  mode: 'history',
-  scrollBehavior: (to, from, savedPosition) => {
-    if (savedPosition) {
-      return savedPosition
-    } else if (to.name !== from.name) {
-      return { y: 0 }
-    }
-  },
-  history: true,
-  routes: [
-    {
-      path: '/',
-      name: 'main-page',
-      component: Main
+    mode: 'history',
+    scrollBehavior: (to, from, savedPosition) => {
+        if(savedPosition) {
+            return savedPosition
+        } else if(to.name !== from.name) {
+            return { y: 0 }
+        }
     },
-    {
-      path: '/portfolio',
-      name: 'portfolio',
-      component: Portfolio
-    },
-    {
-      path: '/portfolio/:title',
-      name: 'project',
-      component: Project
-    },
-    {
-      path: '/news',
-      name: 'news',
-      component: News
-    },
-    {
-      path: '/news/:id',
-      name: 'news-item',
-      component: NewsItem
-    },
-    {
-      path: '/contacts',
-      name: 'contacts',
-      component: Contacts
-    },
-    {
-      path: '/team',
-      name: 'team',
-      component: Team
-    },
-    {
-      path: '/careers',
-      name: 'careers',
-      component: Careers
-    },
-    { path: "*", redirect: '/' }
-  ]
+    history: true,
+    routes: [{
+            path: '/:lang',
+            component: {
+                template: '<router-view/>'
+            },
+            beforeEnter(from, to, next) {
+                // console.log(from, to)
+                let options = {
+                    key: 'currentLanguage',
+                    value: from.params.lang
+                }
+                store.dispatch('setCurrentLanguage', options)
+                next()
+            },
+            children: [{
+                    path: '',
+                    name: 'main-page',
+                    component: Main
+                },
+                {
+                    path: 'portfolio',
+                    name: 'portfolio',
+                    component: Portfolio
+                },
+                {
+                    path: 'portfolio/:title',
+                    name: 'project',
+                    component: Project
+                },
+                {
+                    path: 'news',
+                    name: 'news',
+                    component: News
+                },
+                {
+                    path: 'news/:id',
+                    name: 'news-item',
+                    component: NewsItem
+                },
+                {
+                    path: 'contacts',
+                    name: 'contacts',
+                    component: Contacts
+                },
+                {
+                    path: 'team',
+                    name: 'team',
+                    component: Team
+                },
+                {
+                    path: 'careers',
+                    name: 'careers',
+                    component: Careers
+                },
+            ]
+        },
+        { path: "*", redirect: '/ru' }
+    ]
 })
 
 export default router
