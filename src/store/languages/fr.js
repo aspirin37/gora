@@ -85,6 +85,10 @@ const site = {
         "architeque": {
             "title": "Architeque",
             "description": "Mobile app for viewing 3D-models of architecture buildings"
+        },
+        "ballsy": {
+            "title": "Ballsy",
+            "description": "Ballsy - easy way to find love"
         }
     }
 }

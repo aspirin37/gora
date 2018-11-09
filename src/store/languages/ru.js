@@ -42,8 +42,10 @@ const site = {
     "contacts": {
         "address": "Большой проспект ПС, 29",
         "city": "Санкт-Петербург",
+        "moscow": "Москва",
         "country": "Россия",
         "phone": "+7 (495) 131-0856",
+        "phoneSPB": "+7 (812) 408-25-47",
         "sendedtitle": "Сообщение отправлено",
         "sendedsubtitle": "Мы очень скоро с вами свяжемся"
     },
@@ -85,6 +87,10 @@ const site = {
         "architeque": {
             "title": "Architeque",
             "description": "Мобильное приложение, позволяющее просматривать подробнейшие 3D-модели архитектурных сооружений"
+        },
+        "ballsy": {
+            "title": "Ballsy",
+            "description": "Ballsy - найти любовь просто"
         }
     }
 }

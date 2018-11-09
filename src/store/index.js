@@ -43,17 +43,17 @@ const store = new Vuex.Store({
                 }
             },
             {
-                id: 2,
-                type: 1,
-                title: 'Linger',
-                description: 'Первый в мире мессенджер, который говорит на твоем языке.',
-                path: 'linger',
+                id: 4,
+                type: 2,
+                title: 'fin.team',
+                description: 'Забота о финансах и современная бухгалтерия.',
+                path: 'finteam',
                 goal: 'Create project better than anybody able to.',
-                tags: ['Android', 'Application', 'Linger'],
-                credits: ['Andrey - backend', 'Artem - PM', 'Julia - Android', 'Vladislav - iOS'],
-                date: '01.05.2018',
+                tags: ['Web', 'Site', 'Finteam'],
+                credits: ['Slava - frontend', 'Artem - PM', 'Vladimir - UX/UI'],
+                date: '01.11.2017',
                 dlLinks: {
-                    //   web: 'https://linger.im/'
+                    web: 'https://fin.team/'
                 }
             },
             {
@@ -72,17 +72,47 @@ const store = new Vuex.Store({
                 }
             },
             {
-                id: 4,
-                type: 2,
-                title: 'fin.team',
-                description: 'Забота о финансах и современная бухгалтерия.',
-                path: 'finteam',
+                id: 6,
+                type: 1,
+                title: 'Architeque',
+                description: 'Мобильное приложение, позволяющее просматривать подробнейшие 3D-модели архитектурных сооружений',
+                path: 'architeque',
                 goal: 'Create project better than anybody able to.',
-                tags: ['Web', 'Site', 'Finteam'],
-                credits: ['Slava - frontend', 'Artem - PM', 'Vladimir - UX/UI'],
-                date: '01.11.2017',
+                tags: ['Android', 'iOS', 'Architeque'],
+                credits: ['Andrey - backend', 'Artem - PM', 'Julia - Android', 'Vladislav - iOS'],
+                date: '05.05.2018',
                 dlLinks: {
-                    web: 'https://fin.team/'
+                    // android: 'https://play.google.com/store/apps/details?id=ru.global.id.client',
+                    // web: 'https://kyc.legal/'
+                }
+            },
+            {
+                id: 7,
+                type: 1,
+                title: 'Ballsy',
+                description: 'Ballsy - найти любовь просто',
+                path: 'ballsy',
+                goal: 'Create project better than anybody able to.',
+                tags: ['Android', 'iOS', 'Ballsy'],
+                credits: ['Andrey - backend', 'Artem - PM', 'Julia - Android', 'Vladislav - iOS'],
+                date: '15.10.2018',
+                dlLinks: {
+                    // android: 'https://play.google.com/store/apps/details?id=ru.global.id.client',
+                    // web: 'https://kyc.legal/'
+                }
+            },
+            {
+                id: 2,
+                type: 1,
+                title: 'Linger',
+                description: 'Первый в мире мессенджер, который говорит на твоем языке.',
+                path: 'linger',
+                goal: 'Create project better than anybody able to.',
+                tags: ['Android', 'Application', 'Linger'],
+                credits: ['Andrey - backend', 'Artem - PM', 'Julia - Android', 'Vladislav - iOS'],
+                date: '01.05.2018',
+                dlLinks: {
+                    //   web: 'https://linger.im/'
                 }
             },
             {
@@ -99,21 +129,6 @@ const store = new Vuex.Store({
                     //   web: 'https://eurasia-congress.org/'
                 }
             },
-            {
-                id: 6,
-                type: 1,
-                title: 'Architeque',
-                description: 'Мобильное приложение, позволяющее просматривать подробнейшие 3D-модели архитектурных сооружений',
-                path: 'architeque',
-                goal: 'Create project better than anybody able to.',
-                tags: ['Android', 'Architeque', 'iOS'],
-                credits: ['Andrey - backend', 'Artem - PM', 'Julia - Android', 'Vladislav - iOS'],
-                date: '05.05.2018',
-                dlLinks: {
-                    // android: 'https://play.google.com/store/apps/details?id=ru.global.id.client',
-                    // web: 'https://kyc.legal/'
-                }
-            }
         ],
         careers: [{
                 title: 'Frontend',
