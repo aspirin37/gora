@@ -44,6 +44,9 @@ const site = {
         "city": "Saint-Petersburg",
         "country": "Russia",
         "phone": "+7 (495) 131-0856",
+        "moscow": "Moscow",
+        "phone": "+7 (495) 131-0856",
+        "phoneSPB": "+7 (812) 408-25-47",
         "sendedtitle": "Message sent",
         "sendedsubtitle": "We will contact you soon"
     },
