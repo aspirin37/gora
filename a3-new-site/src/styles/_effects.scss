@@ -1,0 +1,61 @@
+.page-enter-active {
+  transition: all 0.1s ease-out;
+  transition-delay: 0.1s;
+}
+
+.page-leave-active {
+  transition: all 0.1s ease-in;
+}
+
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.feedback-form{
+  perspective: 1000px;
+  position: relative;
+  transform-origin: 0 0;
+}
+
+.feedback-out-leave-active {
+  transition: transform 0.3s ease-in;
+}
+
+.feedback-out-leave-active {
+  position: absolute;
+  transform-origin: top left;
+  transform: rotateY(90deg);
+}
+
+.feedback-in-enter-active {
+  transition: transform 0.3s ease-out;
+  transform-origin: top left;
+  transition-delay: 0.3s;
+}
+
+.feedback-in-enter{
+  transform-origin: top left;
+  transform: rotateY(90deg);
+}
+
+.portfolio-item-enter,
+.portfolio-item-leave-active {
+  height: 0!important;
+}
+
+.collapse-enter-active {
+  transition: all 0.1s ease-out;
+  transition-delay: 0.1s;
+}
+
+.collapse-leave-active {
+  transition: all 0.1s ease-in;
+}
+
+.collapse-enter,
+.collapse-leave-active {
+  opacity: 0;
+  transform: translateY(-10px);
+}

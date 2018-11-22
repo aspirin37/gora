@@ -1,0 +1,95 @@
+.top-main-block{
+  margin-top: -$header-height;
+  background-image: url(../images/main-bg.jpg); //rock.svg
+  background-size: cover;
+  background-position: center;
+}
+
+.team-item{
+  $size: 300px;
+
+  width: $size;
+  height: $size;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(#000, 0.1);
+  position: relative;
+  transition: box-shadow 0.3s;
+  &--rleft{
+    transform: rotate(-1deg);
+  }
+  &--rright{
+    transform: rotate(1deg);
+  }
+  &:before{
+    content: '';
+    width: 100px;
+    height: 30px;
+    background-image: url(../images/stick.svg);
+    background-repeat: no-repeat;
+    background-size: 100px 30px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    margin-left: -50px;
+  }
+  &__img{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    img{
+      position: relative;
+      left: 50%;
+      height: 100%;
+      transform: translate(-50%, 0);
+      filter: grayscale(100%);
+    }
+  }
+  &:hover{
+    box-shadow: 0 10px 10px rgba(#000, 0.1);
+    .team-item__img{
+      img{
+        filter: none;
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    width: 50%;
+  }
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
+}
+
+.rapallax-bgs{
+  position: relative;
+  overflow: hidden;
+  &__content{
+    position: relative;
+    z-index: 9;
+  }
+  &__image{
+    z-index: 0;
+    position: absolute;
+    pointer-events: none;
+    top: 45%;
+    right: 30%;
+    transform: scale(3);
+    opacity: 0.5;
+  }
+}
+
+.scroll-down{
+  background-color: rgba($main-color, 0.6);
+  position: absolute;
+  left: 50%;
+  margin-left: -16px;
+  bottom: 40px;
+  &:hover{
+    background-color: $main-color;
+  }
+}
+
+.service-block{
+  max-width: 400px;
+}

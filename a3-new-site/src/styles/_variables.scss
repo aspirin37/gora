@@ -1,0 +1,81 @@
+$font-family-base: 'Fira Sans', sans-serif;
+$headings-font-family: 'Oswald', sans-serif;
+$headings-font-weight: 400;
+
+$header-height: 72px;
+
+$blue: #2B6BA4;
+$pink: #E53061;
+$yellow: #f3d40c;
+$green: #43A047;
+$main-color: $pink;
+
+$gray-100: #fafafa;
+$gray-200: #CFD8DC;
+$gray-300: #B0BEC5;
+$gray-400: #90A4AE;
+$gray-500: #78909C;
+$gray-600: #607D8B;
+$gray-700: #6b696a;
+$gray-800: #444243;
+$gray-900: #263238;
+
+$headings-color: $gray-900;
+$body-color: $gray-800;
+$link-color: $blue;
+$light: $gray-100;
+$primary: $blue;
+$success: $green;
+
+$h1-font-size: $font-size-base * 4;
+$h2-font-size: $font-size-base * 3.5;
+$h3-font-size: $font-size-base * 2.75;
+$h4-font-size: $font-size-base * 2.5;
+$h5-font-size: $font-size-base * 2;
+$h6-font-size: $font-size-base;
+
+$border-radius: 0.3rem;
+$border-radius-sm: 0.2rem;
+$border-radius-lg: 0.6rem;
+
+$theme-colors: ();
+$theme-colors: map-merge((
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "pink":       $pink,
+  "theme":      $main-color
+), $theme-colors);
+
+$input-btn-focus-box-shadow: 0 1px 1px rgba(#000, 0.2);
+// $btn-focus-box-shadow: $input-btn-focus-box-shadow;
+
+$input-btn-padding-y: 0.6rem;
+$input-btn-padding-x: 1.2rem;
+$input-btn-padding-y-sm: .25rem;
+$input-btn-padding-x-sm: .8rem;
+$input-btn-padding-y-lg: 1rem;
+$input-btn-padding-x-lg: 2rem;
+
+$btn-box-shadow: 0 4px 4px rgba(#000, 0.2);
+$btn-active-box-shadow: $input-btn-focus-box-shadow;
+$btn-padding-y: $input-btn-padding-y;
+$btn-padding-x: $input-btn-padding-x;
+$btn-padding-y-sm: $input-btn-padding-y-sm;
+$btn-padding-x-sm: $input-btn-padding-x-sm;
+$btn-padding-y-lg: $input-btn-padding-y-lg;
+$btn-padding-x-lg: $input-btn-padding-x-lg;
+$btn-border-radius-lg: $border-radius-lg;
+$btn-font-weight: $font-weight-bold;
+
+$input-bg: rgba(#000, 0.05);
+$input-border-color: $input-bg;
+$input-focus-bg: #fff;
+$input-border-radius-lg: $border-radius-lg;
+$input-focus-box-shadow: $input-btn-focus-box-shadow;
+$input-focus-border-color: $input-bg;

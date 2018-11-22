@@ -1,0 +1,30 @@
+@for $i from 1 through 5 {
+  h#{$i}, .h#{$i} {
+    @include media-breakpoint-down(md) {
+      line-height: 1;
+      font-size: ($font-size-base * 3) - ($i / 5);
+    }
+  }
+}
+
+.font-large{
+  font-size: $font-size-lg;
+  line-height: 1.7;
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-base;
+    line-height: 1.5;
+  }
+}
+
+.gradient-text{
+  @include gradient-text(linear-gradient(to right, darken($main-color, 90%), mix(darken($main-color, 40%), $blue)), 'light', $main-color);
+}
+
+.link-dotted{
+  border-bottom: 1px dashed $blue;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    border-bottom: none;
+  }
+}

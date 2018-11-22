@@ -1,0 +1,220 @@
+.side-nav {
+    $size: 1rem;
+
+    position: fixed;
+    right: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+
+    &__link {
+        width: $size;
+        height: $size;
+        border-radius: $size;
+        @extend .link-reset;
+        background-color: #fff;
+        margin-bottom: 0.5rem;
+        position: relative;
+
+        @include media-breakpoint-down(md) {
+            width: $size/1.5;
+            height: $size/1.5;
+            opacity: 0.8;
+            margin-bottom: 1rem;
+        }
+
+        &:hover {
+            .side-nav__text {
+                opacity: 1;
+                right: 100%;
+            }
+        }
+    }
+
+    &__text {
+        pointer-events: none;
+        transition: all 0.3s;
+        opacity: 0;
+        white-space: nowrap;
+        position: absolute;
+        right: 50%;
+        margin-right: 10px;
+        top: 0;
+        line-height: $size;
+        background-color: rgba(#fff, 0.6);
+        padding: 4px;
+        margin-top: -4px;
+        border-radius: 3px;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+}
+
+.navbar-shadow {
+    box-shadow: 0 0 rgba(#000, 0);
+    transition: box-shadow 0.3s;
+
+    &--showed {
+        box-shadow: 0 3px 2px 0 rgba(#000, 0.2);
+    }
+}
+
+.bg-navbar {
+    background-color: rgba(#fff, 0.98);
+}
+
+.navbar-logo {
+    height: 40px;
+    //   width: 40px;
+}
+
+.nav-ul-tabs {
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    &__link {
+        display: inline-block;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 4px;
+            border-radius: 2px;
+            background-color: $main-color;
+            transition: width 0.3s, left 0.3s;
+        }
+
+        &--active {
+            &:after {
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@keyframes menu {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar-menu {
+    @include media-breakpoint-down(md) {
+        display: none;
+        position: absolute;
+        top: 110%;
+        left: 5%;
+        width: 90%;
+        z-index: 99;
+        background-color: #fff;
+        box-shadow: 0 40px 100px rgba(#000, 0.6);
+        padding: 10px;
+        text-align: center;
+        transition: top 0.3s;
+
+        &--opened {
+            display: block;
+            animation: menu 0.3s;
+        }
+    }
+}
+
+$bar-width: 30px;
+$bar-height: 4px;
+$bar-spacing: 8px;
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+    width: $bar-width;
+    height: $bar-height;
+    border-radius: $bar-height;
+}
+
+.hamburger-menu {
+    position: relative;
+    background: $gray-800;
+
+    &.animate {
+        background: #fff;
+    }
+
+    &__outer {
+        height: $bar-width;
+    }
+}
+
+.hamburger-menu:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: $bar-spacing;
+    background: $gray-800;
+    transition: bottom 0.2s 0.2s, transform 0.2s;
+}
+
+.hamburger-menu:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: $bar-spacing;
+    background: $gray-800;
+    transition: top 0.2s 0.2s, transform 0.2s;
+}
+
+.hamburger-menu.animate:after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 0.2s, transform 0.2s 0.2s;
+    ;
+}
+
+.hamburger-menu.animate:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 0.2s, transform 0.2s 0.2s;
+    ;
+}
+
+.navbar-link {
+    position: relative;
+
+    &:hover {
+        &:after {
+            width: 1rem;
+        }
+    }
+
+    &:after {
+        content: '';
+        width: 0;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $main-color;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -1rem;
+        transition: width 0.3s;
+    }
+
+    &--active {
+        &:after {
+            width: 2rem;
+        }
+    }
+}
